@@ -8,6 +8,7 @@ interface Tab {
   label: string;
   value: string;
   content: React.ReactNode;
+  disabled?: boolean;
 }
 
 interface ReportTabsProps {
@@ -15,7 +16,9 @@ interface ReportTabsProps {
 }
 
 export default function ReportTabs({ tabs }: ReportTabsProps) {
-  const [active, setActive] = useState(tabs[0]?.value ?? "");
+  const [active, setActive] = useState(
+    tabs.find((t) => !t.disabled)?.value ?? tabs[0]?.value ?? ""
+  );
 
   const activeTab = tabs.find((t) => t.value === active);
 
@@ -25,7 +28,7 @@ export default function ReportTabs({ tabs }: ReportTabsProps) {
         <SegmentedControl
           value={active}
           onChange={setActive}
-          data={tabs.map((t) => ({ label: t.label, value: t.value }))}
+          data={tabs.map((t) => ({ label: t.label, value: t.value, disabled: t.disabled }))}
           fullWidth
           size="md"
           radius="xl"

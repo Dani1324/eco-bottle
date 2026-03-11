@@ -379,7 +379,7 @@ Design minimalista     → Premium feel    → Piacere estetico  → Autostima, 
 
           <p className={styles.docNote}>
             Documento redatto nell&apos;ambito del Project Work di Marketing —
-            Università Politecnica delle Marche, A.A. 2025/2026
+            Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini
             <br />
             Brand: ECOBOTTLE — Drink Smart. Live Green.
           </p>

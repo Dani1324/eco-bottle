@@ -269,6 +269,10 @@
 }
 
 @media (max-width: 768px) {
+  .reportPage {
+    padding-top: 10px;
+  }
+
   .inner {
     padding: 40px 20px;
   }

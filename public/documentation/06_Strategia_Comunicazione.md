@@ -208,5 +208,5 @@ Il minimalismo nel branding attiva due meccanismi psicologici documentati:
 
 ---
 
-*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026*
+*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini*
 *Brand: ECOBOTTLE — Drink Smart. Live Green.*

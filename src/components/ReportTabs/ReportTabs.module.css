@@ -33,6 +33,12 @@
 }
 
 @media (max-width: 768px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+  }
+
   .segmentedWrapper {
     margin-bottom: 1.5rem;
   }

@@ -139,5 +139,5 @@ L'evoluzione segue il principio di crescita graduale della copertura ponderata: 
 
 ---
 
-*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026*
+*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini*
 *Brand: ECOBOTTLE — Drink Smart. Live Green.*
