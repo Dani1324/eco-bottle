@@ -9,8 +9,8 @@ export default function Footer() {
           <Image
             src="/images/text-logo.png"
             alt="EcoBottle"
-            width={163}
-            height={72}
+            width={210}
+            height={53}
             className={styles.logoImage}
           />
           <span className={styles.separator}>x</span>
