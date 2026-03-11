@@ -1,0 +1,106 @@
+.hero {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: transparent;
+  background-image: url('/images/bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroInner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  position: relative;
+  z-index: 1;
+}
+
+.heroLeft {
+  position: relative;
+}
+
+.heroImageWrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  max-height: 550px;
+  background: var(--color-green-pale);
+}
+
+.heroCta {
+  margin-top: 10px;
+}
+
+.heroTagline {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-green-dark);
+  line-height: 1.15;
+  letter-spacing: 2px;
+}
+
+.heroDescription {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.heroCta {
+  margin-top: 10px;
+}
+
+.heroBottle {
+  position: absolute;
+  right: -20px;
+  bottom: -30px;
+  width: 200px;
+  height: 400px;
+  z-index: 2;
+}
+
+.decorLeaves {
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  width: 180px;
+  height: 180px;
+  opacity: 0.15;
+  color: var(--color-green-medium);
+}
+
+@media (max-width: 968px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .heroTagline {
+    font-size: 2.2rem;
+  }
+
+  .heroDescription {
+    max-width: 100%;
+  }
+
+  .heroBottle {
+    display: none;
+  }
+
+  .heroCta {
+    display: flex;
+    justify-content: center;
+  }
+}

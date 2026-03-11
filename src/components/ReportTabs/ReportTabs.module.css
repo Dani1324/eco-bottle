@@ -1,0 +1,44 @@
+.segmentedWrapper {
+  margin-bottom: 2.5rem;
+}
+
+.root {
+  background: var(--color-green-pale, #E4EDE4);
+  border: none;
+  padding: 4px;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  padding: 0.55rem 1.2rem;
+  transition: color 0.2s;
+}
+
+.tabContent {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .segmentedWrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.6rem;
+  }
+}

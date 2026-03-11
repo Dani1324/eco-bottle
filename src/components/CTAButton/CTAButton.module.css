@@ -1,0 +1,49 @@
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+}
+
+/* Varianti */
+.primary {
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+  border-color: var(--color-green-dark);
+}
+
+.primary:hover {
+  background-color: transparent;
+  color: var(--color-green-dark);
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--color-green-dark);
+  border-color: var(--color-green-dark);
+}
+
+.outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-white);
+}
+
+/* Modalità scura */
+.dark {
+  background-color: #fff;
+  color: var(--color-green-dark);
+  border-color: #fff;
+}
+
+.dark:hover {
+  background-color: transparent;
+  color: #fff;
+}
