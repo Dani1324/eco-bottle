@@ -1422,6 +1422,7 @@ export default function InsightTargetMercatoPage() {
     {
       label: "Analisi Concorrenza",
       value: "concorrenza",
+      disabled: true,
       content: <AnalisiConcorrenza />,
     },
   ];
