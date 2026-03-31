@@ -238,35 +238,9 @@ function RicercaDiMercato() {
         </p>
       </div>
 
-      <hr />
-
-      <h3>Tracciamento amministrativo (campi automatici)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Campo</th>
-            <th>Contenuto</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Response Number</td>
-            <td>Identificativo progressivo automatico</td>
-          </tr>
-          <tr>
-            <td>Respondent Email</td>
-            <td>Email raccolta alla compilazione</td>
-          </tr>
-          <tr>
-            <td>Date Submitted</td>
-            <td>Data e ora di invio</td>
-          </tr>
-        </tbody>
-      </table>
-
       <br />
 
-      <h2>6. Risultati della ricerca e risposte per domanda (n=21)</h2>
+      <h2>6. Risultati della ricerca e risposte per domanda</h2>
 
       <h3>SEZIONE A — PREFERENZE DI PRODOTTO</h3>
 
