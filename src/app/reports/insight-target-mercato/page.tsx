@@ -416,7 +416,7 @@ function RicercaDiMercato() {
       </p>
       <ol>
         <li>
-          <strong>Campione non probabilistico (n=21)</strong>: i risultati non sono
+          <strong>Campione non probabilistico (n=63)</strong>: i risultati non sono
           generalizzabili all&apos;intera popolazione italiana. La distribuzione via
           social media introduce un bias di auto-selezione verso pubblici consapevoli.
         </li>
@@ -473,7 +473,7 @@ function RicercaDiMercato() {
         Documento redatto nell&apos;ambito del Project Work di Marketing —
         Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini
         <br />
-        <strong>Data survey</strong>: N=21 rispondenti | <strong>Periodo</strong>: Marzo 2026
+        <strong>Data survey</strong>: N=63 rispondenti | <strong>Periodo</strong>: Marzo 2026
         <br />
         Brand: ECOBOTTLE — Drink Smart. Live Green.
       </p>
@@ -648,9 +648,9 @@ function SegmentazioneTargeting() {
 
       <br />
 
-      <h2>4. Profilo dei segmenti individuati — Ricalibramento sulla base dei dati della ricerca (n=21)</h2>
+      <h2>4. Profilo dei segmenti individuati — Ricalibramento sulla base dei dati della ricerca (n=63)</h2>
       <p>
-        Dall&apos;incrocio della <strong>ricerca empirica (n=21)</strong> con i
+        Dall&apos;incrocio della <strong>ricerca empirica (n=63)</strong> con i
         criteri multi-dimensionali emergono <strong>4 micro-segmenti</strong> distinti:
       </p>
 
