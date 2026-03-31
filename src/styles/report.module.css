@@ -248,6 +248,58 @@
   margin-bottom: 12px;
 }
 
+/* Question-Chart Pair Layout */
+.questionWithChart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.questionSection {
+  flex: 1;
+}
+
+.chartSection {
+  flex: 1;
+}
+
+.questionHeading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-green-dark);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.questionSubtext {
+  font-size: 0.85rem;
+  color: var(--color-gray-medium);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.answerOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.answerOption {
+  font-size: 0.9rem;
+  color: var(--color-gray-dark);
+  padding: 2px 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .questionWithChart {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 /* Horizontal rule */
 .content hr {
   border: none;

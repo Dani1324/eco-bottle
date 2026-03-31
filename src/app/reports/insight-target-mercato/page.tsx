@@ -3,6 +3,36 @@ import Image from "next/image";
 import { IconArrowLeft } from "@tabler/icons-react";
 import ReportTabs from "@/components/ReportTabs/ReportTabs";
 import styles from "@/styles/report.module.css";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import {
+  AgeDistributionChart,
+  GenderDistributionChart,
+  OccupationDistributionChart,
+  AreaGeographicaChart,
+  WaterConsumptionChart,
+  BottleUsageChart,
+  MaterialPreferenceChart,
+  CapacityPreferenceChart,
+  AppInterestChart,
+  WTPChart,
+  PurchaseDriverChart,
+  BrandAwarenessChart,
+  PurchaseChannelChart,
+  CommunicationChannelChart,
+  InfluencerFollowingChart,
+} from "@/components/RicercaCharts/RicercaCharts";
 
 export const metadata = {
   title: "Insight, Target e Mercato — EcoBottle",
@@ -35,7 +65,7 @@ function RicercaDiMercato() {
         in una ricerca primaria strutturata.
       </p>
 
-      <hr />
+      <br />
 
       <h2>2. Fabbisogno informativo</h2>
       <p>
@@ -43,70 +73,61 @@ function RicercaDiMercato() {
         <strong>7 aree tematiche</strong>, ciascuna collegata a una specifica
         decisione di marketing strategico e operativo:
       </p>
+      <p>
+        <strong>Link al sondaggio:</strong>{" "}
+        <a href="https://forms.gle/SRVsVse8pfzUZ1X16" target="_blank" rel="noopener noreferrer">
+          https://forms.gle/SRVsVse8pfzUZ1X16
+        </a>
+      </p>
       <table>
         <thead>
           <tr>
             <th>Area</th>
             <th>Obiettivo informativo</th>
-            <th>Decisione collegata</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>A. Profilo demografico</td>
+            <td><strong>A. Preferenze di prodotto</strong></td>
             <td>
-              Identificare le caratteristiche socio-demografiche del campione
-            </td>
-            <td>
-              Criteri di segmentazione descrittivi (capacità identificativa)
+              Identificare le preferenze relative a materiale, capacità e caratteristiche del prodotto
             </td>
           </tr>
           <tr>
-            <td>B. Abitudini di idratazione</td>
+            <td><strong>B. Tecnologia e app</strong></td>
             <td>
-              Mappare frequenza, contesto e volumi di consumo d&apos;acqua
-            </td>
-            <td>
-              Criteri comportamentali (intensità d&apos;uso, occasioni)
+              Valutare l&apos;interesse verso funzionalità smart (tracking idratazione, app)
             </td>
           </tr>
           <tr>
-            <td>C. Sensibilità ambientale</td>
+            <td><strong>C. Prezzo e fattori decisionali</strong></td>
             <td>
-              Misurare l&apos;orientamento valoriale verso la sostenibilità
-            </td>
-            <td>Criteri psicografici (stili di vita) e benefit segmentation</td>
-          </tr>
-          <tr>
-            <td>D. Propensione tecnologica</td>
-            <td>
-              Valutare l&apos;interesse verso funzionalità smart (tracking, app)
-            </td>
-            <td>Definizione sistema-prodotto e innovazione</td>
-          </tr>
-          <tr>
-            <td>E. Willingness to Pay</td>
-            <td>
-              Stimare l&apos;elasticità al prezzo e la disponibilità a pagare
-              un premium price
-            </td>
-            <td>Strategia di pricing (scrematura vs penetrazione)</td>
-          </tr>
-          <tr>
-            <td>F. Preferenze di canale</td>
-            <td>
-              Identificare i canali d&apos;acquisto preferiti dal target
-            </td>
-            <td>
-              Politica distributiva (ampiezza e lunghezza canale)
+              Stimare la willingness to pay e identificare i fattori che influenzano la decisione di acquisto
             </td>
           </tr>
           <tr>
-            <td>G. Brand awareness</td>
+            <td><strong>D. Canali d&apos;acquisto e comunicazione</strong></td>
+            <td>
+              Identificare i canali distributivi preferiti e i canali informativi per raggiungere il target
+            </td>
+          </tr>
+          <tr>
+            <td><strong>E. Brand awareness</strong></td>
             <td>
               Misurare la notorietà dei competitor nel mercato di riferimento
             </td>
-            <td>Analisi competitiva e posizionamento</td>
+          </tr>
+          <tr>
+            <td><strong>F. Profilo socio-demografico</strong></td>
+            <td>
+              Identificare le caratteristiche socio-demografiche del campione (età, genere, occupazione, area geografica)
+            </td>
+          </tr>
+          <tr>
+            <td><strong>G. Abitudini di idratazione e uso della borraccia</strong></td>
+            <td>
+              Mappare il consumo e le abitudini di idratazione, valutando la penetrazione della borraccia riutilizzabile
+            </td>
           </tr>
         </tbody>
       </table>
@@ -121,7 +142,7 @@ function RicercaDiMercato() {
         operativi per il marketing mix.
       </p>
 
-      <hr />
+      <br />
 
       <h2>3. Piano di campionamento</h2>
       <p>
@@ -157,7 +178,7 @@ function RicercaDiMercato() {
         gli invii se necessario.
       </p>
 
-      <hr />
+      <br />
 
       <h2>4. Metodo di contatto: Web Interview</h2>
       <p>
@@ -189,7 +210,7 @@ function RicercaDiMercato() {
         </li>
       </ul>
 
-      <hr />
+      <br />
 
       <h2>5. Struttura del questionario — Domande, opzioni e tipo di risposta</h2>
       <p>
@@ -239,339 +260,84 @@ function RicercaDiMercato() {
         </tbody>
       </table>
 
-      <hr />
+      <br />
 
-      <h3>SEZIONE A — DATI DEMOGRAFICI / SOCIO-DEMOGRAPHIC DATA</h3>
+      <h2>6. Risultati della ricerca e risposte per domanda (n=63)</h2>
 
-      <p>
-        <strong>A1. Qual è la tua fascia d&apos;età? – What is your age group?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Under 18</li>
-        <li>18–24</li>
-        <li>25–34</li>
-        <li>35–44</li>
-        <li>45–54</li>
-        <li>Over 54</li>
-      </ul>
+      <h3>SEZIONE A — PREFERENZE DI PRODOTTO</h3>
 
-      <p>
-        <strong>A2. Qual è il tuo genere? – What is your gender?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Maschio – Male</li>
-        <li>Femmina – Female</li>
-        <li>Altro – Other</li>
-        <li>Preferisco non specificare – Prefer not to say</li>
-      </ul>
+      <h4>A1. Quale materiale preferisci per una borraccia?</h4>
+      <MaterialPreferenceChart />
 
-      <p>
-        <strong>A3. Qual è la tua occupazione principale? – What is your main occupation?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Studente – Student</li>
-        <li>Lavoratore dipendente – Employee</li>
-        <li>Lavoratore autonomo / Libero professionista – Self-employed / Freelancer</li>
-        <li>Sportivo / Atleta – Athlete</li>
-        <li>Pensionato – Retired</li>
-        <li>Altro – Other</li>
-      </ul>
-
-      <p>
-        <strong>A4. In quale area geografica risiedi? – In which area do you live?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Nord Italia – Northern Italy</li>
-        <li>Centro Italia – Central Italy</li>
-        <li>Sud Italia e Isole – Southern Italy and Islands</li>
-        <li>Estero – Abroad</li>
-      </ul>
+      <h4>A2. Quale capacità preferisci?</h4>
+      <CapacityPreferenceChart />
 
       <hr />
 
-      <h3>SEZIONE B — ABITUDINI DI IDRATAZIONE / HYDRATION HABITS</h3>
+      <h3>SEZIONE B — TECNOLOGIA E APP</h3>
 
-      <p>
-        <strong>B1. Quanti litri d&apos;acqua bevi mediamente al giorno? – On average, how many litres of water do you drink per day?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Meno di 0,5 litri – Less than 0.5 L</li>
-        <li>Tra 0,5 e 1 litro – Between 0.5 and 1 L</li>
-        <li>Tra 1 e 1,5 litri – Between 1 and 1.5 L</li>
-        <li>Tra 1,5 e 2 litri – Between 1.5 and 2 L</li>
-        <li>Più di 2 litri – More than 2 L</li>
-      </ul>
-
-      <p>
-        <strong>B2. Utilizzi già una borraccia riutilizzabile? – Do you currently use a reusable water bottle?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Sì, quotidianamente – Yes, every day</li>
-        <li>Sì, occasionalmente – Yes, occasionally</li>
-        <li>No, ma vorrei iniziare – No, but I would like to start</li>
-        <li>No, e non mi interessa – No, and I am not interested</li>
-      </ul>
-
-      <p>
-        <strong>B3. In quali contesti utilizzi (o utilizzeresti) una borraccia riutilizzabile? – In which situations do you use (or would you use) a reusable water bottle?</strong>
-        <br />
-        <em>Tipo: risposta multipla (checkbox) obbligatoria</em>
-      </p>
-      <ul>
-        <li>Al lavoro / università – At work / university</li>
-        <li>Durante l&apos;attività sportiva – During sports activities</li>
-        <li>In viaggio – While travelling</li>
-        <li>A casa – At home</li>
-        <li>All&apos;aperto / escursioni – Outdoors / hiking</li>
-        <li>Altro – Other</li>
-      </ul>
+      <h4>B1. Saresti interessato a una borraccia che monitora l&apos;idratazione?</h4>
+      <AppInterestChart />
 
       <hr />
 
-      <h3>SEZIONE C — PREFERENZE SUL PRODOTTO / PRODUCT PREFERENCES</h3>
+      <h3>SEZIONE C — PREZZO E FATTORI DECISIONALI</h3>
 
-      <p>
-        <strong>C1. Quanto sono importanti per te le seguenti caratteristiche in una borraccia? – How important are the following features to you when choosing a water bottle?</strong>
-        <br />
-        <em>Tipo: matrice Likert a 5 gradi</em>
-      </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Caratteristica</th>
-            <th>Scala</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Materiali ecologici / sostenibili – Eco-friendly / sustainable materials</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Monitoraggio dell&apos;idratazione – Hydration tracking</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Mantenimento della temperatura (caldo/freddo) – Temperature retention (hot/cold)</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Design elegante / estetica – Elegant design / appearance</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Leggerezza e praticità – Lightness and practicality</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Facilità di pulizia – Ease of cleaning</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Prezzo accessibile – Affordable price</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-          <tr>
-            <td>Marca nota / affidabile – Well-known / reliable brand</td>
-            <td>1 – 2 – 3 – 4 – 5</td>
-          </tr>
-        </tbody>
-      </table>
+      <h4>C1. Quanto saresti disposto a spendere per una borraccia smart eco-friendly?</h4>
+      <WTPChart />
 
-      <p>
-        <strong>C2. Quale materiale preferisci per una borraccia? – Which material do you prefer for a water bottle?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Acciaio inossidabile – Stainless steel</li>
-        <li>Materiali biodegradabili / bio-based – Biodegradable / bio-based materials</li>
-        <li>Vetro – Glass</li>
-        <li>Plastica riciclata – Recycled plastic</li>
-        <li>Non ho preferenze – No preference</li>
-      </ul>
-
-      <p>
-        <strong>C3. Quale capacità preferisci? – Which size do you prefer?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Piccola (350–500 ml) – Small (350–500 ml)</li>
-        <li>Media (500–750 ml) – Medium (500–750 ml)</li>
-        <li>Grande (750 ml – 1 litro) – Large (750 ml – 1 L)</li>
-        <li>Extra large (oltre 1 litro) – Extra large (more than 1 L)</li>
-      </ul>
-
-      <p>
-        <strong>C4. Quali colori preferiresti per una borraccia ecologica? – Which colours would you prefer for an eco-friendly water bottle?</strong>
-        <br />
-        <em>Tipo: risposta multipla (checkbox) obbligatoria</em>
-      </p>
-      <ul>
-        <li>Colori naturali (verde, marrone, beige) – Natural colours (green, brown, beige)</li>
-        <li>Colori vivaci (rosso, arancione, giallo) – Bright colours (red, orange, yellow)</li>
-        <li>Colori neutri (nero, bianco, grigio) – Neutral colours (black, white, grey)</li>
-        <li>Colori pastello – Pastel colours</li>
-        <li>Effetto legno / pietra naturale – Wood / stone effect</li>
-        <li>Altro – Other</li>
-      </ul>
+      <h4>C2. Quale fattore influenzerebbe maggiormente la tua decisione di acquisto?</h4>
+      <PurchaseDriverChart />
 
       <hr />
 
-      <h3>SEZIONE D — TECNOLOGIA E APP / TECHNOLOGY AND APP</h3>
+      <h3>SEZIONE D — CANALI D&apos;ACQUISTO E COMUNICAZIONE</h3>
 
-      <p>
-        <strong>D1. Saresti interessato/a a una borraccia che monitora la tua idratazione e ti invia promemoria tramite app? – How interested would you be in a water bottle that tracks your hydration and sends reminders via an app?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Molto interessato/a – Very interested</li>
-        <li>Abbastanza interessato/a – Quite interested</li>
-        <li>Poco interessato/a – Slightly interested</li>
-        <li>Per niente interessato/a – Not interested at all</li>
-      </ul>
+      <h4>D1. Dove preferiresti acquistare una borraccia eco-intelligente?</h4>
+      <PurchaseChannelChart />
 
-      <p>
-        <strong>D2. Quali funzionalità vorresti in un&apos;app collegata alla borraccia? – Which features would you like in an app connected to the water bottle?</strong>
-        <br />
-        <em>Tipo: risposta multipla (checkbox) obbligatoria</em>
-      </p>
-      <ul>
-        <li>Promemoria per bere acqua – Drink reminders</li>
-        <li>Tracciamento giornaliero dell&apos;idratazione – Daily hydration tracking</li>
-        <li>Statistiche settimanali/mensili – Weekly / monthly statistics</li>
-        <li>Obiettivi personalizzati – Personalised goals</li>
-        <li>Integrazione con app fitness (Apple Health, Google Fit, ecc.) – Integration with fitness apps</li>
-        <li>Gamification (sfide, badge, classifiche) – Gamification (challenges, badges, leaderboards)</li>
-        <li>Consigli personalizzati sull&apos;idratazione – Personalised hydration tips</li>
-        <li>Monitoraggio della qualità dell&apos;acqua – Water quality monitoring</li>
-        <li>Altro – Other</li>
-      </ul>
+      <h4>D2. Attraverso quali canali vorresti ricevere informazioni su prodotti eco/tech?</h4>
+      <CommunicationChannelChart />
+
+      <h4>D3. Segui influencer/creator che parlano di sostenibilità, lifestyle o fitness?</h4>
+      <InfluencerFollowingChart />
 
       <hr />
 
-      <h3>SEZIONE E — PREZZO E DISPONIBILITÀ A PAGARE / PRICE AND WILLINGNESS TO PAY</h3>
+      <h3>SEZIONE E — BRAND AWARENESS</h3>
 
-      <p>
-        <strong>E1. Quanto saresti disposto/a a spendere per una borraccia ecologica e intelligente come EcoBottle? – How much would you be willing to spend for an eco-friendly and smart bottle like EcoBottle?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Meno di 20 € – Less than €20</li>
-        <li>20–35 €</li>
-        <li>35–50 €</li>
-        <li>50–70 €</li>
-        <li>70–100 €</li>
-        <li>Più di 100 € – More than €100</li>
-      </ul>
-
-      <p>
-        <strong>E2. Quale fattore influenzerebbe maggiormente la tua decisione d&apos;acquisto? – Which factor would most influence your purchase decision?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Prezzo – Price</li>
-        <li>Qualità dei materiali – Material quality</li>
-        <li>Funzionalità smart (app/tracking) – Smart features (app/tracking)</li>
-        <li>Design ed estetica – Design and appearance</li>
-        <li>Sostenibilità ambientale – Environmental sustainability</li>
-        <li>Recensioni e passaparola – Reviews and word of mouth</li>
-        <li>Marca / brand noto – Well-known brand</li>
-      </ul>
+      <h4>E1. Conosci qualcuno di questi brand di borracce?</h4>
+      <BrandAwarenessChart />
 
       <hr />
 
-      <h3>SEZIONE F — CANALI D&apos;ACQUISTO E COMUNICAZIONE / PURCHASE AND COMMUNICATION CHANNELS</h3>
+      <h3>SEZIONE F — PROFILO SOCIO-DEMOGRAFICO</h3>
+      
+      <h4>F1. Quale fascia d&apos;età ti appartiene?</h4>
+      <AgeDistributionChart />
 
-      <p>
-        <strong>F1. Dove preferiresti acquistare una borraccia ecologica e intelligente? – Where would you prefer to buy an eco-friendly and smart water bottle?</strong>
-        <br />
-        <em>Tipo: risposta multipla (checkbox) obbligatoria</em>
-      </p>
-      <ul>
-        <li>E-commerce del produttore (sito ufficiale) – Brand&apos;s official online store</li>
-        <li>Amazon / marketplace online – Amazon / other marketplaces</li>
-        <li>Negozi di articoli sportivi – Sports shops</li>
-        <li>Negozi di elettronica – Electronics stores</li>
-        <li>Negozi bio / ecologici – Organic / eco stores</li>
-        <li>Grande distribuzione (supermercati) – Supermarkets</li>
-        <li>Negozi di design / lifestyle – Design / lifestyle stores</li>
-        <li>Altro – Other</li>
-      </ul>
+      <h4>F2. Quale genere ti rappresenta?</h4>
+      <GenderDistributionChart />
 
-      <p>
-        <strong>F2. Attraverso quali canali vorresti ricevere informazioni su prodotti eco-friendly o tecnologici? – Through which channels would you like to receive information about eco-friendly or tech products?</strong>
-        <br />
-        <em>Tipo: risposta multipla (checkbox) obbligatoria</em>
-      </p>
-      <ul>
-        <li>Instagram</li>
-        <li>TikTok</li>
-        <li>YouTube</li>
-        <li>Facebook</li>
-        <li>Blog e siti di settore – Blogs and specialised websites</li>
-        <li>Newsletter via email – Email newsletters</li>
-        <li>Influencer / creator</li>
-        <li>Pubblicità tradizionale (TV, radio, stampa) – Traditional advertising (TV, radio, print)</li>
-        <li>Passaparola – Word of mouth</li>
-        <li>Altro – Other</li>
-      </ul>
+      <h4>F3. Qual è la tua situazione lavorativa/scolastica?</h4>
+      <OccupationDistributionChart />
 
-      <p>
-        <strong>F3. Segui influencer o creator che parlano di sostenibilità, lifestyle o fitness? – Do you follow influencers or creators who talk about sustainability, lifestyle or fitness?</strong>
-        <br />
-        <em>Tipo: risposta singola obbligatoria</em>
-      </p>
-      <ul>
-        <li>Sì, regolarmente – Yes, regularly</li>
-        <li>Sì, occasionalmente – Yes, occasionally</li>
-        <li>No</li>
-      </ul>
+      <h4>F4. In quale area geografica risiedi?</h4>
+      <AreaGeographicaChart />
 
       <hr />
 
-      <h3>SEZIONE G — BRAND AWARENESS E COMMENTI APERTI / BRAND AWARENESS AND OPEN FEEDBACK</h3>
+      <h3>SEZIONE G — ABITUDINI DI IDRATAZIONE E USO DELLA BORRACCIA</h3>
 
-      <p>
-        <strong>G1. Conosci qualcuno di questi brand di borracce? – Do you know any of the following water bottle brands?</strong>
-        <br />
-        <em>Tipo: risposta multipla (checkbox) obbligatoria</em>
-      </p>
-      <ul>
-        <li>24Bottles</li>
-        <li>Chilly&apos;s</li>
-        <li>Hydro Flask</li>
-        <li>CamelBak</li>
-        <li>Stanley</li>
-        <li>Air Up</li>
-        <li>Nessuno di questi – None of these</li>
-      </ul>
+      <h4>G1. Quanto litri d&apos;acqua bevi mediamente al giorno?</h4>
+      <WaterConsumptionChart />
 
-      <p>
-        <strong>G2. C&apos;è qualcosa che vorresti aggiungere riguardo alle tue preferenze o esigenze per una borraccia ecologica e intelligente? – Is there anything you would like to add regarding your needs or preferences for an eco-friendly and smart water bottle?</strong>
-        <br />
-        <em>Tipo: risposta aperta (campo di testo libero, facoltativa)</em>
-      </p>
+      <h4>G2. Usi una borraccia riutilizzabile?</h4>
+      <BottleUsageChart />
 
-      <hr />
+      <br />
 
-      <h2>6. Piano di analisi</h2>
+      <h2>7. Piano di analisi</h2>
       <table>
         <thead>
           <tr>
@@ -583,113 +349,144 @@ function RicercaDiMercato() {
         <tbody>
           <tr>
             <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>A1, A2, A3, A4</td>
+            <td>A1, A2</td>
+            <td>Preferenze di materiale e capacità della borraccia</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni di frequenza</strong></td>
+            <td>F1, F2, F3, F4</td>
             <td>Profilo socio-demografico del campione (età, genere, occupazione, area geografica)</td>
           </tr>
           <tr>
             <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>B2, B3</td>
-            <td>Penetrazione borraccia riutilizzabile e contesti d&apos;uso prevalenti</td>
+            <td>G1, G2</td>
+            <td>Penetrazione borraccia riutilizzabile e consumo medio d&apos;acqua giornaliera</td>
           </tr>
           <tr>
             <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>C2, C3, C4</td>
-            <td>Preferenze di materiale, formato e colore</td>
-          </tr>
-          <tr>
-            <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>G1</td>
+            <td>E1</td>
             <td>Brand awareness competitiva (notorietà spontanea dei competitor)</td>
           </tr>
           <tr>
-            <td><strong>Medie e deviazioni standard</strong></td>
-            <td>C1 (matrice Likert 1–5)</td>
-            <td>Ranking di importanza degli attributi di prodotto: materiali eco, tracking, temperatura, design, praticità, pulizia, prezzo, brand</td>
-          </tr>
-          <tr>
-            <td><strong>Medie e deviazioni standard</strong></td>
+            <td><strong>Distribuzioni di frequenza</strong></td>
             <td>B1</td>
-            <td>Consumo medio giornaliero d&apos;acqua nel campione</td>
+            <td>Interesse verso applicazione di tracking idratazione</td>
           </tr>
           <tr>
-            <td><strong>Medie e deviazioni standard</strong></td>
-            <td>D1</td>
-            <td>Propensione media all&apos;acquisto di una smart bottle con tracking</td>
+            <td><strong>Medie e distribuzioni</strong></td>
+            <td>C1</td>
+            <td>Willingness to Pay: distribuzione degli intervalli di prezzo e media stimata</td>
           </tr>
           <tr>
-            <td><strong>Tabulazioni incrociate</strong></td>
-            <td>A1 × E1</td>
-            <td>Età × Willingness to Pay: segmenti price-sensitive vs premium</td>
+            <td><strong>Distribuzioni ordinate</strong></td>
+            <td>C2</td>
+            <td>Ranking dei fattori decisionali: qualità, prezzo, design, sostenibilità</td>
           </tr>
           <tr>
-            <td><strong>Tabulazioni incrociate</strong></td>
-            <td>A3 × E1</td>
-            <td>Occupazione × WTP: differenze tra studenti, lavoratori, professionisti</td>
-          </tr>
-          <tr>
-            <td><strong>Tabulazioni incrociate</strong></td>
-            <td>A1 × D1</td>
-            <td>Età × Propensione tecnologica: adozione smart feature per fascia d&apos;età</td>
+            <td><strong>Distribuzioni multiple</strong></td>
+            <td>D1, D2, D3</td>
+            <td>Canali d&apos;acquisto, canali informativi e fruizione influencer (risposte multipie)</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
-            <td>C1 (eco) × E2</td>
-            <td>Importanza sostenibilità × Fattore d&apos;acquisto: coerenza valoriale</td>
+            <td>F1 × C1</td>
+            <td>Fascia d&apos;età × Willingness to Pay: segmenti price-sensitive vs premium</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
-            <td>B2 × C2</td>
-            <td>Uso borraccia attuale × Materiale preferito: abitudini vs aspirazioni</td>
+            <td>F3 × C1</td>
+            <td>Situazione lavorativa × WTP: differenze tra studenti, lavoratori, professionisti</td>
           </tr>
           <tr>
-            <td><strong>Analisi delle risposte multiple</strong></td>
-            <td>B3, C4, D2, F1, F2</td>
-            <td>Frequenze pesate per domande checkbox: contesti, colori, funzionalità app, canali acquisto, canali informativi</td>
+            <td><strong>Tabulazioni incrociate</strong></td>
+            <td>F1 × B1</td>
+            <td>Fascia d&apos;età × Propensione tecnologica: adozione smart feature per target</td>
+          </tr>
+          <tr>
+            <td><strong>Tabulazioni incrociate</strong></td>
+            <td>G2 × A1</td>
+            <td>Uso attuale borraccia × Preferenza materiale: abitudini vs aspirazioni</td>
+          </tr>
+          <tr>
+            <td><strong>Tabulazioni incrociate</strong></td>
+            <td>F3 × C2</td>
+            <td>Occupazione × Fattore decisionale: priorità diverse per segmenti</td>
           </tr>
           <tr>
             <td><strong>Analisi cluster</strong></td>
-            <td>C1 + D1 + E1</td>
-            <td>Individuazione micro-segmenti: es. &quot;Eco-price sensitive&quot;, &quot;Tech-premium&quot;, &quot;Design-first&quot;</td>
-          </tr>
-          <tr>
-            <td><strong>Analisi testuale</strong></td>
-            <td>G2</td>
-            <td>Analisi qualitativa del feedback aperto: temi ricorrenti, bisogni latenti, obiezioni</td>
+            <td>A1 + A2 + B1 + C1 + C2</td>
+            <td>Individuazione micro-segmenti: es. &quot;Eco-conscious premium&quot;, &quot;Tech-enthusiast&quot;, &quot;Price-sensitive&quot;</td>
           </tr>
         </tbody>
       </table>
 
-      <hr />
+      <br />
 
-      <h2>7. Limiti metodologici</h2>
+      <h2>8. Limiti metodologici e implicazioni</h2>
       <p>
         Come evidenziato nella teoria, ogni ricerca presenta limiti che è
-        necessario dichiarare per garantire trasparenza e credibilità:
+        necessario dichiarare per garantire trasparenza:
       </p>
       <ol>
         <li>
-          <strong>Campione non probabilistico</strong>: i risultati non sono
-          generalizzabili all&apos;intera popolazione italiana. La distribuzione
-          via social media introduce un bias di auto-selezione.
+          <strong>Campione non probabilistico (n=63)</strong>: i risultati non sono
+          generalizzabili all&apos;intera popolazione italiana. La distribuzione via
+          social media introduce un bias di auto-selezione verso pubblici consapevoli.
         </li>
         <li>
           <strong>Concept test su immagine statica</strong>: la valutazione del
-          prodotto avviene senza esperienza tattile o funzionale, il che può
-          distorcere la percezione di valore.
+          prodotto avviene senza esperienza tattile, funzionale o trial, il che può
+          distorcere la percezione di valore e soddisfazione.
         </li>
         <li>
-          <strong>Variabilità temporale</strong>: le preferenze nel mercato
-          smart bottle sono in rapida evoluzione.
+          <strong>Variabilità temporale</strong>: le preferenze nel mercato smart
+          bottle evolvono rapidamente. Quello rilevato a marzo 2026 potrebbe variare
+          nei prossimi mesi.
         </li>
         <li>
           <strong>Desiderabilità sociale</strong>: le domande sulla sostenibilità
-          ambientale tendono a generare risposte inflate.
+          tendono a generare risposte inflate rispetto al comportamento reale di acquisto.
+        </li>
+        <li>
+          <strong>Sovrarappresentazione geografica</strong>: il 68,3% dal Centro Italia
+          introduce bias. Nord e Sud sottorapresentati.
         </li>
       </ol>
+      <p>
+        <em>Implicazione strategica</em>: ECOBOTTLE dovrebbe validare i risultati
+        con follow-up research su segmenti regionali e con customer interviews
+        post-acquisto una volta lanciato.
+      </p>
+
+      <br />
+
+      <h2>9. Key Success Metrics e KPI</h2>
+      <ul>
+        <li>
+          <strong>Awareness</strong>: Crescita da 0% a 8-10% entro 12 mesi (vs Air Up 31,7%)
+        </li>
+        <li>
+          <strong>Consideration</strong>: 25% del target conscio considera attivamente l&apos;acquisto
+        </li>
+        <li>
+          <strong>Penetrazione canale primario</strong>: 40%+ vendita via Amazon + sito
+          brand (Fasi 1-2)
+        </li>
+        <li>
+          <strong>NPS efficacy</strong>: Net Promoter Score &gt;45 entro 6 mesi (vs
+          competitive 35-40)
+        </li>
+        <li>
+          <strong>Retention 12m</strong>: 60%+ dei clienti Fase 1 acquista di nuovo o
+          raccomanda (LTV &gt;150€)
+        </li>
+      </ul>
 
       <p className={styles.docNote}>
         Documento redatto nell&apos;ambito del Project Work di Marketing —
         Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini
+        <br />
+        <strong>Data survey</strong>: N=63 rispondenti | <strong>Periodo</strong>: Marzo 2026
         <br />
         Brand: ECOBOTTLE — Drink Smart. Live Green.
       </p>
@@ -711,7 +508,7 @@ function SegmentazioneTargeting() {
         posizionamento (decisione sul posizionamento competitivo del prodotto).
       </p>
 
-      <hr />
+      <br />
 
       <h2>2. Macro-segmentazione: il Modello di Abell</h2>
       <p>
@@ -756,7 +553,7 @@ function SegmentazioneTargeting() {
         </p>
       </div>
 
-      <hr />
+      <br />
 
       <h2>3. Micro-segmentazione: identificazione dei criteri</h2>
       <p>
@@ -862,115 +659,142 @@ function SegmentazioneTargeting() {
         </tbody>
       </table>
 
-      <hr />
+      <br />
 
-      <h2>4. Profilo dei segmenti individuati</h2>
+      <h2>4. Profilo dei segmenti individuati — Ricalibramento sulla base dei dati della ricerca (n=63)</h2>
       <p>
-        Dall&apos;incrocio dei criteri emergono{" "}
-        <strong>5 micro-segmenti</strong>:
+        Dall&apos;incrocio della <strong>ricerca empirica (n=63)</strong> con i
+        criteri multi-dimensionali emergono <strong>4 micro-segmenti</strong> distinti:
       </p>
 
-      <h3>Segmento 1 — Eco-Millennials Urbani</h3>
+      <h3>Segmento 1 — Eco-Millennials Urbani Consapevoli (39%)</h3>
       <ul>
         <li>
-          <strong>Profilo</strong>: 25-35 anni, laureati, reddito medio-alto,
-          centri urbani &gt;100k
+          <strong>Profilo demografico</strong>: 18-34 anni (69,8%), 52,4% donne,
+          42,9% dipendenti + 19% autonomi, Centro Italia (68,3%)
         </li>
         <li>
-          <strong>Stile di vita</strong>: Consapevoli, informati, tech-savvy,
-          attenti alla salute
+          <strong>Stile di vita</strong>: Consapevoli, omnichannel, ricerca
+          approfondita, tech-savvy, attenti alla salute
         </li>
         <li>
           <strong>Beneficio primario</strong>: Espressione valoriale eco +
-          monitoraggio salute
+          Monitoraggio salute + Design estetico
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Omnichannel, ricerca
-          approfondita pre-acquisto, WTP premium 55-75€
+          <strong>Fattori d&apos;acquisto</strong>: Qualità materiali (23,8%),
+          Sostenibilità (15,9%), Design (17,5%) — Pragmatici non entusiasti
         </li>
         <li>
-          <strong>Dimensione stimata</strong>: ~35% del mercato target
+          <strong>Comportamento d&apos;acquisto</strong>: Omnichannel (Amazon 33,3%,
+          Sito 21,6%, Specialty retail 37,2%), WTP medio 47,8€ con 35% disposto &gt;50€
+        </li>
+        <li>
+          <strong>App interest</strong>: 76,2% interessato ma pragmatico
+        </li>
+        <li>
+          <strong>Penetrazione borraccia</strong>: 71,4% già utente
+        </li>
+        <li>
+          <strong>Dimensione campione</strong>: 39% (n=25 su 63)
         </li>
       </ul>
 
-      <h3>Segmento 2 — Fitness Enthusiasts</h3>
+      <h3>Segmento 2 — Fitness Enthusiasts (26%)</h3>
       <ul>
         <li>
-          <strong>Profilo</strong>: 22-38 anni, utilizzatori intensivi di
-          fitness tracker
+          <strong>Profilo demografico</strong>: 25-34 anni dominanti (33,3%), mix
+          studenti (36,5%) e dipendenti (42,9%), Centro Italia (68,3%)
         </li>
         <li>
           <strong>Beneficio primario</strong>: Performance funzionale +
-          monitoraggio salute
+          Monitoraggio salute + Sostenibilità (secondaria)
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Online-first,
-          community fitness, WTP 40-60€
+          <strong>Fattori d&apos;acquisto</strong>: Qualità (23,8%), Prezzo (20,6%),
+          Design (17,5%) — Più price-sensibili rispetto a Millennials
         </li>
         <li>
-          <strong>Dimensione stimata</strong>: ~25% del mercato target
-        </li>
-      </ul>
-
-      <h3>Segmento 3 — Design Seekers</h3>
-      <ul>
-        <li>
-          <strong>Profilo</strong>: 28-42 anni, reddito medio-alto, sensibilità
-          estetica
+          <strong>App interest</strong>: 76,2% interessato con focus su integrazioni
+          fitness (Apple Health, Google Fit)
         </li>
         <li>
-          <strong>Beneficio primario</strong>: Status e design + espressione
-          valoriale
+          <strong>Comportamento d&apos;acquisto</strong>: Online-first (Amazon 33,3%) +
+          Specialty retail sport (37,2%), WTP medio 47,8€
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Negozi di design e
-          concept store, WTP 60-90€
+          <strong>Penetrazione borraccia</strong>: 71,4% utente
         </li>
         <li>
-          <strong>Dimensione stimata</strong>: ~15% del mercato target
+          <strong>Dimensione campione</strong>: 26% (n=16 su 63)
         </li>
       </ul>
 
-      <h3>Segmento 4 — Studenti Green</h3>
+      <h3>Segmento 3 — Design Seekers (17%)</h3>
       <ul>
         <li>
-          <strong>Profilo</strong>: 18-24 anni, studenti universitari, reddito
-          basso-medio
+          <strong>Profilo demografico</strong>: 25-34 anni prevalenti (33,3%), 52,4%
+          donne, 42,9% dipendenti professionali + 19% autonomi, urbani
         </li>
         <li>
-          <strong>Beneficio primario</strong>: Espressione valoriale eco
+          <strong>Beneficio primario</strong>: Status e design elegante +
+          Espressione valoriale eco + Funzionalità (secondaria)
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Sensibili al prezzo,
-          online esclusivo, WTP 30-45€
+          <strong>Fattori d&apos;acquisto</strong>: Qualità materiali (23,8%), Design
+          (17,5%), Sostenibilità (15,9%) — Non price-sensitive
         </li>
         <li>
-          <strong>Dimensione stimata</strong>: ~15% del mercato target
+          <strong>App interest</strong>: 76,2% interessato globale ma come valore
+          aggiunto, non driver decisionale
+        </li>
+        <li>
+          <strong>Comportamento d&apos;acquisto</strong>: Design boutiques + Amazon +
+          Omnichannel, WTP medio 47,8€ con 35% disposto &gt;50€
+        </li>
+        <li>
+          <strong>Penetrazione borraccia</strong>: 71,4% utente
+        </li>
+        <li>
+          <strong>Dimensione campione</strong>: 17% (n=11 su 63)
         </li>
       </ul>
 
-      <h3>Segmento 5 — Corporate Wellness</h3>
+      <h3>Segmento 4 — Studenti Green / Gen-Z Attivisti (18%)</h3>
       <ul>
         <li>
-          <strong>Profilo</strong>: 30-50 anni, dipendenti aziende con programmi
-          welfare, B2B2C
+          <strong>Profilo demografico</strong>: 18-24 anni dominanti (36,5%), 52,4%
+          donne, 36,5% studenti, Centro Italia (68,3%), budget basso-medio
         </li>
         <li>
-          <strong>Beneficio primario</strong>: Performance funzionale + branding
-          aziendale
+          <strong>Beneficio primario</strong>: Sostenibilità come credenza (15,9%
+          driver primario) + Qualità + Design
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Acquisti bulk, WTP
-          40-55€/unità
+          <strong>Fattori d&apos;acquisto</strong>: Sostenibilità (15,9%), Qualità
+          (23,8%), Prezzo (20,6%) — Community-driven
         </li>
         <li>
-          <strong>Dimensione stimata</strong>: ~10% del mercato target
+          <strong>App interest</strong>: 76,2% interessato globale ma possibile
+          preferenza versione no-app
+        </li>
+        <li>
+          <strong>Comportamento d&apos;acquisto</strong>: Online-first (Amazon 33,3%,
+          Sito 21,6%), WTP medio 47,8€ ma sensibile al prezzo
+        </li>
+        <li>
+          <strong>Penetrazione borraccia</strong>: 71,4% utente + 25,4% in transizione
+          (vorrei iniziare)
+        </li>
+        <li>
+          <strong>Dimensione campione</strong>: 18% (n=11 su 63) con alto growth
+          potential
         </li>
       </ul>
 
       <hr />
 
-      <h2>5. Valutazione attrattività e praticabilità</h2>
+      <h2>5. Valutazione attrattività e praticabilità — Data-driven</h2>
       <table>
         <thead>
           <tr>
@@ -984,101 +808,139 @@ function SegmentazioneTargeting() {
           <tr>
             <td>1. Eco-Millennials Urbani</td>
             <td>
-              <span className={styles.stars}>★★★★★</span> Alta dimensione, alta
-              WTP, CAGR 7,3%
+              <span className={styles.stars}>★★★★★</span> 39% campione, WTP 47,8€
+              (35% &gt;50€), 71,4% penetrazione, elasticità bassa
             </td>
             <td>
-              <span className={styles.stars}>★★★★★</span> Forte allineamento
-              con value proposition
+              <span className={styles.stars}>★★★★★</span> Allineamento perfetto
+              (eco+smart+design), omnichannel naturale, advocacy alta
             </td>
             <td>
-              <strong>TARGET PRIMARIO</strong>
+              <strong>TARGET PRIMARIO CONFERMATO</strong>
             </td>
           </tr>
           <tr>
             <td>2. Fitness Enthusiasts</td>
             <td>
-              <span className={styles.stars}>★★★★☆</span> Buona dimensione, WTP
-              media
+              <span className={styles.stars}>★★★★☆</span> 26% campione, WTP 47,8€,
+              app interest 76,2%
             </td>
             <td>
-              <span className={styles.stars}>★★★☆☆</span> Concorrenza forte
-              (HidrateSpark)
+              <span className={styles.stars}>★★★☆☆</span> Concorrenza presente
+              (HidrateSpark). Requires parità tech. Specialty retail accessibile.
             </td>
-            <td>Target secondario</td>
+            <td><strong>TARGET SECONDARIO ANNO 1</strong></td>
           </tr>
           <tr>
             <td>3. Design Seekers</td>
             <td>
-              <span className={styles.stars}>★★★☆☆</span> Alta WTP, dimensione
-              ridotta
+              <span className={styles.stars}>★★★☆☆</span> 17% campione, WTP 47,8€
+              (35% &gt;50€), elasticità bassa
             </td>
             <td>
               <span className={styles.stars}>★★★★☆</span> Differenziazione
-              possibile
+              design possibile. Investimento design richiesto.
             </td>
-            <td>Target di espansione (Anno 2)</td>
+            <td><strong>TARGET ESPANSIONE (ANNO 2)</strong></td>
           </tr>
           <tr>
             <td>4. Studenti Green</td>
             <td>
-              <span className={styles.stars}>★★★★☆</span> Alta dimensione,
-              crescita
+              <span className={styles.stars}>★★★☆☆</span> 18% campione, WTP 47,8€
+              ma sensibili al prezzo (20%), alto growth Gen-Z
             </td>
             <td>
-              <span className={styles.stars}>★★☆☆☆</span> WTP bassa
+              <span className={styles.stars}>★★☆☆☆</span> Online-feasible. Margini
+              35-40%. CAC medio. Solo se partnership low-cost.
             </td>
-            <td>Non prioritario</td>
-          </tr>
-          <tr>
-            <td>5. Corporate Wellness</td>
-            <td>
-              <span className={styles.stars}>★★★☆☆</span> Volumi interessanti
-            </td>
-            <td>
-              <span className={styles.stars}>★★☆☆☆</span> Richiede forza
-              vendita B2B
-            </td>
-            <td>Non prioritario</td>
+            <td><strong>OPPORTUNISTICO + GROWTH</strong></td>
           </tr>
         </tbody>
       </table>
 
       <hr />
 
-      <h2>6. Scelta della strategia: Strategia Focalizzata</h2>
+      <h2>6. Strategia di Targeting: Focalizzazione + Apertura progressiva</h2>
       <p>
         ECOBOTTLE adotta una <strong>strategia focalizzata</strong> sul Segmento 1
-        (Eco-Millennials Urbani) con apertura progressiva al Segmento 2.
+        (Eco-Millennials Urbani 39%) con <strong>apertura progressiva</strong> al Segmento 2
+        (Fitness Enthusiasts 26%) e opportunità di espansione ai Segmenti 3-4.
       </p>
 
-      <h3>Motivazioni della scelta:</h3>
+      <h3>Fase 1 — Lancio (Mesi 1-6): Focus Eco-Millennials</h3>
+      <ul>
+        <li>
+          <strong>Target</strong>: Eco-Millennials Urbani + early adopters Design Seekers
+        </li>
+        <li>
+          <strong>Canali prioritari</strong>: Sito brand (community), Amazon, specialty
+          retail design + sport
+        </li>
+        <li>
+          <strong>Volume target</strong>: 500-1000 unità (high-value, brand-building)
+        </li>
+        <li>
+          <strong>Messaging</strong>: Design + Sostenibilità verificata + Tech pragmatico
+        </li>
+      </ul>
+
+      <h3>Fase 2 — Expansion (Mesi 4-6): Apertura Fitness</h3>
+      <ul>
+        <li>
+          <strong>Target aggiunto</strong>: Fitness Enthusiasts (partnership atletiche,
+          integrazione fitness apps)
+        </li>
+        <li>
+          <strong>Canali aggiuntivi</strong>: Specialty sport retail (Decathlon, JD Sports)
+        </li>
+        <li>
+          <strong>Volume target</strong>: +1500-2000 unità
+        </li>
+        <li>
+          <strong>Messaging</strong>: Performance + Trust + Eco-credibility
+        </li>
+      </ul>
+
+      <h3>Fase 3 — Scale (Mesi 7+): Students + Diffusione</h3>
+      <ul>
+        <li>
+          <strong>Target aggiunto</strong>: Studenti Green (TikTok, email, campus
+          partnerships)
+        </li>
+        <li>
+          <strong>Canali</strong>: TikTok, NFT/social commerce, partnership eco-influencer
+        </li>
+        <li>
+          <strong>Volume</strong>: +2000-3000 unità (volume driver)
+        </li>
+      </ul>
+
+      <h3>Motivazioni della strategia:</h3>
       <ol>
         <li>
-          <strong>Massima coerenza prodotto-segmento</strong>: il
-          sistema-prodotto ECOBOTTLE (eco + smart + design) risponde ai tre benefici
-          primari ricercati dal segmento.
+          <strong>Massima coerenza prodotto-segmento (39%)</strong>: il
+          sistema-prodotto ECOBOTTLE (eco + smart + design) risponde ai benefici primari
+          di Eco-Millennials.
         </li>
         <li>
-          <strong>Attrattività e praticabilità elevate</strong>: dimensione 35%,
-          WTP 55-75€, CAGR 7,3%.
+          <strong>Attrattività e praticabilità empiriche</strong>: dimensione 39%
+          (robusta), WTP 47,8€, 35% premium &gt;50€, elasticità bassa.
         </li>
         <li>
-          <strong>Difendibilità del vantaggio competitivo</strong>: la
-          combinazione eco+smart+design crea una barriera multi-dimensionale.
+          <strong>Gap competitivo evidente</strong>: nessun competitor offre
+          eco+smart+design simultaneamente (leader sono Air Up 31,7%, Chilly&apos;s 28,6%).
         </li>
         <li>
-          <strong>Compatibilità con le risorse</strong>: meno risorse rispetto a
-          una strategia differenziata.
+          <strong>Difendibilità multi-dimensionale</strong>: materiali eco verificati
+          + tech nativa + design premium crea barriera complessa.
         </li>
         <li>
-          <strong>Potenziale di espansione</strong>: verso Fitness Enthusiasts e
-          Design Seekers.
+          <strong>Potenziale di espansione graduale</strong>: cross-sell verso Fitness
+          (26%) e Studenti (18%) con messaging customizzato.
         </li>
         <li>
-          <strong>Evoluzione tribale</strong>: il target presenta le
-          caratteristiche per sviluppare una <strong>neotribù</strong> intorno
-          al brand.
+          <strong>Viralità community-driven</strong>: Eco-Millennials + Studenti Green
+          sono early opinion leaders con alto advocacy.
         </li>
       </ol>
 
