@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import {
   PieChart,
   Pie,
@@ -14,6 +15,50 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import styles from "@/styles/report.module.css";
+
+// Hook per ottenere margini responsivi
+function useResponsiveChartMargins(baseLeftMargin: number, baseYAxisWidth: number) {
+  const [margins, setMargins] = useState({
+    left: baseLeftMargin,
+    yAxisWidth: baseYAxisWidth,
+    fontSize: 11,
+  });
+
+  useEffect(() => {
+    const updateMargins = () => {
+      const width = typeof window !== "undefined" ? window.innerWidth : 768;
+      
+      if (width < 640) {
+        // Mobile: riduci drasticamente
+        setMargins({
+          left: Math.max(60, Math.floor(baseLeftMargin * 0.35)),
+          yAxisWidth: Math.max(50, Math.floor(baseYAxisWidth * 0.35)),
+          fontSize: 9,
+        });
+      } else if (width < 1024) {
+        // Tablet: riduci moderatamente
+        setMargins({
+          left: Math.max(80, Math.floor(baseLeftMargin * 0.6)),
+          yAxisWidth: Math.max(70, Math.floor(baseYAxisWidth * 0.6)),
+          fontSize: 10,
+        });
+      } else {
+        // Desktop: mantieni originale
+        setMargins({
+          left: baseLeftMargin,
+          yAxisWidth: baseYAxisWidth,
+          fontSize: 11,
+        });
+      }
+    };
+
+    updateMargins();
+    window.addEventListener("resize", updateMargins);
+    return () => window.removeEventListener("resize", updateMargins);
+  }, [baseLeftMargin, baseYAxisWidth]);
+
+  return margins;
+}
 
 const COLORS = [
   "#2A3D30", // green-dark
@@ -33,6 +78,7 @@ const COLORS = [
 // ======================
 
 export function ProductCharacteristicsChart() {
+  const margins = useResponsiveChartMargins(200, 200);
   const data = [
     { name: "Materiali ecologici", value: 47.62 },
     { name: "Mantenimento temperatura", value: 52.38 },
@@ -43,10 +89,10 @@ export function ProductCharacteristicsChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} layout="vertical" margin={{ left: 200, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={200} tick={{ fill: "#2A3D30", fontSize: 11 }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${value}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -124,6 +170,7 @@ export function CapacityPreferenceChart() {
 }
 
 export function ColorPreferenceChart() {
+  const margins = useResponsiveChartMargins(180, 180);
   const data = [
     { name: "Colori naturali", value: 45.0 },
     { name: "Colori neutri", value: 40.0 },
@@ -135,10 +182,10 @@ export function ColorPreferenceChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} layout="vertical" margin={{ left: 180, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={180} tick={{ fill: "#2A3D30" }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -184,6 +231,7 @@ export function AppInterestChart() {
 }
 
 export function AppFeaturesChart() {
+  const margins = useResponsiveChartMargins(210, 210);
   const data = [
     { name: "Promemoria per bere acqua", value: 60.0 },
     { name: "Statistiche settimanali/mensili", value: 40.0 },
@@ -198,10 +246,10 @@ export function AppFeaturesChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={350}>
-        <BarChart data={data} layout="vertical" margin={{ left: 210, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={210} tick={{ fill: "#2A3D30", fontSize: 10 }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -249,6 +297,7 @@ export function WTPChart() {
 }
 
 export function PurchaseDriverChart() {
+  const margins = useResponsiveChartMargins(200, 200);
   const data = [
     { name: "Qualità materiali", value: 33.33 },
     { name: "Design ed estetica", value: 28.57 },
@@ -261,10 +310,10 @@ export function PurchaseDriverChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} layout="vertical" margin={{ left: 200, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={200} tick={{ fill: "#2A3D30", fontSize: 11 }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -278,6 +327,7 @@ export function PurchaseDriverChart() {
 // ======================
 
 export function PurchaseChannelChart() {
+  const margins = useResponsiveChartMargins(210, 210);
   const data = [
     { name: "Amazon / marketplace online", value: 25.0 },
     { name: "Grande distribuzione", value: 25.0 },
@@ -291,10 +341,10 @@ export function PurchaseChannelChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} layout="vertical" margin={{ left: 210, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={210} tick={{ fill: "#2A3D30", fontSize: 10 }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -304,6 +354,7 @@ export function PurchaseChannelChart() {
 }
 
 export function CommunicationChannelChart() {
+  const margins = useResponsiveChartMargins(210, 210);
   const data = [
     { name: "Instagram", value: 42.86 },
     { name: "Blog e siti di settore", value: 33.33 },
@@ -316,11 +367,11 @@ export function CommunicationChannelChart() {
 
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
-      <ResponsiveContainer width="100%" height={380}>
-        <BarChart data={data} layout="vertical" margin={{ left: 210, right: 30, top: 5, bottom: 5 }}>
+      <ResponsiveContainer width="100%" height={280}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={210} tick={{ fill: "#2A3D30", fontSize: 10 }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -366,6 +417,7 @@ export function InfluencerFollowingChart() {
 // ======================
 
 export function BrandAwarenessChart() {
+  const margins = useResponsiveChartMargins(150, 150);
   const data = [
     { name: "Air Up", value: 52.38 },
     { name: "Chilly's", value: 47.62 },
@@ -378,10 +430,10 @@ export function BrandAwarenessChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} layout="vertical" margin={{ left: 150, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={150} tick={{ fill: "#2A3D30" }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
@@ -598,6 +650,7 @@ export function BottleUsageChart() {
 }
 
 export function UsageContextsChart() {
+  const margins = useResponsiveChartMargins(220, 220);
   const data = [
     { name: "Durante attività sportiva", value: 71.43 },
     { name: "Al lavoro/università", value: 57.14 },
@@ -610,10 +663,10 @@ export function UsageContextsChart() {
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} layout="vertical" margin={{ left: 220, right: 30, top: 5, bottom: 5 }}>
+        <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
-          <YAxis dataKey="name" type="category" width={220} tick={{ fill: "#2A3D30", fontSize: 10 }} />
+          <YAxis dataKey="name" type="category" width={margins.yAxisWidth} tick={{ fill: "#2A3D30", fontSize: margins.fontSize }} />
           <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
           <Bar dataKey="value" fill="#3D6B3D" />
         </BarChart>
