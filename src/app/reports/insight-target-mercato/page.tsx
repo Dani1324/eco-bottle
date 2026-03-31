@@ -26,12 +26,16 @@ import {
   MaterialPreferenceChart,
   CapacityPreferenceChart,
   AppInterestChart,
+  AppFeaturesChart,
   WTPChart,
   PurchaseDriverChart,
   BrandAwarenessChart,
   PurchaseChannelChart,
   CommunicationChannelChart,
   InfluencerFollowingChart,
+  ProductCharacteristicsChart,
+  CharacteristicsImportanceTable,
+  UsageContextsChart,
 } from "@/components/RicercaCharts/RicercaCharts";
 
 export const metadata = {
@@ -262,9 +266,12 @@ function RicercaDiMercato() {
 
       <br />
 
-      <h2>6. Risultati della ricerca e risposte per domanda (n=63)</h2>
+      <h2>6. Risultati della ricerca e risposte per domanda (n=21)</h2>
 
       <h3>SEZIONE A — PREFERENZE DI PRODOTTO</h3>
+
+      <h4>A0. Caratteristiche di importanza (scala Likert)</h4>
+      <CharacteristicsImportanceTable />
 
       <h4>A1. Quale materiale preferisci per una borraccia?</h4>
       <MaterialPreferenceChart />
@@ -278,6 +285,9 @@ function RicercaDiMercato() {
 
       <h4>B1. Saresti interessato a una borraccia che monitora l&apos;idratazione?</h4>
       <AppInterestChart />
+
+      <h4>B2. Quali funzionalità smart ti interesserebbero di più?</h4>
+      <AppFeaturesChart />
 
       <hr />
 
@@ -334,6 +344,9 @@ function RicercaDiMercato() {
 
       <h4>G2. Usi una borraccia riutilizzabile?</h4>
       <BottleUsageChart />
+
+      <h4>G3. In quali contesti utilizzi una borraccia? (Risposta multipla)</h4>
+      <UsageContextsChart />
 
       <br />
 
@@ -429,7 +442,7 @@ function RicercaDiMercato() {
       </p>
       <ol>
         <li>
-          <strong>Campione non probabilistico (n=63)</strong>: i risultati non sono
+          <strong>Campione non probabilistico (n=21)</strong>: i risultati non sono
           generalizzabili all&apos;intera popolazione italiana. La distribuzione via
           social media introduce un bias di auto-selezione verso pubblici consapevoli.
         </li>
@@ -486,7 +499,7 @@ function RicercaDiMercato() {
         Documento redatto nell&apos;ambito del Project Work di Marketing —
         Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini
         <br />
-        <strong>Data survey</strong>: N=63 rispondenti | <strong>Periodo</strong>: Marzo 2026
+        <strong>Data survey</strong>: N=21 rispondenti | <strong>Periodo</strong>: Marzo 2026
         <br />
         Brand: ECOBOTTLE — Drink Smart. Live Green.
       </p>
@@ -661,9 +674,9 @@ function SegmentazioneTargeting() {
 
       <br />
 
-      <h2>4. Profilo dei segmenti individuati — Ricalibramento sulla base dei dati della ricerca (n=63)</h2>
+      <h2>4. Profilo dei segmenti individuati — Ricalibramento sulla base dei dati della ricerca (n=21)</h2>
       <p>
-        Dall&apos;incrocio della <strong>ricerca empirica (n=63)</strong> con i
+        Dall&apos;incrocio della <strong>ricerca empirica (n=21)</strong> con i
         criteri multi-dimensionali emergono <strong>4 micro-segmenti</strong> distinti:
       </p>
 
