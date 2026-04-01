@@ -199,9 +199,10 @@ export function ColorPreferenceChart() {
 
 export function AppInterestChart() {
   const data = [
-    { name: "Molto interessato/a", value: 19.05 },
-    { name: "Abbastanza interessato/a", value: 71.43 },
-    { name: "Poco interessato/a", value: 9.52 },
+    { name: "Molto interessato/a", value: 27.0 },
+    { name: "Abbastanza interessato/a", value: 52.4 },
+    { name: "Poco interessato/a", value: 14.3 },
+    { name: "Per niente interessato/a", value: 6.3 },
   ];
 
   return (
@@ -232,14 +233,14 @@ export function AppInterestChart() {
 export function AppFeaturesChart() {
   const margins = useResponsiveChartMargins(210, 210);
   const data = [
-    { name: "Promemoria per bere acqua", value: 60.0 },
-    { name: "Statistiche settimanali/mensili", value: 40.0 },
-    { name: "Tracciamento giornaliero", value: 40.0 },
-    { name: "Gamification", value: 35.0 },
-    { name: "Consigli personalizzati", value: 30.0 },
-    { name: "Monitoraggio qualità", value: 30.0 },
-    { name: "Obiettivi personalizzati", value: 25.0 },
-    { name: "Integrazione fitness", value: 20.0 },
+    { name: "Promemoria per bere acqua", value: 31.7 },
+    { name: "Tracciamento giornaliero dell'idratazione", value: 33.3 },
+    { name: "Statistiche settimanali/mensili", value: 47.6 },
+    { name: "Obiettivi personalizzati", value: 28.6 },
+    { name: "Integrazione con app fitness", value: 42.9 },
+    { name: "Gamification (sfide, badge, classifiche)", value: 30.2 },
+    { name: "Consigli personalizzati sull'idratazione", value: 34.9 },
+    { name: "Monitoraggio della qualità dell'acqua", value: 31.7 },
   ];
 
   return (
@@ -263,11 +264,12 @@ export function AppFeaturesChart() {
 
 export function WTPChart() {
   const data = [
-    { name: "<20 €", value: 9.52 },
-    { name: "20–35 €", value: 33.33 },
-    { name: "35–50 €", value: 47.62 },
-    { name: "50–70 €", value: 4.76 },
-    { name: "70–100 €", value: 4.76 },
+    { name: "Meno di 20 €", value: 11.1 },
+    { name: "20–35 €", value: 28.6 },
+    { name: "35–50 €", value: 39.7 },
+    { name: "50–70 €", value: 12.7 },
+    { name: "70–100 €", value: 6.3 },
+    { name: "Più di 100 € – More than 100 €", value: 1.6 },
   ];
 
   return (
@@ -298,12 +300,13 @@ export function WTPChart() {
 export function PurchaseDriverChart() {
   const margins = useResponsiveChartMargins(200, 200);
   const data = [
-    { name: "Qualità materiali", value: 33.33 },
-    { name: "Design ed estetica", value: 28.57 },
-    { name: "Prezzo", value: 19.05 },
-    { name: "Sostenibilità ambientale", value: 9.52 },
-    { name: "Recensioni/passaparola", value: 4.76 },
-    { name: "Funzionalità smart", value: 4.76 },
+    { name: "Prezzo", value: 22.2 },
+    { name: "Qualità dei materiali", value: 30.2 },
+    { name: "Funzionalità smart (app/tracking)", value: 11.1 },
+    { name: "Design ed estetica", value: 14.3 },
+    { name: "Sostenibilità ambientale", value: 14.3 },
+    { name: "Recensioni e passaparola", value: 6.3 },
+    { name: "Marca / brand noto", value: 1.6 },
   ];
 
   return (
@@ -328,13 +331,13 @@ export function PurchaseDriverChart() {
 export function PurchaseChannelChart() {
   const margins = useResponsiveChartMargins(210, 210);
   const data = [
-    { name: "Amazon / marketplace online", value: 25.0 },
-    { name: "Grande distribuzione", value: 25.0 },
-    { name: "Negozi articoli sportivi", value: 15.0 },
-    { name: "E-commerce del produttore", value: 10.0 },
-    { name: "Negozi di elettronica", value: 10.0 },
-    { name: "Negozi design/lifestyle", value: 10.0 },
-    { name: "Negozi bio/ecologici", value: 5.0 },
+    { name: "E-commerce del produttore (sito ufficiale)", value: 19.0 },
+    { name: "Amazon / marketplace online", value: 22.2 },
+    { name: "Negozi di articoli sportivi", value: 19.0 },
+    { name: "Negozi di elettronica", value: 22.2 },
+    { name: "Negozi bio / ecologici", value: 19.0 },
+    { name: "Grande distribuzione (supermercati)", value: 25.4 },
+    { name: "Negozi di design / lifestyle", value: 19.0 },
   ];
 
   return (
@@ -355,18 +358,20 @@ export function PurchaseChannelChart() {
 export function CommunicationChannelChart() {
   const margins = useResponsiveChartMargins(210, 210);
   const data = [
-    { name: "Instagram", value: 42.86 },
-    { name: "Blog e siti di settore", value: 33.33 },
-    { name: "Influencer/creator", value: 33.33 },
-    { name: "Facebook", value: 28.57 },
-    { name: "YouTube", value: 23.81 },
-    { name: "Passaparola", value: 23.81 },
-    { name: "Pubblicità tradizionale", value: 19.05 },
+    { name: "Instagram", value: 22.2 },
+    { name: "TikTok", value: 23.8 },
+    { name: "YouTube", value: 25.4 },
+    { name: "Facebook", value: 22.2 },
+    { name: "Blog e siti di settore", value: 27.0 },
+    { name: "Newsletter via email", value: 17.5 },
+    { name: "Influencer / creator", value: 23.8 },
+    { name: "Pubblicità tradizionale (TV, radio, stampa)", value: 30.2 },
+    { name: "Passaparola - Word of mouth", value: 22.2 },
   ];
 
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
-      <ResponsiveContainer width="100%" height={280}>
+      <ResponsiveContainer width="100%" height={340}>
         <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
@@ -381,9 +386,9 @@ export function CommunicationChannelChart() {
 
 export function InfluencerFollowingChart() {
   const data = [
-    { name: "Sì, regolarmente", value: 45.0 },
-    { name: "Sì, occasionalmente", value: 30.0 },
-    { name: "No", value: 25.0 },
+    { name: "Sì, regolarmente", value: 38.1 },
+    { name: "Sì, occasionalmente", value: 47.6 },
+    { name: "No", value: 14.3 },
   ];
 
   return (
