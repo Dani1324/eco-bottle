@@ -142,10 +142,13 @@ function RicercaDiMercato() {
         segmentazione devono possedere tre capacità:{" "}
         <strong>identificativa</strong> (chi è il consumatore),{" "}
         <strong>discriminante</strong> (cosa lo differenzia) ed{" "}
-        <strong>esplicativa</strong> (perché si comporta così). Le aree A-B
-        coprono la capacità identificativa e comportamentale; le aree C-D
-        quella esplicativa e psicografica; le aree E-F-G forniscono dati
-        operativi per il marketing mix.
+        <strong>esplicativa</strong> (perché si comporta così). La presente ricerca
+        copre tutte e tre le capacità: Area F (IDENTIFICATIVA) fornisce i dati
+        demografici; Aree A-B-G (DISCRIMINANTE e COMPORTAMENTALE) evidenziano
+        preferenze di prodotto e propensione tecnologica; Aree C-D (ESPLICATIVA e
+        PSICOGRAFICA) spiegano i fattori decisionali e le preferenze di canale;
+        Aree D-E-G (OPERATIVA) forniscono dati per il marketing mix e la
+        strategia di posizionamento.
       </p>
 
       <br />
@@ -157,14 +160,15 @@ function RicercaDiMercato() {
       </p>
       <h3>3.1 Unità di campionamento (Chi?)</h3>
       <p>
-        Individui residenti in Italia, età 18-45 anni, con accesso a internet e
+        Individui residenti in Italia, età 18-54 anni, con accesso a internet e
         almeno una minima sensibilità verso tematiche ambientali o benessere.
-        La scelta della fascia 18-45 deriva dall&apos;analisi del mercato: il
-        segmento smart bottle è dominato da Millennials e Gen-Z urbani.
+        La scelta della fascia 18-54 deriva dall&apos;analisi del mercato: il
+        segmento smart bottle è dominato da Millennials, Gen-Z e giovani adulti urbani
+        (fascia "young professional").
       </p>
       <h3>3.2 Dimensione del campione (Quanti?)</h3>
       <p>
-        <strong>Risultato: 63 rispondenti validi (Marzo 2026).</strong> La ricerca empirica ha raccolto 63 risposte complete, inferiore al target iniziale di 200-300 rispondenti ma comunque significativa per un&apos;analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
+        <strong>Risultato: 63 rispondenti validi (Marzo 2026).</strong> La ricerca empirica ha raccolto 63 risposte complete, significativa per un&apos;analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
       </p>
       <p>
         <strong>Profilo demografico realizzato:</strong>
@@ -215,8 +219,7 @@ function RicercaDiMercato() {
         </li>
         <li>
           Possibilità di inserire <strong>contenuti multimediali</strong>{" "}
-          (immagine concept ECOBOTTLE) e <strong>skipping automatico</strong> delle
-          risposte
+          (immagine concept ECOBOTTLE)
         </li>
       </ul>
 
@@ -347,74 +350,109 @@ function RicercaDiMercato() {
         </thead>
         <tbody>
           <tr>
-            <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>A1, A2</td>
-            <td>Preferenze di materiale e capacità della borraccia</td>
+            <td><strong>Analisi descrittiva (Likert scale)</strong></td>
+            <td>A0 (A1 nel grafico)</td>
+            <td>Priorità delle caratteristiche di prodotto: ordinamento delle feature per importanza</td>
           </tr>
           <tr>
             <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>F1, F2, F3, F4</td>
-            <td>Profilo socio-demografico del campione (età, genere, occupazione, area geografica)</td>
-          </tr>
-          <tr>
-            <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>G1, G2</td>
-            <td>Penetrazione borraccia riutilizzabile e consumo medio d&apos;acqua giornaliera</td>
-          </tr>
-          <tr>
-            <td><strong>Distribuzioni di frequenza</strong></td>
-            <td>E1</td>
-            <td>Brand awareness competitiva (notorietà spontanea dei competitor)</td>
+            <td>A2, A3, A4</td>
+            <td>Preferenze di materiale, capacità e colore della borraccia</td>
           </tr>
           <tr>
             <td><strong>Distribuzioni di frequenza</strong></td>
             <td>B1</td>
-            <td>Interesse verso applicazione di tracking idratazione</td>
+            <td>Interesse verso applicazione di tracking e monitoraggio idratazione</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni multiple</strong></td>
+            <td>B2</td>
+            <td>Preferenze funzionalità smart: ranking delle feature più desiderate (risposte multiple)</td>
           </tr>
           <tr>
             <td><strong>Medie e distribuzioni</strong></td>
             <td>C1</td>
-            <td>Willingness to Pay: distribuzione degli intervalli di prezzo e media stimata</td>
+            <td>Willingness to Pay: distribuzione degli intervalli di prezzo e stima della fascia ottimale</td>
           </tr>
           <tr>
             <td><strong>Distribuzioni ordinate</strong></td>
             <td>C2</td>
-            <td>Ranking dei fattori decisionali: qualità, prezzo, design, sostenibilità</td>
+            <td>Ranking dei fattori decisionali di acquisto: sostenibilità, prezzo, design, qualità</td>
           </tr>
           <tr>
             <td><strong>Distribuzioni multiple</strong></td>
-            <td>D1, D2, D3</td>
-            <td>Canali d&apos;acquisto, canali informativi e fruizione influencer (risposte multipie)</td>
+            <td>D1</td>
+            <td>Canali d&apos;acquisto preferiti: e-commerce, grande distribuzione, negozi specializzati (risposte multiple)</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni multiple</strong></td>
+            <td>D2</td>
+            <td>Canali comunicativi: social media, blog, influencer, tradizionali (risposte multiple)</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni di frequenza</strong></td>
+            <td>D3</td>
+            <td>Fruizione di creator/influencer su tematiche eco/tech/lifestyle/fitness</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni di frequenza</strong></td>
+            <td>E1</td>
+            <td>Brand awareness competitiva: notorietà spontanea dei competitor (Air Up, Stanley, Chilly&apos;s, etc.)</td>
+          </tr>
+          <tr>
+            <td><strong>Analisi qualitativa</strong></td>
+            <td>E2</td>
+            <td>Feedback aperti: esigenze non strutturate, bisogni latenti, suggerimenti innovativi (n=8 risposte)</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni di frequenza</strong></td>
+            <td>F1, F2, F3, F4</td>
+            <td>Profilo socio-demografico: età, genere, occupazione, area geografica</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni di frequenza</strong></td>
+            <td>G1, G2</td>
+            <td>Abitudini di idratazione: consumo medio giornaliero e penetrazione borraccia riutilizzabile</td>
+          </tr>
+          <tr>
+            <td><strong>Distribuzioni multiple</strong></td>
+            <td>G3</td>
+            <td>Contesti di utilizzo della borraccia: lavoro, sport, viaggio, casa, outdoor (risposte multiple)</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
             <td>F1 × C1</td>
-            <td>Fascia d&apos;età × Willingness to Pay: segmenti price-sensitive vs premium</td>
+            <td>Fascia d&apos;età × WTP: identificazione segmenti price-sensitive vs premium</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
             <td>F3 × C1</td>
-            <td>Situazione lavorativa × WTP: differenze tra studenti, lavoratori, professionisti</td>
+            <td>Occupazione × WTP: capacità di spesa differenziata per profilo lavorativo</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
             <td>F1 × B1</td>
-            <td>Fascia d&apos;età × Propensione tecnologica: adozione smart feature per target</td>
+            <td>Età × Propensione tecnologica: adozione smart features per fascia anagrafica</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
-            <td>G2 × A1</td>
-            <td>Uso attuale borraccia × Preferenza materiale: abitudini vs aspirazioni</td>
+            <td>F1 × D2</td>
+            <td>Età × Canali comunicativi: preferenze media diverse tra generazioni</td>
           </tr>
           <tr>
             <td><strong>Tabulazioni incrociate</strong></td>
-            <td>F3 × C2</td>
-            <td>Occupazione × Fattore decisionale: priorità diverse per segmenti</td>
+            <td>G2 × A2</td>
+            <td>Uso attuale borraccia × Preferenza materiale: allineamento tra abitudini e aspirazioni</td>
+          </tr>
+          <tr>
+            <td><strong>Tabulazioni incrociate</strong></td>
+            <td>A2 + A3 × C1</td>
+            <td>Profilo prodotto preferito (materiale + capacità) × WTP: combo prodotto e fascia di prezzo</td>
           </tr>
           <tr>
             <td><strong>Analisi cluster</strong></td>
-            <td>A1 + A2 + B1 + C1 + C2</td>
-            <td>Individuazione micro-segmenti: es. &quot;Eco-conscious premium&quot;, &quot;Tech-enthusiast&quot;, &quot;Price-sensitive&quot;</td>
+            <td>A0 + A2 + B1 + B2 + C1 + C2 + F1 + G2</td>
+            <td>Individuazione micro-segmenti: es. &quot;Eco-conscious Premium&quot;, &quot;Tech Enthusiast Young&quot;, &quot;Price-Sensitive Student&quot;, &quot;Casual User&quot;</td>
           </tr>
         </tbody>
       </table>

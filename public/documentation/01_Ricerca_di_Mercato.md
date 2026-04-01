@@ -34,10 +34,10 @@ Il fabbisogno informativo è stato articolato in **7 aree tematiche**, ciascuna 
 Secondo la teoria, il piano di campionamento richiede decisioni su tre aspetti fondamentali:
 
 ### 3.1 Unità di campionamento (Chi?)
-Individui residenti in Italia, età 18-45 anni, con accesso a internet e almeno una minima sensibilità verso tematiche ambientali o benessere. La scelta della fascia 18-45 deriva dall'analisi del mercato: il segmento smart bottle è dominato da Millennials e Gen-Z urbani.
+Individui residenti in Italia, età 18-54 anni, con accesso a internet e almeno una minima sensibilità verso tematiche ambientali o benessere. La scelta della fascia 18-54 deriva dall'analisi del mercato: il segmento smart bottle è dominato da Millennials, Gen-Z e giovani adulti urbani (fascia "young professional").
 
 ### 3.2 Dimensione del campione (Quanti?)
-**Risultato: 63 rispondenti validi (Marzo 2026).** La ricerca empirica ha raccolto 63 risposte complete, inferiore al target iniziale di 200-300 rispondenti ma comunque significativa per un'analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
+**Risultato: 63 rispondenti validi (Marzo 2026).** La ricerca empirica ha raccolto 63 risposte complete, significativa per un'analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
 
 **Profilo demografico realizzato:**
 - **Fascia d'eta**: 18–24 anni (42,86%, n=27), 25–34 anni (23,81%, n=15), 35–44 anni (9,52%, n=6), 45–54 anni (23,81%, n=15)
