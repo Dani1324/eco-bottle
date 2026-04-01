@@ -37,7 +37,13 @@ Secondo la teoria, il piano di campionamento richiede decisioni su tre aspetti f
 Individui residenti in Italia, età 18-45 anni, con accesso a internet e almeno una minima sensibilità verso tematiche ambientali o benessere. La scelta della fascia 18-45 deriva dall'analisi del mercato: il segmento smart bottle è dominato da Millennials e Gen-Z urbani.
 
 ### 3.2 Dimensione del campione (Quanti?)
-**Target: 200-300 rispondenti validi.** Si mira a un campione sufficientemente ampio da ridurre l'errore campionario (che, come definito nel corso, è la "differenza tra il valore stimato sul campione e il valore reale della popolazione") mantenendo al contempo gestibile l'errore non campionario (errori di trascrizione, misurazione, elaborazione). Il trade-off tra i due errori è fondamentale: all'aumentare dell'ampiezza del campione diminuisce l'errore campionario ma aumenta quello non campionario.
+**Risultato: 63 rispondenti validi (Marzo 2026).** La ricerca empirica ha raccolto 63 risposte complete, inferiore al target iniziale di 200-300 rispondenti ma comunque significativa per un'analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
+
+**Profilo demografico realizzato:**
+- **Fascia d'eta**: 18–24 anni (42,86%, n=27), 25–34 anni (23,81%, n=15), 35–44 anni (9,52%, n=6), 45–54 anni (23,81%, n=15)
+- **Genere**: Femmina (52,38%), Maschio (28,57%), Preferisc non specificare/Altro (19,05%)
+- **Occupazione**: Studente (38,10%), Lavoratore dipendente (38,10%), Autonomo/Libero professionista (19,05%), Sportivo/Atleta (4,76%)
+- **Area geografica**: Centro Italia (60,0%), Nord Italia (14,29%), Sud Italia e Isole (14,29%), Estero (9,52%)
 
 ### 3.3 Procedura di campionamento (Come?)
 **Campione non probabilistico di convenienza con distribuzione selezionata.** Il questionario viene distribuito via link diretto (campione selezionato) attraverso social media (Instagram, LinkedIn, community eco-friendly). Questa scelta garantisce un elevato grado di controllo sul campione: conosciamo i canali di provenienza e possiamo sostituire gli invii se necessario. Rispetto al campione aperto (questionario su sito web aziendale), il campione selezionato riduce il rischio che rispondano persone non in target, sebbene con un tasso di risposta potenzialmente più basso.

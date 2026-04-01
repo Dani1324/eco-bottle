@@ -681,23 +681,24 @@ export function UsageContextsChart() {
 
 export function CharacteristicsImportanceTable() {
   const characteristics = [
-    { name: "Materiali Ecologici", molto: 47.62, abbastanza: 28.57, indifferente: 14.29, poco: 9.52, perNiente: 0.0 },
-    { name: "Monitoraggio App/Promemoria", molto: 4.76, abbastanza: 38.10, indifferente: 33.33, poco: 19.05, perNiente: 4.76 },
-    { name: "Mantenimento Temperatura", molto: 52.38, abbastanza: 28.57, indifferente: 19.05, poco: 0.0, perNiente: 0.0 },
-    { name: "Design e Personalizzazione", molto: 33.33, abbastanza: 42.86, indifferente: 14.29, poco: 4.76, perNiente: 4.76 },
-    { name: "Leggerezza e Portabilità", molto: 47.62, abbastanza: 38.10, indifferente: 9.52, poco: 4.76, perNiente: 0.0 },
-    { name: "Facilità di Pulizia", molto: 38.10, abbastanza: 47.62, indifferente: 14.29, poco: 0.0, perNiente: 0.0 },
-    { name: "Prezzo/Rapporto Qualità-Prezzo", molto: 23.81, abbastanza: 47.62, indifferente: 19.05, poco: 4.76, perNiente: 4.76 },
-    { name: "Marca Affidabile/Storica", molto: 4.76, abbastanza: 9.52, indifferente: 47.62, poco: 19.05, perNiente: 19.05 },
+    { name: "Materiali Ecologici", molto: 52.38, abbastanza: 25.39, indifferente: 11.11, poco: 11.11, perNiente: 0.0 },
+    { name: "Monitoraggio App/Promemoria", molto: 14.28, abbastanza: 30.15, indifferente: 28.57, poco: 20.63, perNiente: 6.35 },
+    { name: "Mantenimento Temperatura", molto: 49.21, abbastanza: 27.00, indifferente: 22.22, poco: 1.59, perNiente: 0.0 },
+    { name: "Design e Personalizzazione", molto: 23.8, abbastanza: 41.27, indifferente: 20.63, poco: 1.59, perNiente: 4.76 },
+    { name: "Leggerezza e Portabilità", molto: 46.03, abbastanza: 33.33, indifferente: 15.87, poco: 3.17, perNiente: 1.59 },
+    { name: "Facilità di Pulizia", molto: 36.51, abbastanza: 50.80, indifferente: 12.70, poco: 0.0, perNiente: 0.0 },
+    { name: "Prezzo/Rapporto Qualità-Prezzo", molto: 28.58, abbastanza: 44.44, indifferente: 23.81, poco: 3.17, perNiente: 0.0 },
+    { name: "Marca Affidabile/Storica", molto: 7.94, abbastanza: 14.29, indifferente: 31.74, poco: 33.33, perNiente: 12.70 },
   ];
 
   return (
-    <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px", overflowX: "auto" }}>
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
       <table style={{
         width: "100%",
         borderCollapse: "collapse",
         fontSize: "13px",
         color: "#2A3D30",
+        margin: 0,
       }}>
         <thead>
           <tr style={{ backgroundColor: "#2A3D30", color: "white" }}>

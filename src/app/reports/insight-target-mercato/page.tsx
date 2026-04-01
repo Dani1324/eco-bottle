@@ -162,13 +162,17 @@ function RicercaDiMercato() {
       </p>
       <h3>3.2 Dimensione del campione (Quanti?)</h3>
       <p>
-        <strong>Target: 200-300 rispondenti validi.</strong> Si mira a un
-        campione sufficientemente ampio da ridurre l&apos;errore campionario
-        (che, come definito nel corso, è la &quot;differenza tra il valore
-        stimato sul campione e il valore reale della popolazione&quot;)
-        mantenendo al contempo gestibile l&apos;errore non campionario (errori
-        di trascrizione, misurazione, elaborazione).
+        <strong>Risultato: 63 rispondenti validi (Marzo 2026).</strong> La ricerca empirica ha raccolto 63 risposte complete, inferiore al target iniziale di 200-300 rispondenti ma comunque significativa per un&apos;analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
       </p>
+      <p>
+        <strong>Profilo demografico realizzato:</strong>
+      </p>
+      <ul>
+        <li><strong>Fascia d&apos;età</strong>: 18–24 anni (42,86%, n=27), 25–34 anni (23,81%, n=15), 35–44 anni (9,52%, n=6), 45–54 anni (23,81%, n=15)</li>
+        <li><strong>Genere</strong>: Femmina (52,38%), Maschio (28,57%), Preferisco non specificare/Altro (19,05%)</li>
+        <li><strong>Occupazione</strong>: Studente (38,10%), Lavoratore dipendente (38,10%), Autonomo/Libero professionista (19,05%), Sportivo/Atleta (4,76%)</li>
+        <li><strong>Area geografica</strong>: Centro Italia (60,0%), Nord Italia (14,29%), Sud Italia e Isole (14,29%), Estero (9,52%)</li>
+      </ul>
       <h3>3.3 Procedura di campionamento (Come?)</h3>
       <p>
         <strong>
