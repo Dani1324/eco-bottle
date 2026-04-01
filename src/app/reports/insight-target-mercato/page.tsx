@@ -25,6 +25,7 @@ import {
   BottleUsageChart,
   MaterialPreferenceChart,
   CapacityPreferenceChart,
+  ColorPreferenceChart,
   AppInterestChart,
   AppFeaturesChart,
   WTPChart,
@@ -248,14 +249,17 @@ function RicercaDiMercato() {
 
       <h3>SEZIONE A — PREFERENZE DI PRODOTTO</h3>
 
-      <h4>A0. Caratteristiche di importanza (scala Likert)</h4>
+      <h4>A1. Caratteristiche di importanza (scala Likert)</h4>
       <CharacteristicsImportanceTable />
 
-      <h4>A1. Quale materiale preferisci per una borraccia?</h4>
+      <h4>A2. Quale materiale preferisci per una borraccia?</h4>
       <MaterialPreferenceChart />
 
-      <h4>A2. Quale capacità preferisci?</h4>
+      <h4>A3. Quale capacità preferisci?</h4>
       <CapacityPreferenceChart />
+
+      <h4>A4. Quali colori preferiresti per una borraccia ecologica?</h4>
+      <ColorPreferenceChart />
 
       <hr />
 

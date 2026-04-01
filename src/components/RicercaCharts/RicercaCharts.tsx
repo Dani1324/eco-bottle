@@ -103,12 +103,11 @@ export function ProductCharacteristicsChart() {
 
 export function MaterialPreferenceChart() {
   const data = [
-    { name: "Acciaio inossidabile", value: 33.33 },
-    { name: "Materiali biodegradabili", value: 33.33 },
-    { name: "Plastica riciclata", value: 19.05 },
-    { name: "Vetro", value: 4.76 },
-    { name: "Nessuna preferenza", value: 4.76 },
-    { name: "Altro", value: 4.76 },
+    { name: "Acciaio inossidabile", value: 42.9 },
+    { name: "Materiali biodegradabili", value: 31.7 },
+    { name: "Plastica riciclata", value: 19.0 },
+    { name: "Vetro", value: 4.8 },
+    { name: "Nessuna preferenza", value: 1.6 },
   ];
 
   return (
@@ -138,10 +137,10 @@ export function MaterialPreferenceChart() {
 
 export function CapacityPreferenceChart() {
   const data = [
-    { name: "Piccola (350–500 ml)", value: 14.29 },
-    { name: "Media (500–750 ml)", value: 38.10 },
-    { name: "Grande (750 ml – 1 litro)", value: 42.86 },
-    { name: "Extra large (oltre 1 litro)", value: 4.76 },
+    { name: "Piccola (350–500 ml)", value: 9.5 },
+    { name: "Media (500–750 ml)", value: 57.1 },
+    { name: "Grande (750 ml – 1 litro)", value: 28.6 },
+    { name: "Extra large (oltre 1 litro)", value: 4.8 },
   ];
 
   return (
@@ -172,11 +171,11 @@ export function CapacityPreferenceChart() {
 export function ColorPreferenceChart() {
   const margins = useResponsiveChartMargins(180, 180);
   const data = [
-    { name: "Colori naturali", value: 45.0 },
-    { name: "Colori neutri", value: 40.0 },
-    { name: "Colori vivaci", value: 30.0 },
-    { name: "Effetto legno/pietra", value: 30.0 },
-    { name: "Colori pastello", value: 25.0 },
+    { name: "Colori naturali (verde, marrone, beige)", value: 44.4 },
+    { name: "Colori neutri (nero, bianco, grigio)", value: 42.9 },
+    { name: "Colori vivaci (rosso, arancione, giallo)", value: 33.3 },
+    { name: "Colori pastello", value: 30.2 },
+    { name: "Effetto legno / pietra naturale", value: 28.6 },
   ];
 
   return (
