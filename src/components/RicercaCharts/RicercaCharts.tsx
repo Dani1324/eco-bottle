@@ -525,8 +525,8 @@ export function OccupationDistributionChart() {
     { name: "Lavoratore dipendente", value: 42.9 },
     { name: "Autonomo/Libero professionista", value: 19.0 },
     { name: "Sportivo/Atleta", value: 1.6 },
-    { name: "Pensionato", value: 0 },
-    { name: "Altro", value: 0 },
+    /* { name: "Pensionato", value: 0.0 }, */
+    /* { name: "Altro", value: 0.0 }, */
   ];
 
   return (
@@ -593,7 +593,7 @@ export function AreaGeographicaChart() {
 
 export function WaterConsumptionChart() {
   const data = [
-    { name: "Meno di 0,5 litri", value: 0.0 },
+    /* { name: "Meno di 0,5 litri", value: 0.0 }, */
     { name: "Tra 0,5 e 1 litro", value: 6.3 },
     { name: "Tra 1 e 1,5 litri", value: 39.7 },
     { name: "Tra 1,5 e 2 litri", value: 42.9 },
