@@ -36,6 +36,7 @@ import {
   InfluencerFollowingChart,
   ProductCharacteristicsChart,
   CharacteristicsImportanceTable,
+  OpenFeedbackTable,
   UsageContextsChart,
 } from "@/components/RicercaCharts/RicercaCharts";
 
@@ -300,6 +301,9 @@ function RicercaDiMercato() {
 
       <h4>E1. Conosci qualcuno di questi brand di borracce?</h4>
       <BrandAwarenessChart />
+
+      <h4>E2. Feedback e suggerimenti aperti (risposte qualitative)</h4>
+      <OpenFeedbackTable />
 
       <hr />
 

@@ -423,17 +423,18 @@ export function InfluencerFollowingChart() {
 export function BrandAwarenessChart() {
   const margins = useResponsiveChartMargins(150, 150);
   const data = [
-    { name: "Air Up", value: 52.38 },
-    { name: "Chilly's", value: 47.62 },
-    { name: "24Bottles", value: 19.05 },
-    { name: "Stanley", value: 19.05 },
-    { name: "CamelBak", value: 14.29 },
-    { name: "Hydro Flask", value: 9.52 },
+    { name: "24Bottles", value: 20.6 },
+    { name: "Chilly's", value: 28.6 },
+    { name: "Hydro Flask", value: 12.7 },
+    { name: "CamelBak", value: 19.0 },
+    { name: "Stanley", value: 30.2 },
+    { name: "Air Up", value: 38.1 },
+    { name: "Nessuno di questi", value: 17.5 },
   ];
 
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={320}>
         <BarChart data={data} layout="vertical" margin={{ left: margins.left, right: 30, top: 5, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tick={{ fill: "#2A3D30" }} />
@@ -452,13 +453,13 @@ export function BrandAwarenessChart() {
 
 export function AgeDistributionChart() {
   const data = [
-    { name: "18–24", value: 42.86 },
-    { name: "25–34", value: 23.81 },
-    { name: "35–44", value: 9.52 },
-    { name: "45–54", value: 23.81 },
+    { name: "Under 18", value: 3.2 },
+    { name: "18–24", value: 36.5 },
+    { name: "25–34", value: 33.3 },
+    { name: "35–44", value: 9.5 },
+    { name: "45–54", value: 15.9 },
+    { name: "Over 54", value: 1.6 },
   ];
-
-
 
   return (
     <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
@@ -487,10 +488,10 @@ export function AgeDistributionChart() {
 
 export function GenderDistributionChart() {
   const data = [
-    { name: "Femmina", value: 52.38 },
-    { name: "Maschio", value: 28.57 },
-    { name: "Preferisco non specificare", value: 14.29 },
-    { name: "Altro", value: 4.76 },
+    { name: "Femmina", value: 52.4 },
+    { name: "Maschio", value: 41.3 },
+    { name: "Preferisco non specificare", value: 4.8 },
+    { name: "Altro", value: 1.6 },
   ];
 
   return (
@@ -520,10 +521,12 @@ export function GenderDistributionChart() {
 
 export function OccupationDistributionChart() {
   const data = [
-    { name: "Studente", value: 38.10 },
-    { name: "Lavoratore dipendente", value: 38.10 },
-    { name: "Autonomo/Libero professionista", value: 19.05 },
-    { name: "Sportivo/Atleta", value: 4.76 },
+    { name: "Studente", value: 36.5 },
+    { name: "Lavoratore dipendente", value: 42.9 },
+    { name: "Autonomo/Libero professionista", value: 19.0 },
+    { name: "Sportivo/Atleta", value: 1.6 },
+    { name: "Pensionato", value: 0 },
+    { name: "Altro", value: 0 },
   ];
 
   return (
@@ -553,10 +556,10 @@ export function OccupationDistributionChart() {
 
 export function AreaGeographicaChart() {
   const data = [
-    { name: "Centro Italia", value: 60.0 },
-    { name: "Nord Italia", value: 14.29 },
-    { name: "Sud Italia e Isole", value: 14.29 },
-    { name: "Estero", value: 9.52 },
+    { name: "Centro Italia", value: 68.3 },
+    { name: "Nord Italia", value: 12.7 },
+    { name: "Sud Italia e Isole", value: 12.7 },
+    { name: "Estero", value: 6.3 },
   ];
 
   return (
@@ -590,10 +593,11 @@ export function AreaGeographicaChart() {
 
 export function WaterConsumptionChart() {
   const data = [
-    { name: "1-1,5L", value: 47.62 },
-    { name: "1,5-2L", value: 42.86 },
-    { name: ">2L", value: 4.76 },
-    { name: "0,5-1L", value: 4.76 },
+    { name: "Meno di 0,5 litri", value: 0.0 },
+    { name: "Tra 0,5 e 1 litro", value: 6.3 },
+    { name: "Tra 1 e 1,5 litri", value: 39.7 },
+    { name: "Tra 1,5 e 2 litri", value: 42.9 },
+    { name: "Più di 2 litri", value: 11.1 },
   ];
 
   return (
@@ -623,9 +627,10 @@ export function WaterConsumptionChart() {
 
 export function BottleUsageChart() {
   const data = [
-    { name: "Sì, quotidianamente", value: 38.10 },
-    { name: "Sì, occasionalmente", value: 38.10 },
-    { name: "No, ma vorrei iniziare", value: 23.81 },
+    { name: "Sì, quotidianamente", value: 44.4 },
+    { name: "Sì, occasionalmente", value: 27.0 },
+    { name: "No, ma vorrei iniziare", value: 25.4 },
+    { name: "No, non mi interessa", value: 3.2 },
   ];
 
   return (
@@ -656,12 +661,12 @@ export function BottleUsageChart() {
 export function UsageContextsChart() {
   const margins = useResponsiveChartMargins(220, 220);
   const data = [
-    { name: "Durante attività sportiva", value: 71.43 },
-    { name: "Al lavoro/università", value: 57.14 },
-    { name: "All'aperto/escursioni", value: 52.38 },
-    { name: "A casa", value: 42.86 },
-    { name: "In viaggio", value: 33.33 },
-    { name: "Altro", value: 4.76 },
+    { name: "Al lavoro / università – At work / university", value: 54.0 },
+    { name: "Durante l'attività sportiva – During sports activities", value: 66.7 },
+    { name: "In viaggio – While travelling", value: 49.2 },
+    { name: "A casa – At home", value: 50.8 },
+    { name: "All'aperto / escursioni – Outdoors / hiking", value: 54.0 },
+    { name: "Altro – Other", value: 1.6 },
   ];
 
   return (
@@ -723,6 +728,46 @@ export function CharacteristicsImportanceTable() {
               <td style={{ padding: "10px", textAlign: "center", color: "#5A8A5A" }}>{char.indifferente.toFixed(2)}%</td>
               <td style={{ padding: "10px", textAlign: "center", color: "#6B9A6B" }}>{char.poco.toFixed(2)}%</td>
               <td style={{ padding: "10px", textAlign: "center", color: "#999" }}>{char.perNiente.toFixed(2)}%</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function OpenFeedbackTable() {
+  const feedbackList = [
+    "Vorrei poterci mettere una foto al posto del colore",
+    "Il peso è molto importante, deve essere leggera",
+    "Would love a built-in straw",
+    "A lightweight design would make a big difference for me",
+    "Spero sia lavabile in lavastoviglie",
+    "Personalizzarla",
+    "Deve entrare nello spazio bibite delle auto",
+    "I really hope the app syncs with Apple Health natively",
+  ];
+
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{
+        width: "100%",
+        borderCollapse: "collapse",
+        fontSize: "13px",
+        color: "#2A3D30",
+        margin: 0,
+      }}>
+        <thead>
+          <tr style={{ backgroundColor: "#2A3D30", color: "white" }}>
+            <th style={{ padding: "10px", textAlign: "center", fontWeight: "bold", width: "50px" }}>N.</th>
+            <th style={{ padding: "10px", textAlign: "left", fontWeight: "bold" }}>Feedback ricevuto</th>
+          </tr>
+        </thead>
+        <tbody>
+          {feedbackList.map((feedback, idx) => (
+            <tr key={idx} style={{ backgroundColor: idx % 2 === 0 ? "#f9f9f9" : "#ffffff", borderBottom: "1px solid #ddd" }}>
+              <td style={{ padding: "10px", textAlign: "center", fontWeight: "500" }}>{idx + 1}</td>
+              <td style={{ padding: "10px" }}>{feedback}</td>
             </tr>
           ))}
         </tbody>
