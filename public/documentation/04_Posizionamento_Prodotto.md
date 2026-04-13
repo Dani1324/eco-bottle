@@ -1,114 +1,170 @@
-# ECOBOTTLE — Posizionamento di Prodotto
+# ECOBOTTLE - Posizionamento di Prodotto
 ## Documento tecnico | Project Work Marketing 2025/2026
 
 ---
 
-## 1. Dal posizionamento programmato al posizionamento percepito
+## 1. Punto di partenza dopo Segmentazione e Target
 
-Come definito nel corso, "ogni prodotto è formato da un insieme di attributi, che lo differenziano più o meno nettamente dai prodotti concorrenti e che lo qualificano in un certo modo nella mente del consumatore, consentendogli di occupare una certa posizione rispetto agli altri." Scegliere il posizionamento significa decidere come vogliamo che i clienti ci percepiscano rispetto ai concorrenti.
+Dopo la segmentazione, il posizionamento deve tradurre i risultati empirici in una proposta di valore differenziale e in un sistema prodotto coerente.
 
-Il posizionamento è sempre un **concetto relativo**: "esiste in relazione al posizionamento delle imprese concorrenti" e "un brand concorrente che cambia il suo posizionamento, automaticamente e indirettamente va a cambiare anche il mio." L'obiettivo è far coincidere il **posizionamento programmato** (desiderato dall'impresa) con il **posizionamento percepito** (effettivamente presente nella mente del consumatore), puntando a un posizionamento **appuntito** — "la maggior parte delle percezioni dei consumatori convergono ad un'unica parte" — anziché disperso.
+Il posizionamento resta un **concetto relativo**: ogni scelta va letta rispetto ai concorrenti e alle percezioni del cliente nel proprio insieme evocato. L'obiettivo manageriale è allineare il **posizionamento programmato** con il **posizionamento percepito**, riducendo dispersioni interpretative del brand.
 
----
+Coerentemente con il report Insight, Target e Mercato (n=63), ECOBOTTLE lavora su una logica di **focalizzazione sulla differenziazione**, con segmento primario Eco-Millennials Urbani (39%) e sviluppo progressivo su Fitness Enthusiasts (26%), Design Seekers (17%) e Studenti Green (18%).
 
-## 2. Customer Value Proposition
-
-La **customer value proposition** è "la differenza tra i benefici e i sacrifici che i consumatori percepiscono dell'offerta aziendale, in rapporto a quella riferita alle imprese concorrenti." Per progettarla rispondiamo alle tre domande del corso:
-
-### 2.1 Quali fattori determinano il valore percepito dal cliente?
-
-Attraverso la catena mezzi-fini e l'analisi dei dati di mercato, identifichiamo i fattori chiave:
-
-| Livello catena | Elemento ECOBOTTLE | Descrizione |
-|---------------|---------------|-------------|
-| **Attributi concreti** | Acciaio inox riciclato 75%, sensore IoT, isolamento doppia parete | Caratteristiche fisiche e tecniche del prodotto |
-| **Attributi astratti** | "Made in Italy", design minimalista, certificazione eco | Proprietà non direttamente osservabili |
-| **Benefici funzionali** | Mantiene temperatura 24h caldo/freddo, traccia idratazione | Performance tangibile |
-| **Benefici esperienziali** | App intuitiva, unboxing premium, senso di cura personale | Esperienza d'uso e relazione col prodotto |
-| **Benefici sociali** | Appartenenza a community eco-smart, riconoscibilità sociale | "Lo compro perché mi sento parte di una community" (neotribù) |
-| **Benefici psicologici** | Senso di responsabilità ambientale, autostima, sicurezza nelle scelte salutari | "Usare un prodotto ci fa stare bene, ci dà sicurezza" |
-| **Valori strumentali** | Indipendenza, onestà verso l'ambiente, apertura mentale | Intermediari verso i valori terminali |
-| **Valori terminali** | Armonia interna, rispetto per sé stessi, benessere | Obiettivi di vita ultimi del consumatore |
-
-### 2.2 Su quali fattori ECOBOTTLE può superare la concorrenza?
-
-La superiorità competitiva si fonda sulla **combinazione simultanea** di tre dimensioni che nessun competitor possiede congiuntamente:
-1. **Sostenibilità verificabile** (superiore a LARQ e HidrateSpark)
-2. **Funzionalità smart** (superiore a 24Bottles, Chilly's, S'well)
-3. **Design premium minimalista** (superiore a HidrateSpark)
-
-### 2.3 I fattori sono coerenti con obiettivi e strategie aziendali?
-
-Sì. La strategia competitiva di ECOBOTTLE è la **focalizzazione sulla differenziazione**, come definita nel corso: "si focalizza su un ambito di mercato ristretto, cerca di conseguire un vantaggio competitivo andando a soddisfare i bisogni specifici di un dato segmento di domanda in modo migliore rispetto ai competitor." La combinazione eco+smart+design è coerente con il target Eco-Millennials Urbani e con la strategia di pricing di scrematura.
+> Nota metodologica: le quote segmentali 39/26/17/18 sono stime da clustering interno; gli indicatori percentuali usati qui derivano dalla Sezione 6 della ricerca.
 
 ---
 
-## 3. Analisi secondo il modello di Kano
+## 2. Base dati di riferimento (coerenza numerica)
 
-Come insegnato nel corso, "non tutti gli attributi sono uguali in termini di relazione con il livello di soddisfazione del cliente":
-
-| Tipo attributo (Kano) | Attributo ECOBOTTLE | Implicazione strategica |
-|----------------------|----------------|----------------------|
-| **Basic** (se assente → alta insoddisfazione) | Tenuta stagna, resistenza materiali, sicurezza alimentare | Non comunicabili come differenziale — devono semplicemente esserci |
-| **One-dimensional** (relazione lineare soddisfazione) | Isolamento termico, autonomia batteria, accuratezza tracking | Comunicabili con dati oggettivi (24h, ±2% precisione) |
-| **Exciting** (se presente → alta soddisfazione, mai insoddisfazione) | Display e-ink integrato, materiali bio-based, community gamificata | **Leva principale di differenziazione.** "Sono attributi su cui si gioca molto per differenziarsi dalla concorrenza" |
+| Evidenza dal sondaggio | Dato | Implicazione per il posizionamento |
+|---|---|---|
+| Driver di acquisto principale | Qualità materiali 30,2% | Promessa prodotto centrata su affidabilità e qualità percepita |
+| Driver economico | Prezzo 22,2% | Posizionamento premium accessibile, non luxury estremo |
+| Interesse smart | 79,4% (molto + abbastanza) | Tecnologia come leva reale, non solo narrativa |
+| Fasce prezzo preferite | 20-35 + 35-50 = 68,3% | Sweet spot percepito in area medio-premium |
+| Disponibilità premium (>50 euro) | 20,6% | Esiste una nicchia premium, ma non è il mercato principale |
+| Brand awareness (top 3) | Air Up 38,1%, Stanley 30,2%, Chilly's 28,6% | Concorrenza percepita guidata da marchi forti e già noti |
 
 ---
 
-## 4. La catena mezzi-fini di ECOBOTTLE e il punto di leva
+## 3. Customer Value Proposition
 
-Secondo la tecnica del **Laddering** studiata nel corso, la catena mezzi-fini si costruisce in 4 fasi:
+La value proposition è la differenza tra **benefici** e **sacrifici percepiti**, rispetto alle alternative.
 
-### I. Definizione della catena
+### 3.1 Benefici progettati
+
+| Tipo di beneficio | Contenuto ECOBOTTLE | Base empirica |
+|---|---|---|
+| Funzionali | Materiali robusti, isolamento termico, esperienza d'uso pratica | Qualità materiali 30,2%; importanza mantenimento temperatura 52,4% |
+| Esperienziali | Uso quotidiano semplice e integrazione con routine personali | 71,4% del campione usa già borracce quotidianamente; 66,7% le utilizza durante attività sportive |
+| Sociali | Coerenza con stile di vita eco-smart e riconoscibilità | Interesse verso design/sostenibilità nei driver (14,3% + 14,3%) |
+| Psicologici | Senso di controllo dell'idratazione e responsabilità ambientale | Interesse smart 79,4% + attenzione ai materiali ecologici |
+
+### 3.2 Sacrifici percepiti e risposta strategica
+
+| Tipo di sacrificio | Rischio percepito | Risposta di posizionamento |
+|---|---|---|
+| Economico | Prezzo troppo alto rispetto alle alternative base | Prezzo target in fascia 35-50 euro, coerente con WTP prevalente |
+| Transazionale | Difficoltà di scelta e confronto tra modelli | Messaggio semplice su 3 pilastri: qualità, smart, sostenibilità |
+| Psicologico | Timore di promessa non mantenuta | Comunicazione con claim verificabili e tono non iperbolico |
+| Di apprendimento | Percezione di complessità delle funzioni smart | Onboarding app essenziale e focus su utilità immediata |
+
+### 3.3 Fattori di superiorità competitiva
+
+La proposta ECOBOTTLE integra tre dimensioni che, in combinazione, sostengono il differenziale competitivo nel target prioritario:
+1. **Sostenibilità credibile** con orientamento a materiali e comportamenti d'uso responsabili.
+2. **Utilità smart** progettata per la routine quotidiana, non come feature accessoria.
+3. **Design premium funzionale** come elemento di riconoscibilità e valore percepito.
+
+### 3.4 Coerenza con obiettivi aziendali
+
+La focalizzazione sulla differenziazione è coerente con i segmenti selezionati e con la struttura di disponibilità a pagare emersa nel campione: l'obiettivo non è competere sul prezzo minimo, ma offrire un equilibrio superiore tra qualità, significato e funzionalità.
+
+---
+
+## 4. Posizionamento di prodotto (scelta teorica)
+
+Il posizionamento è un concetto relativo: il brand occupa una posizione nella mente del consumatore in funzione delle alternative presenti nell'insieme evocato.
+
+Per ECOBOTTLE la scelta combina tre logiche:
+1. **Posizionamento per attributi**: qualità materiali, usabilità, dimensione smart.
+2. **Posizionamento per benefici attesi**: idratazione più consapevole, maggiore praticità quotidiana.
+3. **Posizionamento per valori**: coerenza con uno stile di vita responsabile.
+
+### 4.1 Lettura con il modello di Kano
+
+Non tutti gli attributi hanno lo stesso effetto sulla soddisfazione. La lettura Kano permette di distinguere prerequisiti, driver lineari e leve di entusiasmo.
+
+| Tipo attributo (Kano) | Applicazione ECOBOTTLE | Implicazione strategica |
+|---|---|---|
+| Basic | Tenuta stagna, resistenza materiali, sicurezza alimentare | Prerequisiti: se assenti generano forte insoddisfazione |
+| One-dimensional | Isolamento termico, usabilità, qualità percepita | La soddisfazione cresce in modo proporzionale alla performance |
+| Exciting | Esperienza smart semplice, valore eco-smart integrato, design distintivo | Leva di differenziazione per aumentare desiderabilità e preferenza |
+
+---
+
+## 5. Posizionamento programmato vs percepito
+
+| Tipo | Definizione operativa | Stato attuale ECOBOTTLE |
+|---|---|---|
+| Posizionamento programmato | Eco-smart premium accessibile, centrato su utilità reale | Definito con chiarezza nel piano marketing |
+| Posizionamento percepito | Immagine effettivamente costruita nella mente dei clienti | Da validare post-lancio con tracking brand e customer feedback |
+
+Obiettivo: massimizzare la convergenza tra programmato e percepito, evitando un posizionamento disperso.
+
+---
+
+## 6. Come si decide il posizionamento programmato
+
+### 6.1 Fase 1: attributi rilevanti
+Gli attributi prioritari emersi sono qualità materiali, prezzo, sostenibilità, design e utilità smart.
+
+### 6.2 Fase 2: percezioni sulle marche (mappa percettiva)
+Le percezioni nel campione sono guidate da brand noti (Air Up, Stanley, Chilly's). Questo indica un mercato già presidiato su notorietà, ma non necessariamente su combinazione eco+smart.
+
+La mappa percettiva consente di leggere il posizionamento relativo dei brand sulle dimensioni rilevanti; la successiva mappa di preferenza evidenzia dove si concentra il valore ricercato dal cliente.
+
+### 6.3 Fase 3: preferenze dei consumatori (mappa di preferenza)
+Le preferenze convergono su prodotti affidabili, con valore d'uso quotidiano e prezzo sostenibile: 68,3% concentra la disponibilità di spesa tra 20 e 50 euro.
+
+> Gap identificato: spazio competitivo in area smart + sostenibilità con posizionamento di prezzo medio-premium (35-50 euro), evitando estremi low-cost e ultra-premium.
+
+---
+
+## 7. Strategie decisionali applicate
+
+Le opzioni strategiche sono valutate secondo le logiche classiche: conservativa, riposizionamento, affiancamento, spostamento delle preferenze e modifica delle basi di posizionamento. Per ECOBOTTLE la combinazione prioritaria è la seguente.
+
+1. **Affiancamento**: ingresso con una proposta distinta rispetto ai player più noti per notorietà.
+2. **Spostamento delle preferenze**: comunicazione che valorizza il trade-off qualità-smart-sostenibilità oltre la sola marca storica.
+3. **Riposizionamento progressivo**: ottimizzazione del messaggio in base ai dati post-lancio (brand lift, NPS, conversione).
+
+### 7.1 Fondamento competitivo
+
+Il vantaggio competitivo atteso si regge su tre condizioni manageriali da presidiare nel tempo:
+1. **Durevolezza**: coerenza della proposta eco-smart lungo le diverse fasi di sviluppo.
+2. **Difendibilità**: sistema di attributi multipli, più difficile da imitare rispetto a una singola feature.
+3. **Rilevanza**: aderenza ai benefici realmente ricercati dal target, non solo a logiche interne di prodotto.
+
+---
+
+## 8. Catena mezzi-fini e Laddering
+
+La catena mezzi-fini collega attributi, benefici e valori. Per ECOBOTTLE la sequenza operativa è:
+
+```text
+Attributi -> Benefici -> Valori
+Materiali affidabili e sostenibili -> fiducia d'uso quotidiano -> sicurezza e responsabilità
+Funzioni smart semplici -> monitoraggio idratazione -> benessere personale
+Design riconoscibile -> piacere d'uso e identità -> autostima e auto-espressione
 ```
-Attributi concreti → Attributi astratti → Benefici funzionali → Benefici psicologici → Valori
-Acciaio riciclato 75%  → Eco-design     → Riduce impatto    → Mi sento responsabile → Armonia interna
-Sensore IoT integrato  → Smart-health   → Monitora idrataz. → Cura di sé            → Benessere
-Design minimalista     → Premium feel    → Piacere estetico  → Autostima, status     → Rispetto per sé
-```
 
-### II. La sequenza ideale
-ECOBOTTLE sceglie la sequenza: **Materiali eco + Tracking smart → Idratazione consapevole e sostenibile → Responsabilità e benessere → Armonia con sé e con l'ambiente**.
+Il **punto di leva comunicativo** è a metà catena: tradurre attributi concreti in benefici immediatamente percepibili, senza perdere il legame con i valori.
 
-### III. Il punto di leva
-Il punto di leva si colloca a **metà catena**, tra benefici funzionali e benefici psicologici/sociali. Non comunichiamo solo attributi (razionalità pura) né solo valori (emozionalità pura), ma il ponte tra i due: **"Bere in modo smart è il tuo contributo quotidiano al pianeta"**. Questa scelta bilancia funzionalità e razionalità (credibilità ingegneristica) con emozionalità e valori (purpose e significato).
-
-### IV. Dichiarazione formale di posizionamento
-
-Come insegnato nel corso, la dichiarazione formale di posizionamento deve essere "chiara, coerente rispetto al prodotto/servizio e credibile — deve avere basi solide per essere vero." Deve esprimere "a chi ci rivolgiamo, quali sono i bisogni che vogliamo soddisfare e perché."
-
-> **Per** i giovani professionisti urbani attenti alla sostenibilità e al benessere personale,
-> **che** desiderano un'idratazione quotidiana consapevole senza compromessi tra etica e tecnologia,
-> **ECOBOTTLE è** la smart water bottle in materiali bio-based
-> **che** unisce tracking intelligente dell'idratazione, isolamento termico premium e design minimalista italiano
-> **perché** è l'unica bottiglia riutilizzabile che integra sostenibilità certificata, funzionalità smart e un'estetica progettata per diventare parte della tua identità.
+In termini comunicativi, la sequenza ideale resta: attributi credibili - benefici concreti - significato personale e sociale.
 
 ---
 
-## 5. Payoff: "Drink Smart. Live Green."
+## 9. Dichiarazione formale di posizionamento
 
-### Razionale linguistico
-- **"Drink Smart"** → leva funzionale (tracking, tecnologia, salute) — punto di leva verso i benefici
-- **"Live Green"** → leva valoriale (sostenibilità, stile di vita) — punto di leva verso i valori terminali
-- **Struttura parallela** imperativo + aggettivo: memorabilità, ritmo, simmetria
-- **Lingua inglese**: coerente con target cosmopolita, internazionalizzabile, evoca premium positioning
+La dichiarazione è costruita per essere chiara, coerente e credibile:
 
-### Verifica di coerenza (test Biscoburro del corso)
-La comunicazione è coerente quando il claim riflette il principale elemento differenziale. "Drink Smart. Live Green." comunica esplicitamente la doppia dimensione che differenzia ECOBOTTLE dalla concorrenza (smart + green), a differenza di un ipotetico "La bottiglia del futuro" (generico, manca il differenziale) o "Bevi di più" (riduttivo, non distingue da HidrateSpark).
+> **Per** giovani adulti e professionisti urbani attenti a benessere, qualità e sostenibilità,  
+> **che** cercano una borraccia utile ogni giorno e non solo estetica,  
+> **ECOBOTTLE è** una proposta eco-smart di fascia medio-premium,  
+> **che** unisce affidabilità d'uso, supporto al monitoraggio dell'idratazione e design riconoscibile,  
+> **perché** offre un equilibrio concreto tra valore funzionale, coerenza valoriale e accessibilità percepita.
 
----
+### Payoff
+**Drink Smart. Live Green.** rimane coerente con il posizionamento: asse funzionale (smart) + asse valoriale (green).
 
-## 6. Strategia competitiva: Focalizzazione sulla differenziazione
-
-Come studiato nel corso, la strategia di differenziazione "consiste nel conferire ai prodotti caratteristiche distintive rilevanti all'occhio del cliente, tali da differenziarli dai prodotti dei competitor. Il cliente è disposto a pagare un prezzo alto grazie alle sue caratteristiche distintive (premium price)."
-
-Il vantaggio competitivo di ECOBOTTLE è di tipo **esterno** — "si basa su caratteri e qualità distintive del prodotto e della marca in grado di aumentarne la performance o ridurne i costi di utilizzo per il cliente." Questo vantaggio rispetta le tre caratteristiche richieste:
-
-1. **Durevolezza**: la combinazione eco+smart+design è un sistema integrato, non un singolo elemento facilmente imitabile
-2. **Difendibilità**: "non deve essere facilmente imitabile. Frutto di insieme di elementi — materie prime rare o di elevata qualità, design del prodotto, confezione. Se è un unico elemento di differenziazione è facilmente imitabile." ECOBOTTLE difende il vantaggio attraverso molteplici barriere simultanee
-3. **Rilevanza**: gli elementi di differenziazione sono direttamente collegati ai benefici primari ricercati dal target
+### Razionale del payoff
+- **Drink Smart**: attiva la leva funzionale (utilità, controllo, performance d'uso).
+- **Live Green**: attiva la leva valoriale (responsabilità, identità, stile di vita).
+- **Struttura sintetica e memorabile**: mantiene chiarezza strategica e facilita la riconoscibilità del brand.
 
 ---
 
-*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini*
+*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini*  
 *Brand: ECOBOTTLE — Drink Smart. Live Green.*

@@ -1163,3 +1163,188 @@ export function PerceptualMapChart() {
     </div>
   );
 }
+
+export function PositioningDataReferenceTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px", color: "#2A3D30", margin: 0 }}>
+        <thead>
+          <tr>
+            <th>Evidenza dal sondaggio</th>
+            <th>Dato</th>
+            <th>Implicazione per il posizionamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Driver di acquisto principale</td>
+            <td>Qualita materiali 30,2%</td>
+            <td>Promessa prodotto centrata su affidabilita e qualita percepita</td>
+          </tr>
+          <tr>
+            <td>Driver economico</td>
+            <td>Prezzo 22,2%</td>
+            <td>Posizionamento premium accessibile, non luxury estremo</td>
+          </tr>
+          <tr>
+            <td>Interesse smart</td>
+            <td>79,4% (molto + abbastanza)</td>
+            <td>Tecnologia come leva reale, non solo narrativa</td>
+          </tr>
+          <tr>
+            <td>Fasce prezzo preferite</td>
+            <td>20-35 + 35-50 = 68,3%</td>
+            <td>Sweet spot percepito in area medio-premium</td>
+          </tr>
+          <tr>
+            <td>Disponibilita premium (&gt;50 euro)</td>
+            <td>20,6%</td>
+            <td>Esiste una nicchia premium, ma non e il mercato principale</td>
+          </tr>
+          <tr>
+            <td>Brand awareness (top 3)</td>
+            <td>Air Up 38,1%, Stanley 30,2%, Chilly&apos;s 28,6%</td>
+            <td>Concorrenza percepita guidata da marchi forti e gia noti</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function PositioningBenefitsTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px", color: "#2A3D30", margin: 0 }}>
+        <thead>
+          <tr>
+            <th>Tipo di beneficio</th>
+            <th>Contenuto ECOBOTTLE</th>
+            <th>Base empirica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Funzionali</td>
+            <td>Materiali robusti, isolamento termico, esperienza d&apos;uso pratica</td>
+            <td>Qualita materiali 30,2%; importanza mantenimento temperatura 52,4%</td>
+          </tr>
+          <tr>
+            <td>Esperienziali</td>
+            <td>Uso quotidiano semplice e integrazione con routine personali</td>
+            <td>71,4% del campione usa già borracce quotidianamente; 66,7% le utilizza durante attività sportive</td>
+          </tr>
+          <tr>
+            <td>Sociali</td>
+            <td>Coerenza con stile di vita eco-smart e riconoscibilità</td>
+            <td>Interesse verso design/sostenibilita nei driver (14,3% + 14,3%)</td>
+          </tr>
+          <tr>
+            <td>Psicologici</td>
+            <td>Senso di controllo dell&apos;idratazione e responsabilità ambientale</td>
+            <td>Interesse smart 79,4% + attenzione ai materiali ecologici</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function PositioningSacrificesTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px", color: "#2A3D30", margin: 0 }}>
+        <thead>
+          <tr>
+            <th>Tipo di sacrificio</th>
+            <th>Rischio percepito</th>
+            <th>Risposta di posizionamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Economico</td>
+            <td>Prezzo troppo alto rispetto alle alternative base</td>
+            <td>Prezzo target in fascia 35-50 euro, coerente con WTP prevalente</td>
+          </tr>
+          <tr>
+            <td>Transazionale</td>
+            <td>Difficolta di scelta e confronto tra modelli</td>
+            <td>Messaggio semplice su 3 pilastri: qualita, smart, sostenibilita</td>
+          </tr>
+          <tr>
+            <td>Psicologico</td>
+            <td>Timore di promessa non mantenuta</td>
+            <td>Comunicazione con claim verificabili e tono non iperbolico</td>
+          </tr>
+          <tr>
+            <td>Di apprendimento</td>
+            <td>Percezione di complessita delle funzioni smart</td>
+            <td>Onboarding app essenziale e focus su utilità immediata</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function PositioningProgrammedVsPerceivedTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px", color: "#2A3D30", margin: 0 }}>
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Definizione operativa</th>
+            <th>Stato attuale ECOBOTTLE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Posizionamento programmato</td>
+            <td>Eco-smart premium accessibile, centrato su utilità reale</td>
+            <td>Definito con chiarezza nel piano marketing</td>
+          </tr>
+          <tr>
+            <td>Posizionamento percepito</td>
+            <td>Immagine effettivamente costruita nella mente dei clienti</td>
+            <td>Da validare post-lancio con tracking brand e customer feedback</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function PositioningKanoTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px", color: "#2A3D30", margin: 0 }}>
+        <thead>
+          <tr>
+            <th>Tipo attributo (Kano)</th>
+            <th>Applicazione ECOBOTTLE</th>
+            <th>Implicazione strategica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>Tenuta stagna, resistenza materiali, sicurezza alimentare</td>
+            <td>Prerequisiti: se assenti generano forte insoddisfazione</td>
+          </tr>
+          <tr>
+            <td>One-dimensional</td>
+            <td>Isolamento termico, usabilita, qualita percepita</td>
+            <td>La soddisfazione cresce in modo proporzionale alla performance</td>
+          </tr>
+          <tr>
+            <td>Exciting</td>
+            <td>Esperienza smart semplice, valore eco-smart integrato, design distintivo</td>
+            <td>Leva di differenziazione per aumentare desiderabilita e preferenza</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
