@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { IconArrowLeft } from "@tabler/icons-react";
 import ReportTabs from "@/components/ReportTabs/ReportTabs";
 import styles from "@/styles/report.module.css";
@@ -37,6 +36,12 @@ import {
   ProductCharacteristicsChart,
   CharacteristicsImportanceTable,
   OpenFeedbackTable,
+  SegmentDescriptiveCriteriaTable,
+  SegmentBehavioralCriteriaTable,
+  SegmentBenefitsCriteriaTable,
+  SegmentAttractivenessTable,
+  CompetitiveComparisonTable,
+  PerceptualMapChart,
   UsageContextsChart,
 } from "@/components/RicercaCharts/RicercaCharts";
 
@@ -168,7 +173,7 @@ function RicercaDiMercato() {
       </p>
       <h3>3.2 Dimensione del campione (Quanti?)</h3>
       <p>
-        <strong>Risultato: 63 rispondenti validi (Marzo 2026).</strong> La ricerca empirica ha raccolto 63 risposte complete, significativa per un&apos;analisi qualitativa del target market. Il campione ha subito riduzioni dovute a limitazioni di tempo e risorse, ma mantiene sufficiente rappresentatività per i segmenti chiave del target (giovani adulti 18-45, maggioranza nel segmento 18-34).
+        <strong>Risultato: 63 rispondenti validi (Marzo 2026).</strong> La ricerca empirica ha raccolto 63 risposte complete, significativa per un&apos;analisi qualitativa del target market. Il campione mantiene buona rappresentatività del core 18-34 (69,8%), con presenza secondaria 35-54 (25,4%) e quote marginali under 18 / over 54 (4,8%).
       </p>
       <p>
         <strong>Profilo demografico realizzato:</strong>
@@ -500,7 +505,7 @@ function RicercaDiMercato() {
       <h2>9. Key Success Metrics e KPI</h2>
       <ul>
         <li>
-          <strong>Awareness</strong>: Crescita da 0% a 8-10% entro 12 mesi (vs Air Up 31,7%)
+          <strong>Awareness</strong>: Crescita da 0% a 8-10% entro 12 mesi (vs Air Up 38,1%)
         </li>
         <li>
           <strong>Consideration</strong>: 25% del target conscio considera attivamente l&apos;acquisto
@@ -577,16 +582,16 @@ function SegmentazioneTargeting() {
 
       <h3>Asse Clienti (A chi?)</h3>
       <p>
-        Consumatori finali B2C, giovani adulti 22-38 anni, urbani, con reddito
-        medio-alto, orientati alla sostenibilità e all&apos;uso di tecnologia
-        wearable/smart.
+        Consumatori finali B2C, prevalentemente giovani adulti 18-34 con
+        estensione al segmento 35-54, urbani/suburbani, orientati a
+        sostenibilità pratica e funzionalità smart utili nella routine.
       </p>
 
       <div className={styles.infoBox}>
         <p>
           <strong>ASA risultante:</strong> ECOBOTTLE opera nell&apos;intersezione
           Tecnologia smart-eco × Funzione idratazione + monitoraggio salute +
-          espressione valoriale × Clienti eco-conscious urbani 22-38.
+          espressione valoriale × Clienti eco-conscious urbani 18-54 (core 18-34).
         </p>
       </div>
 
@@ -607,32 +612,7 @@ function SegmentazioneTargeting() {
           esplicativa.
         </em>
       </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Variabile</th>
-            <th>Livelli considerati</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Età</td>
-            <td>18-24 / 25-34 / 35-45</td>
-          </tr>
-          <tr>
-            <td>Area geografica</td>
-            <td>Urbana (&gt;100k ab.) / Suburbana / Rurale</td>
-          </tr>
-          <tr>
-            <td>Reddito</td>
-            <td>Basso (&lt;20k) / Medio (20-40k) / Medio-alto (40k+)</td>
-          </tr>
-          <tr>
-            <td>Istruzione</td>
-            <td>Diplomati / Laureati / Post-lauream</td>
-          </tr>
-        </tbody>
-      </table>
+      <SegmentDescriptiveCriteriaTable />
 
       <h3>3.2 Criteri comportamentali</h3>
       <p>
@@ -641,93 +621,57 @@ function SegmentazioneTargeting() {
           identificativa.
         </em>
       </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Variabile</th>
-            <th>Livelli considerati</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Intensità d&apos;uso bottiglia riutilizzabile</td>
-            <td>Non utente / Occasionale / Quotidiano</td>
-          </tr>
-          <tr>
-            <td>Fedeltà alla marca</td>
-            <td>Brand switcher / Brand loyal</td>
-          </tr>
-          <tr>
-            <td>Canali utilizzati</td>
-            <td>Solo online / Solo offline / Omnichannel</td>
-          </tr>
-          <tr>
-            <td>Risposta a stimoli eco</td>
-            <td>Indifferente / Sensibile / Attivista</td>
-          </tr>
-        </tbody>
-      </table>
+      <SegmentBehavioralCriteriaTable />
 
       <h3>3.3 Criteri basati sui benefici ricercati</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Beneficio primario</th>
-            <th>Descrizione</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Performance funzionale</td>
-            <td>Isolamento termico, resistenza, portabilità</td>
-          </tr>
-          <tr>
-            <td>Monitoraggio salute</td>
-            <td>Tracking idratazione, sync con app fitness</td>
-          </tr>
-          <tr>
-            <td>Espressione valoriale eco</td>
-            <td>Materiali sostenibili, carbon footprint ridotto</td>
-          </tr>
-          <tr>
-            <td>Status e design</td>
-            <td>Estetica premium, riconoscibilità sociale</td>
-          </tr>
-        </tbody>
-      </table>
+      <SegmentBenefitsCriteriaTable />
 
       <br />
 
       <h2>4. Profilo dei segmenti individuati — Ricalibramento sulla base dei dati della ricerca (n=63)</h2>
       <p>
         Dall&apos;incrocio della <strong>ricerca empirica (n=63)</strong> con i
-        criteri multi-dimensionali emergono <strong>4 micro-segmenti</strong> distinti:
+        criteri multi-dimensionali emergono <strong>4 micro-segmenti</strong> distinti.
+        Le quote segmentali (39/26/17/18) sono stime da clustering interno,
+        mentre gli indicatori numerici riportati sotto derivano dai risultati
+        osservati nella Sezione 6.
       </p>
+      <div className={styles.infoBox}>
+        <p>
+          <strong>Nota metodologica (coerenza con la Sezione 6):</strong> le
+          percentuali citate nei profili segmentali sono <strong>indicatori del
+          campione totale</strong> usati come proxy interpretative, non frequenze
+          statistiche interne a ciascun cluster. Le evidenze segment-specific
+          richiedono tabulazioni/incroci dedicati per cluster.
+        </p>
+      </div>
 
       <h3>Segmento 1 — Eco-Millennials Urbani Consapevoli (39%)</h3>
       <ul>
         <li>
-          <strong>Profilo demografico</strong>: 18-34 anni (69,8%), 52,4% donne,
-          42,9% dipendenti + 19% autonomi, Centro Italia (68,3%)
+          <strong>Profilo demografico</strong>: prevalenza 18-34 anni (69,8%),
+          con forte presenza di dipendenti (42,9%) e studenti (36,5%),
+          concentrazione nel Centro Italia (68,3%)
         </li>
         <li>
-          <strong>Stile di vita</strong>: Consapevoli, omnichannel, ricerca
-          approfondita, tech-savvy, attenti alla salute
+          <strong>Stile di vita</strong>: consumatori eco-pragmatici, attenti a
+          qualità, salute e usabilità quotidiana
         </li>
         <li>
           <strong>Beneficio primario</strong>: Espressione valoriale eco +
-          Monitoraggio salute + Design estetico
+          affidabilità del prodotto + monitoraggio salute
         </li>
         <li>
-          <strong>Fattori d&apos;acquisto</strong>: Qualità materiali (23,8%),
-          Sostenibilità (15,9%), Design (17,5%) — Pragmatici non entusiasti
+          <strong>Fattori d&apos;acquisto</strong>: Qualità materiali (30,2%) come
+          driver prevalente nel campione, seguita da Prezzo (22,2%)
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Omnichannel (Amazon 33,3%,
-          Sito 21,6%, Specialty retail 37,2%), WTP medio 47,8€ con 35% disposto &gt;50€
+          <strong>Comportamento d&apos;acquisto</strong>: omnichannel pragmatico,
+          con priorità a GDO (25,4%), Amazon/marketplace (22,2%) e siti brand (19,0%)
         </li>
         <li>
-          <strong>App interest</strong>: 76,2% interessato ma pragmatico
+          <strong>App interest</strong>: 79,4% interessato (molto + abbastanza),
+          con focus su statistiche (47,6%) e integrazione fitness (42,9%)
         </li>
         <li>
           <strong>Penetrazione borraccia</strong>: 71,4% già utente
@@ -740,24 +684,24 @@ function SegmentazioneTargeting() {
       <h3>Segmento 2 — Fitness Enthusiasts (26%)</h3>
       <ul>
         <li>
-          <strong>Profilo demografico</strong>: 25-34 anni dominanti (33,3%), mix
-          studenti (36,5%) e dipendenti (42,9%), Centro Italia (68,3%)
+          <strong>Profilo demografico</strong>: forte presenza 18-34, mix
+          studenti/dipendenti, alta esposizione a routine sportive e outdoor
         </li>
         <li>
           <strong>Beneficio primario</strong>: Performance funzionale +
-          Monitoraggio salute + Sostenibilità (secondaria)
+          monitoraggio salute + integrazione con ecosistema fitness
         </li>
         <li>
-          <strong>Fattori d&apos;acquisto</strong>: Qualità (23,8%), Prezzo (20,6%),
-          Design (17,5%) — Più price-sensibili rispetto a Millennials
+          <strong>Fattori d&apos;acquisto</strong>: Qualità (30,2%) e Prezzo (22,2%),
+          con attenzione alla dimensione funzionale del prodotto
         </li>
         <li>
-          <strong>App interest</strong>: 76,2% interessato con focus su integrazioni
-          fitness (Apple Health, Google Fit)
+          <strong>App interest</strong>: area più sensibile a feature smart,
+          guidata da integrazione fitness (42,9%), tracciamento (33,3%) e consigli (34,9%)
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Online-first (Amazon 33,3%) +
-          Specialty retail sport (37,2%), WTP medio 47,8€
+          <strong>Comportamento d&apos;acquisto</strong>: combinazione online + retail
+          specializzato (sport/elettronica), con forte coerenza su uso in attività sportiva (66,7%)
         </li>
         <li>
           <strong>Penetrazione borraccia</strong>: 71,4% utente
@@ -770,24 +714,24 @@ function SegmentazioneTargeting() {
       <h3>Segmento 3 — Design Seekers (17%)</h3>
       <ul>
         <li>
-          <strong>Profilo demografico</strong>: 25-34 anni prevalenti (33,3%), 52,4%
-          donne, 42,9% dipendenti professionali + 19% autonomi, urbani
+          <strong>Profilo demografico</strong>: cluster trasversale su età/occupazione,
+          orientato a stile, riconoscibilità e qualità percepita
         </li>
         <li>
           <strong>Beneficio primario</strong>: Status e design elegante +
-          Espressione valoriale eco + Funzionalità (secondaria)
+          espressione valoriale eco + funzionalità affidabile
         </li>
         <li>
-          <strong>Fattori d&apos;acquisto</strong>: Qualità materiali (23,8%), Design
-          (17,5%), Sostenibilità (15,9%) — Non price-sensitive
+          <strong>Fattori d&apos;acquisto</strong>: Qualità materiali (30,2%),
+          Design (14,3%) e Sostenibilità (14,3%)
         </li>
         <li>
-          <strong>App interest</strong>: 76,2% interessato globale ma come valore
-          aggiunto, non driver decisionale
+          <strong>App interest</strong>: interesse presente ma secondario rispetto
+          alla desiderabilità del prodotto fisico
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Design boutiques + Amazon +
-          Omnichannel, WTP medio 47,8€ con 35% disposto &gt;50€
+          <strong>Comportamento d&apos;acquisto</strong>: preferenza per canali in cui
+          confrontare estetica e finiture (GDO, negozi specializzati, online)
         </li>
         <li>
           <strong>Penetrazione borraccia</strong>: 71,4% utente
@@ -800,24 +744,24 @@ function SegmentazioneTargeting() {
       <h3>Segmento 4 — Studenti Green / Gen-Z Attivisti (18%)</h3>
       <ul>
         <li>
-          <strong>Profilo demografico</strong>: 18-24 anni dominanti (36,5%), 52,4%
-          donne, 36,5% studenti, Centro Italia (68,3%), budget basso-medio
+          <strong>Profilo demografico</strong>: prevalenza 18-24, forte incidenza
+          studenti (36,5%), budget più sensibile
         </li>
         <li>
-          <strong>Beneficio primario</strong>: Sostenibilità come credenza (15,9%
-          driver primario) + Qualità + Design
+          <strong>Beneficio primario</strong>: sostenibilità concreta + qualità
+          d&apos;uso + prezzo accessibile
         </li>
         <li>
-          <strong>Fattori d&apos;acquisto</strong>: Sostenibilità (15,9%), Qualità
-          (23,8%), Prezzo (20,6%) — Community-driven
+          <strong>Fattori d&apos;acquisto</strong>: Prezzo (22,2%) e Qualità (30,2%),
+          con sostenibilità importante (14,3%) ma non unico driver
         </li>
         <li>
-          <strong>App interest</strong>: 76,2% interessato globale ma possibile
-          preferenza versione no-app
+          <strong>App interest</strong>: buona predisposizione (79,4% interessato)
+          ma con richiesta di valore percepito immediato
         </li>
         <li>
-          <strong>Comportamento d&apos;acquisto</strong>: Online-first (Amazon 33,3%,
-          Sito 21,6%), WTP medio 47,8€ ma sensibile al prezzo
+          <strong>Comportamento d&apos;acquisto</strong>: social-informed e digitale,
+          con preferenza per fasce prezzo 20-35€ / 35-50€ (68,3% complessivo)
         </li>
         <li>
           <strong>Penetrazione borraccia</strong>: 71,4% utente + 25,4% in transizione
@@ -829,73 +773,12 @@ function SegmentazioneTargeting() {
         </li>
       </ul>
 
-      <hr />
+      <br />
 
       <h2>5. Valutazione attrattività e praticabilità — Data-driven</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Segmento</th>
-            <th>Attrattività</th>
-            <th>Praticabilità</th>
-            <th>Valutazione</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1. Eco-Millennials Urbani</td>
-            <td>
-              <span className={styles.stars}>★★★★★</span> 39% campione, WTP 47,8€
-              (35% &gt;50€), 71,4% penetrazione, elasticità bassa
-            </td>
-            <td>
-              <span className={styles.stars}>★★★★★</span> Allineamento perfetto
-              (eco+smart+design), omnichannel naturale, advocacy alta
-            </td>
-            <td>
-              <strong>TARGET PRIMARIO CONFERMATO</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>2. Fitness Enthusiasts</td>
-            <td>
-              <span className={styles.stars}>★★★★☆</span> 26% campione, WTP 47,8€,
-              app interest 76,2%
-            </td>
-            <td>
-              <span className={styles.stars}>★★★☆☆</span> Concorrenza presente
-              (HidrateSpark). Requires parità tech. Specialty retail accessibile.
-            </td>
-            <td><strong>TARGET SECONDARIO ANNO 1</strong></td>
-          </tr>
-          <tr>
-            <td>3. Design Seekers</td>
-            <td>
-              <span className={styles.stars}>★★★☆☆</span> 17% campione, WTP 47,8€
-              (35% &gt;50€), elasticità bassa
-            </td>
-            <td>
-              <span className={styles.stars}>★★★★☆</span> Differenziazione
-              design possibile. Investimento design richiesto.
-            </td>
-            <td><strong>TARGET ESPANSIONE (ANNO 2)</strong></td>
-          </tr>
-          <tr>
-            <td>4. Studenti Green</td>
-            <td>
-              <span className={styles.stars}>★★★☆☆</span> 18% campione, WTP 47,8€
-              ma sensibili al prezzo (20%), alto growth Gen-Z
-            </td>
-            <td>
-              <span className={styles.stars}>★★☆☆☆</span> Online-feasible. Margini
-              35-40%. CAC medio. Solo se partnership low-cost.
-            </td>
-            <td><strong>OPPORTUNISTICO + GROWTH</strong></td>
-          </tr>
-        </tbody>
-      </table>
+      <SegmentAttractivenessTable />
 
-      <hr />
+      <br />
 
       <h2>6. Strategia di Targeting: Focalizzazione + Apertura progressiva</h2>
       <p>
@@ -910,8 +793,8 @@ function SegmentazioneTargeting() {
           <strong>Target</strong>: Eco-Millennials Urbani + early adopters Design Seekers
         </li>
         <li>
-          <strong>Canali prioritari</strong>: Sito brand (community), Amazon, specialty
-          retail design + sport
+          <strong>Canali prioritari</strong>: Grande distribuzione (25,4%), Amazon/
+          marketplace (22,2%) e sito brand (19,0%)
         </li>
         <li>
           <strong>Volume target</strong>: 500-1000 unità (high-value, brand-building)
@@ -928,7 +811,8 @@ function SegmentazioneTargeting() {
           integrazione fitness apps)
         </li>
         <li>
-          <strong>Canali aggiuntivi</strong>: Specialty sport retail (Decathlon, JD Sports)
+          <strong>Canali aggiuntivi</strong>: Retail sport/elettronica e community
+          fitness verticali
         </li>
         <li>
           <strong>Volume target</strong>: +1500-2000 unità
@@ -945,7 +829,8 @@ function SegmentazioneTargeting() {
           partnerships)
         </li>
         <li>
-          <strong>Canali</strong>: TikTok, NFT/social commerce, partnership eco-influencer
+          <strong>Canali</strong>: TikTok, YouTube, influencer/creator, blog di
+          settore e newsletter
         </li>
         <li>
           <strong>Volume</strong>: +2000-3000 unità (volume driver)
@@ -961,11 +846,11 @@ function SegmentazioneTargeting() {
         </li>
         <li>
           <strong>Attrattività e praticabilità empiriche</strong>: dimensione 39%
-          (robusta), WTP 47,8€, 35% premium &gt;50€, elasticità bassa.
+          (robusta), WTP concentrata 20-50€ (68,3%), quota premium &gt;50€ pari al 20,6%.
         </li>
         <li>
           <strong>Gap competitivo evidente</strong>: nessun competitor offre
-          eco+smart+design simultaneamente (leader sono Air Up 31,7%, Chilly&apos;s 28,6%).
+          eco+smart+design simultaneamente (leader awareness: Air Up 38,1%, Stanley 30,2%, Chilly&apos;s 28,6%).
         </li>
         <li>
           <strong>Difendibilità multi-dimensionale</strong>: materiali eco verificati
@@ -1007,17 +892,45 @@ function AnalisiConcorrenza() {
           misurazione mediante il confronto con i concorrenti più forti.
         </li>
       </ol>
+      <p>
+        Coerentemente con la Sezione E1 della ricerca (n=63), la notorietà
+        percepita nel campione vede in testa <strong>Air Up (38,1%)</strong>,
+        <strong> Stanley (30,2%)</strong> e <strong>Chilly&apos;s (28,6%)</strong>.
+        Il benchmarking che segue combina quindi due livelli: brand con maggiore
+        salienza nel campione italiano e benchmark funzionali internazionali per
+        tecnologia/sostenibilità.
+      </p>
+      <div className={styles.infoBox}>
+        <p>
+          <strong>Fonti documentali utilizzate:</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Dati primari</strong>: Sezione 6 della ricerca (in particolare
+            E1 Brand Awareness, n=63).
+          </li>
+          <li>
+            <strong>Dati secondari (desk research)</strong>: siti ufficiali brand,
+            schede prodotto e fasce prezzo pubbliche rilevate ad aprile 2026.
+          </li>
+          <li>
+            <strong>Nota</strong>: prezzi e feature sono indicativi e soggetti a
+            variazioni commerciali/di mercato.
+          </li>
+        </ul>
+      </div>
 
-      <hr />
+      <br />
 
       <h2>2. Le cinque forze competitive</h2>
 
       <h3>2.1 Rivalità tra concorrenti esistenti</h3>
       <p>
-        Il settore è <strong>moderatamente concentrato</strong> nella fascia
-        premium-smart. I principali player controllano circa il 30-35% del
-        mercato premium. La concorrenza si gioca sulla{" "}
-        <strong>differenziazione</strong> (design, tecnologia, sostenibilità).
+        Nel campione analizzato (E1, n=63), la rivalità percepita si concentra
+        su <strong>Air Up (38,1%)</strong>, <strong>Stanley (30,2%)</strong> e
+        <strong> Chilly&apos;s (28,6%)</strong>. Sul piano competitivo, la
+        dinamica osservata è guidata dalla <strong>differenziazione</strong>
+        (design, tecnologia, sostenibilità) più che da pura competizione di prezzo.
       </p>
 
       <h3>2.2 Potere contrattuale dei fornitori</h3>
@@ -1044,7 +957,7 @@ function AnalisiConcorrenza() {
         awareness. Ma assenza di brevetti bloccanti.
       </p>
 
-      <hr />
+      <br />
 
       <h2>3. Benchmarking competitivo: schede brand</h2>
 
@@ -1149,115 +1062,80 @@ function AnalisiConcorrenza() {
         </li>
       </ul>
 
-      <hr />
+      <h3>3.7 Air Up (Germania, 2019)</h3>
+      <ul>
+        <li>
+          <strong>Posizionamento</strong>: Innovazione sensoriale (flavour pod) +
+          hydration lifestyle
+        </li>
+        <li>
+          <strong>Rilevanza nel campione</strong>: brand più noto in E1 (38,1%)
+        </li>
+        <li>
+          <strong>Forza</strong>: forte awareness, proposition distintiva,
+          comunicazione digitale efficace
+        </li>
+        <li>
+          <strong>Debolezza</strong>: focus più sensoriale che eco-tech integrato
+        </li>
+      </ul>
+
+      <h3>3.8 Stanley (USA, 1913)</h3>
+      <ul>
+        <li>
+          <strong>Posizionamento</strong>: Durability icon + thermal performance
+        </li>
+        <li>
+          <strong>Rilevanza nel campione</strong>: secondo brand per awareness
+          in E1 (30,2%)
+        </li>
+        <li>
+          <strong>Forza</strong>: reputazione consolidata, distribuzione ampia,
+          forte prova sociale
+        </li>
+        <li>
+          <strong>Debolezza</strong>: ecosistema smart limitato rispetto ai benchmark tech
+        </li>
+      </ul>
+
+      <br />
 
       <h2>4. Tabella comparativa sintetica</h2>
-      <div style={{ overflowX: "auto" }}>
-        <table>
-          <thead>
-            <tr>
-              <th>Attributo</th>
-              <th>24Bottles</th>
-              <th>Chilly&apos;s</th>
-              <th>Hydro Flask</th>
-              <th>S&apos;well</th>
-              <th>LARQ</th>
-              <th>HidrateSpark</th>
-              <th>ECOBOTTLE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Design premium</td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-            </tr>
-            <tr>
-              <td>Sostenibilità</td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★☆☆☆</span></td>
-              <td><span className={styles.stars}>★★☆☆☆</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★☆☆☆</span></td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-            </tr>
-            <tr>
-              <td>Tracking</td>
-              <td>✗</td>
-              <td>✗</td>
-              <td>✗</td>
-              <td>✗</td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-            </tr>
-            <tr>
-              <td>Isolamento termico</td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-            </tr>
-            <tr>
-              <td>App ecosystem</td>
-              <td>✗</td>
-              <td>✗</td>
-              <td>✗</td>
-              <td>✗</td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-            </tr>
-            <tr>
-              <td>Prezzo medio</td>
-              <td>€35</td>
-              <td>€35</td>
-              <td>€45</td>
-              <td>€40</td>
-              <td>€115</td>
-              <td>€75</td>
-              <td><strong>€59</strong></td>
-            </tr>
-            <tr>
-              <td>Distribuzione IT</td>
-              <td><span className={styles.stars}>★★★★★</span></td>
-              <td><span className={styles.stars}>★★★★☆</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-              <td><span className={styles.stars}>★★☆☆☆</span></td>
-              <td><span className={styles.stars}>★★☆☆☆</span></td>
-              <td><span className={styles.stars}>★☆☆☆☆</span></td>
-              <td><span className={styles.stars}>★★★☆☆</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <CompetitiveComparisonTable />
 
-      <hr />
+      <br />
 
-      <h2>5. Mappa percettiva</h2>
+      <h2>5. Mappa percettiva (Tecnologia vs Sostenibilita)</h2>
       <p>
         Sugli assi i due attributi strategici più rilevanti:{" "}
         <strong>Innovazione tecnologica</strong> (X) e{" "}
         <strong>Impegno ecologico</strong> (Y).
       </p>
-      <div style={{ marginTop: "24px", marginBottom: "24px", position: "relative", width: "100%", height: "auto" }}>
-        <Image
-          src="/images/mappa_percettiva.png"
-          alt="Mappa percettiva dei competitor: assi innovazione tecnologica vs impegno ecologico"
-          width={800}
-          height={600}
-          style={{ width: "100%", height: "auto" }}
-          priority
-        />
+      <p>
+        La lettura strategica evidenzia un posizionamento distintivo nel
+        quadrante ad alta tecnologia e alta sostenibilità, con spazio
+        competitivo ancora poco presidiato dai player tradizionali.
+      </p>
+      <PerceptualMapChart />
+      <div className={styles.infoBox}>
+        <p>
+          <strong>Fasce di lettura della mappa percettiva:</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Eco-tradizionale</strong>: sostenibilità alta, tecnologia
+            bassa.
+          </li>
+          <li>
+            <strong>Smart + Green</strong>: sostenibilità alta, tecnologia alta.
+          </li>
+          <li>
+            <strong>Basico</strong>: sostenibilità bassa, tecnologia bassa.
+          </li>
+          <li>
+            <strong>Tech-First</strong>: sostenibilità bassa, tecnologia alta.
+          </li>
+        </ul>
       </div>
 
       <h3>5.1 Identificazione del gap competitivo</h3>
@@ -1283,7 +1161,7 @@ function AnalisiConcorrenza() {
         </p>
       </div>
 
-      <hr />
+      <br />
 
       <h2>6. Implicazioni per il posizionamento</h2>
       <p>
@@ -1310,18 +1188,19 @@ export default function InsightTargetMercatoPage() {
     {
       label: "Ricerca di Mercato",
       value: "ricerca",
+      disabled: false,
       content: <RicercaDiMercato />,
     },
     {
       label: "Segmentazione & Targeting",
       value: "segmentazione",
-      disabled: true,
+      disabled: false,
       content: <SegmentazioneTargeting />,
     },
     {
       label: "Analisi Concorrenza",
       value: "concorrenza",
-      disabled: true,
+      disabled: false,
       content: <AnalisiConcorrenza />,
     },
   ];

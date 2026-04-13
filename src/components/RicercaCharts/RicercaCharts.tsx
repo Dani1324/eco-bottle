@@ -7,6 +7,10 @@ import {
   Cell,
   BarChart,
   Bar,
+  ScatterChart,
+  Scatter,
+  ReferenceLine,
+  LabelList,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -772,6 +776,390 @@ export function OpenFeedbackTable() {
           ))}
         </tbody>
       </table>
+    </div>
+  );
+}
+
+export function SegmentDescriptiveCriteriaTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{
+        width: "100%",
+        borderCollapse: "collapse",
+        fontSize: "13px",
+        color: "#2A3D30",
+        margin: 0,
+      }}>
+        <thead>
+          <tr>
+            <th>Variabile</th>
+            <th>Livelli considerati</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Età</td>
+            <td>Under 18 / 18-24 / 25-34 / 35-44 / 45-54 / Over 54</td>
+          </tr>
+          <tr>
+            <td>Area geografica</td>
+            <td>Nord Italia / Centro Italia / Sud e Isole / Estero</td>
+          </tr>
+          <tr>
+            <td>Genere</td>
+            <td>Femmina / Maschio / Preferisco non specificare / Altro</td>
+          </tr>
+          <tr>
+            <td>Occupazione</td>
+            <td>Studente / Dipendente / Autonomo / Sportivo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function SegmentBehavioralCriteriaTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{
+        width: "100%",
+        borderCollapse: "collapse",
+        fontSize: "13px",
+        color: "#2A3D30",
+        margin: 0,
+      }}>
+        <thead>
+          <tr>
+            <th>Variabile</th>
+            <th>Livelli considerati</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Intensità d&apos;uso bottiglia riutilizzabile</td>
+            <td>Non utente / Occasionale / Quotidiano</td>
+          </tr>
+          <tr>
+            <td>Interesse per smart features</td>
+            <td>Molto / Abbastanza / Poco / Per niente interessato</td>
+          </tr>
+          <tr>
+            <td>Canali d&apos;acquisto preferiti</td>
+            <td>Marketplace / Sito brand / GDO / Retail specializzato</td>
+          </tr>
+          <tr>
+            <td>Canali informativi preferiti</td>
+            <td>Social / Blog / Influencer / Media tradizionali / Newsletter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function SegmentBenefitsCriteriaTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{
+        width: "100%",
+        borderCollapse: "collapse",
+        fontSize: "13px",
+        color: "#2A3D30",
+        margin: 0,
+      }}>
+        <thead>
+          <tr>
+            <th>Beneficio primario</th>
+            <th>Descrizione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Performance funzionale</td>
+            <td>Isolamento termico, resistenza, portabilità</td>
+          </tr>
+          <tr>
+            <td>Monitoraggio salute</td>
+            <td>Tracking idratazione, sync con app fitness</td>
+          </tr>
+          <tr>
+            <td>Espressione valoriale eco</td>
+            <td>Materiali sostenibili, carbon footprint ridotto</td>
+          </tr>
+          <tr>
+            <td>Status e design</td>
+            <td>Estetica premium, riconoscibilità sociale</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function SegmentAttractivenessTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{
+        width: "100%",
+        borderCollapse: "collapse",
+        fontSize: "13px",
+        color: "#2A3D30",
+        margin: 0,
+      }}>
+        <thead>
+          <tr>
+            <th>Segmento</th>
+            <th>Attrattività</th>
+            <th>Praticabilità</th>
+            <th>Valutazione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Eco-Millennials Urbani</td>
+            <td>
+              <span className={styles.stars}>★★★★★</span> 39% campione, penetrazione
+              borraccia 71,4%, interesse app 79,4%
+            </td>
+            <td>
+              <span className={styles.stars}>★★★★★</span> Allineamento perfetto
+              (eco+smart+design), distribuzione omnichannel già coerente
+            </td>
+            <td>
+              <strong>TARGET PRIMARIO CONFERMATO</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>2. Fitness Enthusiasts</td>
+            <td>
+              <span className={styles.stars}>★★★★☆</span> 26% campione, uso sportivo
+              66,7%, forte interesse su integrazione fitness (42,9%)
+            </td>
+            <td>
+              <span className={styles.stars}>★★★☆☆</span> Concorrenza presente
+              (HidrateSpark). Necessaria execution tech credibile.
+            </td>
+            <td><strong>TARGET SECONDARIO ANNO 1</strong></td>
+          </tr>
+          <tr>
+            <td>3. Design Seekers</td>
+            <td>
+              <span className={styles.stars}>★★★☆☆</span> 17% campione, forte
+              sensibilità a qualità materiali (30,2%) e stile distintivo
+            </td>
+            <td>
+              <span className={styles.stars}>★★★★☆</span> Differenziazione
+              design possibile. Investimento design richiesto.
+            </td>
+            <td><strong>TARGET ESPANSIONE (ANNO 2)</strong></td>
+          </tr>
+          <tr>
+            <td>4. Studenti Green</td>
+            <td>
+              <span className={styles.stars}>★★★☆☆</span> 18% campione, alta
+              numerosità studenti e sensibilità prezzo (fasce &lt;35€ = 39,7%)
+            </td>
+            <td>
+              <span className={styles.stars}>★★☆☆☆</span> Online-feasible. Margini
+              ridotti e CAC più delicato. Richiede offerte/partnership mirate.
+            </td>
+            <td><strong>OPPORTUNISTICO + GROWTH</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function CompetitiveComparisonTable() {
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", borderRadius: "8px", overflowX: "auto" }}>
+      <table style={{
+        width: "100%",
+        borderCollapse: "collapse",
+        fontSize: "13px",
+        color: "#2A3D30",
+        margin: 0,
+      }}>
+        <thead>
+          <tr>
+            <th>Attributo</th>
+            <th>24Bottles</th>
+            <th>Chilly&apos;s</th>
+            <th>Hydro Flask</th>
+            <th>S&apos;well</th>
+            <th>LARQ</th>
+            <th>HidrateSpark</th>
+            <th>ECOBOTTLE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Design premium</td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+          </tr>
+          <tr>
+            <td>Sostenibilità</td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★☆☆☆</span></td>
+            <td><span className={styles.stars}>★★☆☆☆</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★☆☆☆</span></td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+          </tr>
+          <tr>
+            <td>Tracking</td>
+            <td>✗</td>
+            <td>✗</td>
+            <td>✗</td>
+            <td>✗</td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+          </tr>
+          <tr>
+            <td>Isolamento termico</td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+          </tr>
+          <tr>
+            <td>App ecosystem</td>
+            <td>✗</td>
+            <td>✗</td>
+            <td>✗</td>
+            <td>✗</td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+          </tr>
+          <tr>
+            <td>Prezzo medio</td>
+            <td>€35</td>
+            <td>€35</td>
+            <td>€45</td>
+            <td>€40</td>
+            <td>€115</td>
+            <td>€75</td>
+            <td><strong>€59</strong></td>
+          </tr>
+          <tr>
+            <td>Distribuzione IT</td>
+            <td><span className={styles.stars}>★★★★★</span></td>
+            <td><span className={styles.stars}>★★★★☆</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+            <td><span className={styles.stars}>★★☆☆☆</span></td>
+            <td><span className={styles.stars}>★★☆☆☆</span></td>
+            <td><span className={styles.stars}>★☆☆☆☆</span></td>
+            <td><span className={styles.stars}>★★★☆☆</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function PerceptualMapChart() {
+  const competitors = [
+    { name: "24Bottles", x: 2, y: 9, color: "#2A6A4C", dx: -20, dy: -10 },
+    { name: "Chilly's", x: 2, y: 7, color: "#57B687", dx: -20, dy: -10 },
+    { name: "Hydro Flask", x: 3, y: 6, color: "#66BE8B", dx: -30, dy: -12 },
+    { name: "S'well", x: 1, y: 5, color: "#9CD9BC", dx: -16, dy: -10 },
+    { name: "LARQ", x: 9, y: 6, color: "#3E8D66", dx: -16, dy: -10 },
+    { name: "HidrateSpark", x: 8, y: 3, color: "#B4E7CD", dx: -38, dy: -10 },
+  ];
+
+  const ecobottle = [{ name: "ECOBOTTLE", x: 8, y: 9 }];
+
+  const renderDot = (props: any) => {
+    const { cx, cy, payload } = props;
+    return <circle cx={cx} cy={cy} r={7} fill={payload.color || "#3D6B3D"} />;
+  };
+
+  const renderStar = (props: any) => {
+    const { cx, cy } = props;
+    const points = "0,-11 3,-3.5 10,-3.5 4.2,1.5 6.4,8.8 0,4.5 -6.4,8.8 -4.2,1.5 -10,-3.5 -3,-3.5";
+    return <polygon points={points} transform={`translate(${cx}, ${cy})`} fill="#1F3A28" stroke="#1F3A28" />;
+  };
+
+  const renderLabel = (props: any) => {
+    const { x, y, value, payload } = props;
+    return (
+      <text
+        x={(x as number) + (payload?.dx ?? -16)}
+        y={(y as number) + (payload?.dy ?? -10)}
+        fill={payload?.color || "#3D6B3D"}
+        fontSize={13}
+        fontWeight={600}
+      >
+        {value}
+      </text>
+    );
+  };
+
+  const renderEcoLabel = (props: any) => {
+    const { x, y, value } = props;
+    return (
+      <text x={(x as number) - 18} y={(y as number) - 14} fill="#2A3D30" fontSize={14} fontWeight={700}>
+        {value}
+      </text>
+    );
+  };
+
+  return (
+    <div style={{ marginBottom: "32px", border: "1px solid #ccc", padding: "16px", borderRadius: "8px" }}>
+      <div style={{ position: "relative", width: "100%", height: "560px" }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <ScatterChart margin={{ top: 30, right: 40, bottom: 55, left: 20 }}>
+            <CartesianGrid stroke="#d6d6d6" />
+            <XAxis
+              type="number"
+              dataKey="x"
+              domain={[0, 10.5]}
+              ticks={[0, 2, 4, 6, 8, 10]}
+              label={{ value: "Tecnologia", position: "insideBottom", offset: -18, fill: "#6b6b6b", fontSize: 18 }}
+              tick={{ fill: "#7b7b7b", fontSize: 16 }}
+            />
+            <YAxis
+              type="number"
+              dataKey="y"
+              domain={[0, 10.5]}
+              ticks={[0, 2, 4, 6, 8, 10]}
+              label={{ value: "Sostenibilita", angle: -90, position: "insideLeft", offset: -8, fill: "#6b6b6b", fontSize: 18 }}
+              tick={{ fill: "#7b7b7b", fontSize: 16 }}
+            />
+            <ReferenceLine x={5} stroke="#bcbcbc" strokeDasharray="3 3" />
+            <ReferenceLine y={5} stroke="#bcbcbc" strokeDasharray="3 3" />
+
+            <Scatter data={competitors} shape={renderDot}>
+              <LabelList dataKey="name" content={renderLabel} />
+            </Scatter>
+            <Scatter data={ecobottle} shape={renderStar}>
+              <LabelList dataKey="name" content={renderEcoLabel} />
+            </Scatter>
+
+            <Tooltip
+              cursor={{ strokeDasharray: "3 3" }}
+              formatter={(_value: any, _name: any, item: any) => [
+                `T ${item?.payload?.x} | S ${item?.payload?.y}`,
+                item?.payload?.name,
+              ]}
+            />
+          </ScatterChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 }

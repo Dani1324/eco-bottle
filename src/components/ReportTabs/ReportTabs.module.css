@@ -9,12 +9,23 @@
 }
 
 .label {
+  color: var(--color-green-dark, #2B4F2B);
   font-family: var(--font-sans);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   padding: 0.55rem 1.2rem;
   transition: color 0.2s;
+}
+
+.label:active {
+  color: var(--color-green-dark, #2B4F2B);
+  opacity: 0.5;
+}
+
+.label:where([data-active]){
+  color: var(--color-green-dark, #2B4F2B);
+  color: #fff !important;
 }
 
 .tabContent {
