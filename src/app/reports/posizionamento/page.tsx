@@ -192,26 +192,37 @@ export default function PosizionamentoPage() {
 
           <br />
 
-          <h2>7. Strategie decisionali applicate</h2>
+          <h2>7. Strategia di ingresso nel mercato (New Product Entry)</h2>
           <p>
-            Le opzioni strategiche sono valutate secondo le logiche classiche:
-            conservativa, riposizionamento, affiancamento, spostamento delle
-            preferenze e modifica delle basi di posizionamento. Per ECOBOTTLE
-            la combinazione prioritaria e la seguente.
+            Trattandosi di <strong>nuovo prodotto</strong>, la strategia non riguarda
+            il riposizionamento di un brand esistente, bensì l&apos;ingresso in un gap
+            competitivo scoperto. L&apos;analisi della concorrenza mostra uno spazio
+            non presidato: nessun competitor offre simultaneamente <strong>leadership eco
+            + tecnologia smart + design premium</strong>.
           </p>
           <ol>
             <li>
-              <strong>Affiancamento</strong>: ingresso con una proposta distinta
-              rispetto ai player piu noti per notorieta.
+              <strong>Penetrazione di gap competitivo</strong>: Entrare nel quadrante
+              non coperto (HIGH-ECO + HIGH-TECH della mappa percettiva), dove la
+              domanda esiste ma l&apos;offerta non è concentrata.
             </li>
             <li>
-              <strong>Spostamento delle preferenze</strong>: comunicazione che
-              valorizza il trade-off qualità-smart-sostenibilita oltre la sola
-              marca storica.
+              <strong>Differenziazione per combinazione attributi</strong>: Non
+              competere su singola feature (es. tracking vs 24Bottles, o eco vs
+              HidrateSpark), ma offrire il sistema &apos;eco+smart+design&apos; come
+              proposta integrata.
             </li>
             <li>
-              <strong>Riposizionamento progressivo</strong>: ottimizzazione del
-              messaggio in base ai dati post-lancio (brand lift, NPS, conversione).
+              <strong>Ingresso premium con market education</strong>: I clienti
+              non cercano ancora esplicitamente &apos;eco+smart&apos;, vanno educati sul
+              valore della combinazione. Prezzo premium (48-65€) segnala qualità e
+              giustifica investimento comunicativo.
+            </li>
+            <li>
+              <strong>Monitoraggio e ottimizzazione post-lancio</strong>: Validare
+              ipotesi di posizionamento con dati di mercato reali (brand lift, NPS,
+              conversione) e adattare il messaggio se il posizionamento percepito
+              diverge dal programmato.
             </li>
           </ol>
 
@@ -239,26 +250,80 @@ export default function PosizionamentoPage() {
 
           <h2>8. Catena mezzi-fini e Laddering</h2>
           <p>
-            La catena mezzi-fini collega attributi, benefici e valori. Per
-            ECOBOTTLE la sequenza operativa è:
+            La catena <strong>attributi → benefici funzionali → benefici psicologici → valori terminali</strong>
+            costituisce il fondamento su cui costruire la comunicazione di marca. Per ECOBOTTLE,
+            le tre catene principali sono costruite come segue, per rispondere al bisogno rilevante
+            di ciascun segmento:
           </p>
+
+          <h4>Catena 1: Sostenibilità materiali</h4>
           <pre>
             <code>
-{`Attributi -> Benefici -> Valori
-Materiali affidabili e sostenibili -> fiducia d'uso quotidiano -> sicurezza e responsabilità
-Funzioni smart semplici -> monitoraggio idratazione -> benessere personale
-Design riconoscibile -> piacere d'uso e identità -> autostima e auto-espressione`}
+{`ATTRIBUTO CONCRETO
+Acciaio inossidabile 100% riciclato, lavorazione a basso impatto carbon
+          ↓
+BENEFICIO FUNZIONALE
+Bottiglia che dura molti anni, riduce la generazione di rifiuti plastici
+          ↓
+BENEFICIO PSICOLOGICO/EMOTIVO
+Senso di coerenza tra le proprie scelte quotidiane e i valori personali
+          ↓
+VALORE TERMINALE
+Responsabilità ambientale, legacy positiva, autopercamping di "persona consapevole"`}
             </code>
           </pre>
+
+          <h4>Catena 2: Funzionalità smart</h4>
+          <pre>
+            <code>
+{`ATTRIBUTO CONCRETO
+Sensore di prossimità integrato, reminder app intelligente, sync con Apple Health
+          ↓
+BENEFICIO FUNZIONALE
+Tracking automatico dell'idratazione, feedback visivo sul consumo giornaliero
+          ↓
+BENEFICIO PSICOLOGICO/EMOTIVO
+Senso di controllo sulla propria salute, minor sforzo cognitivo nel ricordare
+          ↓
+VALORE TERMINALE
+Autodisciplina, salute consapevole, self-optimization personale`}
+            </code>
+          </pre>
+
+          <h4>Catena 3: Design premium</h4>
+          <pre>
+            <code>
+{`ATTRIBUTO CONCRETO
+Forma ergonomica, colori naturali curati, materiali tattimente piacevoli
+          ↓
+BENEFICIO FUNZIONALE
+Piacere d'uso quotidiano, object desirability, facilità di integrazione in routine
+          ↓
+BENEFICIO PSICOLOGICO/EMOTIVO
+Riconoscimento sociale (il prodotto comunica chi sei), autostima
+          ↓
+VALORE TERMINALE
+Auto-espressione, identità personale, senso di gusto e dignità estetica`}
+            </code>
+          </pre>
+
           <p>
-            Il <strong>punto di leva comunicativo</strong> è a metà catena:
-            tradurre attributi concreti in benefici immediatamente percepibili,
-            senza perdere il legame con i valori.
+            <strong>Nota metodologica</strong>: Le catene sopra sono costruite tramite <strong>interpretazione manageriale</strong>
+            del posizionamento desiderato, non derivate da laddering interview empirico. Una validazione
+            rigorosa richiederebbe interview qualitativa in profondità (laddering method) con campioni
+            rappresentativi dei tre segmenti target, per verificare che la sequenza beneficio-valore
+            sia realmente corrispondente alle strutture mentali dei clienti.
           </p>
+
           <p>
-            In termini comunicativi, la sequenza ideale resta: attributi
-            credibili - benefici concreti - significato personale e sociale.
+            Il <strong>punto di leva comunicativa</strong> rimane il beneficio funzionale o psicologico,
+            non l&apos;attributo o il valore astratto. Esempi:
           </p>
+          <ul>
+            <li>Per Eco-Millennials: "Dura anni, non è rifiuto" (beneficio funzionale) → "La scelta che rispecchia chi sei" (valore)</li>
+            <li>Per Fitness Enthusiasts: "64 app connesse, niente da ricordare" (beneficio funzionale) → "Salute consapevole" (valore)</li>
+            <li>Per Design Seekers: "Bellissima in borsa, rispecchia il tuo gusto" (beneficio psicologico) → "Identità personale" (valore)</li>
+          </ul>
 
           <br />
 
