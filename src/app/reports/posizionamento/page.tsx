@@ -218,12 +218,6 @@ export default function PosizionamentoPage() {
               valore della combinazione. Prezzo premium (48-65€) segnala qualità e
               giustifica investimento comunicativo.
             </li>
-            <li>
-              <strong>Monitoraggio e ottimizzazione post-lancio</strong>: Validare
-              ipotesi di posizionamento con dati di mercato reali (brand lift, NPS,
-              conversione) e adattare il messaggio se il posizionamento percepito
-              diverge dal programmato.
-            </li>
           </ol>
 
           <h3>7.1 Fondamento competitivo</h3>
