@@ -26,7 +26,7 @@ export default function Research() {
           </p>
           <p className={styles.description}>
             Abbiamo condotto una ricerca di mercato strutturata con
-            questionari su 267 persone, 7 analisi tematiche, scale
+            questionari su 63 persone, 7 analisi tematiche, scale
             psicometriche Likert, differenziale semantico, aperti verbali e un
             piano di campionamento controllato. I risultati hanno
             guidato ogni decisione di design e funzionalità.

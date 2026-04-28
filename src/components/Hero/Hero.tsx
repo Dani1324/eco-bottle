@@ -21,7 +21,7 @@ export default function Hero() {
       <div className={styles.heroInner}>
         <div className={styles.heroLeft}>
           <p className={styles.heroDescription}>
-            ECOBOTTLE nasce da un progetto di ricerca di marketing su oltre 50 persone.
+            ECOBOTTLE nasce da un progetto di ricerca di marketing su 63 persone.
             Abbiamo unito materiali bio-based, isolamento termico e tracking
             intelligente dell&apos;idratazione in un unico prodotto pensato per la vita urbana.
           </p>
