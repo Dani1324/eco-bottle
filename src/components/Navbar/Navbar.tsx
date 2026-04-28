@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { IconLeaf, IconMenu2, IconX } from "@tabler/icons-react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import styles from "./Navbar.module.css";
 
 const navItems = [
@@ -15,9 +15,20 @@ const navItems = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = window.innerHeight * 0.10; // 10vh
+      setScrolled(window.scrollY > scrollThreshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Se non è montato nel client, non renderizzare il mobile menu per evitare hydration mismatch
@@ -27,7 +38,6 @@ export default function Navbar() {
         <div className={styles.navbarInner}>
           <Link href="/" className={styles.logo}>
             EcoBottle
-            <IconLeaf size={20} className={styles.logoLeaf} />
           </Link>
 
           <ul className={styles.navLinks}>
@@ -46,11 +56,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={styles.navbar}>
+      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
         <div className={styles.navbarInner}>
           <Link href="/" className={styles.logo}>
             EcoBottle
-            <IconLeaf size={20} className={styles.logoLeaf} />
           </Link>
 
           <ul className={styles.navLinks}>
