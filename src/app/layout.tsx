@@ -91,9 +91,9 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
   ],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+    shortcut: "/images/logo.png",
   },
   manifest: "/site.webmanifest",
   category: "e-commerce",
