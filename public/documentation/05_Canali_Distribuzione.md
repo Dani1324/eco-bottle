@@ -15,24 +15,32 @@ Le decisioni distributive si articolano su due dimensioni principali: la **lungh
 
 ---
 
-## 2. Decisioni sulla lunghezza del canale
+## 2. Analisi e Selezione dei Canali di Distribuzione
 
-### 2.1 Il trade-off investimento vs controllo
-Come studiato nel corso, esiste un **trade-off fondamentale tra investimento/rischio e controllo/conoscenza del mercato**:
+### 2.1 Brainstorming sui canali di distribuzione
+Nella fase di esplorazione iniziale, sono stati analizzati i diversi canali disponibili e le loro caratteristiche, valutandone l'adeguatezza per un prodotto premium e tech come ECOBOTTLE:
+
+- **E-commerce D2C (Direct-to-Consumer)**: Canale *diretto* (produttore → consumatore). Offre il massimo controllo sul brand, sui prezzi e sui dati dei clienti, ma richiede investimenti significativi in digital marketing e logistica.
+- **Marketplace generalisti (es. Amazon)**: Canale *indiretto corto*. Garantisce altissima visibilità e tassi di conversione elevati, sfruttando la logistica della piattaforma (FBA), ma riduce il controllo sul posizionamento e comporta commissioni sulle vendite.
+- **Grande Distribuzione Organizzata (GDO)**: Canale *indiretto lungo*. Offre massima capillarità e volumi, ma i margini sono compressi, il controllo sull'esposizione è minimo e il posizionamento di massa non si addice a un prodotto premium.
+- **Retail specializzato (Design, Eco-sostenibilità, Lifestyle)**: Canale *indiretto corto*. Negozi fisici con target specifico (es. Rinascente, NaturaSì, Concept store). Offre un'ottima "supporting evidence" (il cliente tocca il prodotto con mano), giustificando il price point premium.
+
+### 2.2 Il trade-off investimento vs controllo
+La scelta dei canali è guidata dal **trade-off fondamentale tra investimento/rischio e controllo/conoscenza del mercato**:
 - Il **canale diretto** garantisce "grado di controllo massimo ma investimento e rischio alti"
 - Il **canale indiretto** riduce investimento e rischio ma cede controllo ai distributori
 
-### 2.2 Architettura multicanale di ECOBOTTLE
+### 2.3 Selezione dei canali e struttura (Architettura multicanale)
 
-ECOBOTTLE adotta una strategia **multicanale** — "l'impresa si avvale sia di e-shop che di punti vendita al dettaglio" — articolata in tre canali con lunghezze diverse:
+A seguito del brainstorming, ECOBOTTLE adotta una strategia **multicanale** scartando la GDO (incompatibile con il posizionamento premium) e selezionando tre canali complementari con lunghezze diverse, adatti al target di mercato:
 
-| Canale | Tipo | Lunghezza | Quota vendite stimata (Anno 1) |
-|--------|------|-----------|-------------------------------|
-| **E-commerce D2C** (ecobottle.com) | Diretto | 0 livelli (produttore → consumatore) | 50% |
-| **Amazon Marketplace** | Indiretto corto | 1 livello (produttore → piattaforma → consumatore) | 30% |
-| **Retail selettivo** | Indiretto corto | 1 livello (produttore → dettagliante → consumatore) | 20% |
+| Canale Scelto | Struttura (Lunghezza) | Tipo | Quota vendite stimata (Anno 1) |
+|---------------|-----------------------|------|-------------------------------|
+| **E-commerce D2C** (ecobottle.com) | **Diretto** (0 livelli: produttore → consumatore) | Diretto | 50% |
+| **Amazon Marketplace** | **Indiretto Corto** (1 livello: produttore → piattaforma → consumatore) | Indiretto | 30% |
+| **Retail selettivo** | **Indiretto Corto** (1 livello: produttore → dettagliante → consumatore) | Indiretto | 20% |
 
-### 2.3 Motivazioni teoriche per ciascun canale
+### 2.4 Giustificazione delle scelte fatte
 
 **Canale D2C (diretto)**: Il canale diretto è il cuore della strategia perché garantisce:
 - Massimo controllo sul brand storytelling e sull'esperienza d'acquisto
@@ -50,9 +58,9 @@ L'e-commerce riduce gli investimenti fissi rispetto a un negozio (affitto, perso
 
 ---
 
-## 3. Decisione sull'ampiezza: Distribuzione Selettiva
+## 3. Definizione della politica di vendita (Ampiezza del Canale)
 
-Come definito nel corso, l'ampiezza del canale si declina in tre livelli:
+Come definito nel corso, l'ampiezza del canale (politica di vendita) si declina in tre livelli:
 
 | Strategia | Descrizione | Adatta a |
 |-----------|-------------|----------|
@@ -60,7 +68,7 @@ Come definito nel corso, l'ampiezza del canale si declina in tre livelli:
 | **Selettiva** | "Immagine particolare del prodotto", numero ristretto di intermediari scelti in base a criteri qualitativi | Beni comparabili, premium |
 | **Esclusiva** | Un solo intermediario per area, diritto di esclusiva territoriale | Beni di lusso, alta gamma |
 
-ECOBOTTLE adotta la **distribuzione selettiva** per 5 motivazioni teoriche:
+ECOBOTTLE adotta una politica di vendita basata sulla **distribuzione selettiva** per 5 motivazioni teoriche che giustificano la scelta:
 
 1. **Coerenza con il posizionamento premium**: la distribuzione selettiva è indicata quando il prodotto ha un'"immagine particolare" da difendere. Essere presenti ovunque (distribuzione intensiva) diluirebbe la percezione di esclusività.
 
