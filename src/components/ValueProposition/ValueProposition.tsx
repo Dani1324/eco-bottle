@@ -53,27 +53,17 @@ export default function ValueProposition() {
               </p>
             </div>
           ))}
-        </div>
-
-        <div className={styles.imageWrapper}>
-          <Image
-            src="/images/value-proposition.png"
-            alt="La proposta di valore EcoBottle — ECO, SMART, DESIGN, THERMAL"
-            fill
-            style={{ objectFit: "contain" }}
-          />
-        </div>
-
-        <div className={styles.positioningSection}>
-          <div className={styles.positioningImageWrapper}>
+          <div className={styles.imageWrapper}>
             <Image
-              src="/images/product-positioning.png"
-              alt="Posizionamento del prodotto EcoBottle"
+              src="/images/value-proposition.png"
+              alt="La proposta di valore EcoBottle — ECO, SMART, DESIGN, THERMAL"
               fill
               style={{ objectFit: "contain" }}
             />
           </div>
+        </div>
 
+        <div className={styles.positioningSection}>
           <div className={styles.positioningCtaWrapper}>
             <CTAButton
               label="Scarica il report · Posizionamento del prodotto"
