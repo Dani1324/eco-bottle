@@ -1,38 +1,11 @@
 # ECOBOTTLE — Canali di Distribuzione
 ## Documento tecnico | Project Work Marketing 2025/2026
 
----
+***
 
-## 1. Framework teorico: la distribuzione nel marketing mix
+## 1. Architettura dei canali: la strategia multicanale di ECOBOTTLE
 
-La distribuzione è una delle 4 leve del marketing operativo e riguarda le decisioni relative alla struttura del canale distributivo, ossia "il percorso che il prodotto compie dal produttore al consumatore finale". Come definito nel corso, le funzioni commerciali della distribuzione sono:
-- **Trasferimento nello spazio** (dal luogo di produzione al luogo di consumo)
-- **Trasferimento nel tempo** (stoccaggio e magazzinaggio)
-- **Adattamento qualitativo** (assortimento adeguato alle esigenze del consumatore)
-- **Adattamento quantitativo** (frazionamento delle grandi quantità produttive in lotti adatti al consumo)
-
-Le decisioni distributive si articolano su due dimensioni principali: la **lunghezza** del canale (numero di livelli intermedi) e l'**ampiezza** (numero di intermediari per livello).
-
----
-
-## 2. Analisi e Selezione dei Canali di Distribuzione
-
-### 2.1 Brainstorming sui canali di distribuzione
-Nella fase di esplorazione iniziale, sono stati analizzati i diversi canali disponibili e le loro caratteristiche, valutandone l'adeguatezza per un prodotto premium e tech come ECOBOTTLE:
-
-- **E-commerce D2C (Direct-to-Consumer)**: Canale *diretto* (produttore → consumatore). Offre il massimo controllo sul brand, sui prezzi e sui dati dei clienti, ma richiede investimenti significativi in digital marketing e logistica.
-- **Marketplace generalisti (es. Amazon)**: Canale *indiretto corto*. Garantisce altissima visibilità e tassi di conversione elevati, sfruttando la logistica della piattaforma (FBA), ma riduce il controllo sul posizionamento e comporta commissioni sulle vendite.
-- **Grande Distribuzione Organizzata (GDO)**: Canale *indiretto lungo*. Offre massima capillarità e volumi, ma i margini sono compressi, il controllo sull'esposizione è minimo e il posizionamento di massa non si addice a un prodotto premium.
-- **Retail specializzato (Design, Eco-sostenibilità, Lifestyle)**: Canale *indiretto corto*. Negozi fisici con target specifico (es. Rinascente, NaturaSì, Concept store). Offre un'ottima "supporting evidence" (il cliente tocca il prodotto con mano), giustificando il price point premium.
-
-### 2.2 Il trade-off investimento vs controllo
-La scelta dei canali è guidata dal **trade-off fondamentale tra investimento/rischio e controllo/conoscenza del mercato**:
-- Il **canale diretto** garantisce "grado di controllo massimo ma investimento e rischio alti"
-- Il **canale indiretto** riduce investimento e rischio ma cede controllo ai distributori
-
-### 2.3 Selezione dei canali e struttura (Architettura multicanale)
-
-A seguito del brainstorming, ECOBOTTLE adotta una strategia **multicanale** scartando la GDO (incompatibile con il posizionamento premium) e selezionando tre canali complementari con lunghezze diverse, adatti al target di mercato:
+ECOBOTTLE adotta una strategia **multicanale** con tre canali complementari:
 
 | Canale Scelto | Struttura (Lunghezza) | Tipo | Quota vendite stimata (Anno 1) |
 |---------------|-----------------------|------|-------------------------------|
@@ -40,112 +13,98 @@ A seguito del brainstorming, ECOBOTTLE adotta una strategia **multicanale** scar
 | **Amazon Marketplace** | **Indiretto Corto** (1 livello: produttore → piattaforma → consumatore) | Indiretto | 30% |
 | **Retail selettivo** | **Indiretto Corto** (1 livello: produttore → dettagliante → consumatore) | Indiretto | 20% |
 
-### 2.4 Giustificazione delle scelte fatte
+### Motivazioni dei canali scelti
 
-**Canale D2C (diretto)**: Il canale diretto è il cuore della strategia perché garantisce:
-- Massimo controllo sul brand storytelling e sull'esperienza d'acquisto
-- Margine pieno (nessuna commissione a intermediari)
-- Raccolta dati first-party per alimentare il CRM e il marketing data-driven
-- Possibilità di costruire la relazione di lungo periodo con il cliente (come definito nel corso: "il CRM mira alla creazione, allo sviluppo e al mantenimento delle relazioni con i clienti nel lungo periodo")
+**Canale D2C**: Massimo controllo sul brand, margine pieno, raccolta dati first-party per il CRM. Riduce gli investimenti fissi rispetto al retail fisico.
 
-L'e-commerce riduce gli investimenti fissi rispetto a un negozio (affitto, personale, magazzino) mantenendo il massimo controllo.
+**Amazon Marketplace**: Garantisce una **copertura ponderata elevata**: un solo intermediario (copertura semplice bassa) ma con il peso medio dei clienti più alto del mercato online italiano. Intercetta il consumatore nella fase di ricerca attiva.
 
-**Amazon Marketplace (indiretto corto)**: Amazon funge da dettagliante digitale — il canale è corto (1 livello) perché "il produttore salta il grossista e va a vendere direttamente al dettagliante". La motivazione è duplice:
-- **Copertura ponderata elevata**: Amazon è il dettagliante con il peso medio più alto nel mercato online italiano. Come studiato nel corso, la copertura ponderata è data dalla copertura semplice moltiplicata per il peso medio della clientela. Anche con un solo intermediario (copertura semplice bassa), il peso medio di Amazon è talmente elevato da generare una copertura ponderata significativa.
-- **Incremento dell'indice di penetrazione**: Amazon intercetta il consumatore nella fase di ricerca attiva, aumentando il "tasso di penetrazione — tra i compratori della categoria, quanti hanno comprato il nostro brand".
+**Retail selettivo**: Negozi di design (Rinascente), concept store eco (NaturaSì, Eataly). Offre supporting evidence: toccare il prodotto rafforza la credibilità del posizionamento premium.
 
-**Retail selettivo (indiretto corto)**: Negozi di design (Rinascente, WOW Design), concept store eco (NaturaSì flagship, Eataly), catene lifestyle (Flying Tiger premium). Il canale retail ha una funzione strategica di **supporting evidence**: vedere il prodotto fisicamente rafforza la credibilità del posizionamento premium.
+***
 
----
+## 2. Distribuzione selettiva: politica di ampiezza
 
-## 3. Definizione della politica di vendita (Ampiezza del Canale)
+ECOBOTTLE adotta la **distribuzione selettiva** per:
 
-Come definito nel corso, l'ampiezza del canale (politica di vendita) si declina in tre livelli:
+1. **Coerenza con il posizionamento premium**: distribuire solo nei punti vendita giusti difende l'immagine
+2. **Qualità del punto vendita**: il contesto comunica il valore del brand
+3. **Controllo dell'assortimento**: negoziare spazi privilegiati nei negozi selezionati
+4. **Riduzione conflitti**: limitare i retailer evita scontri di prezzo tra canali
+5. **Ottimizzazione risorse**: una startup non ha risorse per distribuzione capillare
 
-| Strategia | Descrizione | Adatta a |
-|-----------|-------------|----------|
-| **Intensiva** | Massimo numero di PdV, capillare | Beni di largo consumo |
-| **Selettiva** | "Immagine particolare del prodotto", numero ristretto di intermediari scelti in base a criteri qualitativi | Beni comparabili, premium |
-| **Esclusiva** | Un solo intermediario per area, diritto di esclusiva territoriale | Beni di lusso, alta gamma |
+***
 
-ECOBOTTLE adotta una politica di vendita basata sulla **distribuzione selettiva** per 5 motivazioni teoriche che giustificano la scelta:
+## 3. Scelta dei retailer fisici
 
-1. **Coerenza con il posizionamento premium**: la distribuzione selettiva è indicata quando il prodotto ha un'"immagine particolare" da difendere. Essere presenti ovunque (distribuzione intensiva) diluirebbe la percezione di esclusività.
+Criteri di selezione:
 
-2. **Qualità del punto vendita come supporting evidence**: il contesto di vendita influenza la percezione del prodotto. Un negozio di design comunica attributi astratti (premium, curato) che rafforzano il posizionamento.
+**Oggettivi** (economici): quota di mercato, trend vendite, copertura geografica, capacità logistiche
 
-3. **Controllo della quota nei clienti trattanti**: con pochi intermediari selezionati, ECOBOTTLE può negoziare una posizione privilegiata nell'assortimento (spazio espositivo, vetrina) aumentando la quota nei clienti trattanti (Qi/ACSi).
+**Soggettivi** (immagine): posizionamento premium, qualità del servizio, esperienza con prodotti eco/smart, assenza di competitor diretti nell'assortimento (es. se il retailer vende già LARQ, potrebbe non dedicare la giusta attenzione a ECOBOTTLE)
 
-4. **Riduzione del conflitto multicanale**: limitare il numero di retailer riduce la probabilità di conflitti di prezzo con il canale D2C.
+***
 
-5. **Compatibilità con le risorse**: una startup non ha le risorse per una distribuzione intensiva (forza vendita, logistica capillare). La distribuzione selettiva ottimizza il rapporto tra copertura e investimento.
+## 4. Forza vendita e sales management
 
----
+La forza vendita è il collegamento tra ECOBOTTLE e i retailer.
 
-## 4. Il sito web come canale duale: distribuzione E comunicazione
+**Distinzione fondamentale**:
+- **Intermediari commerciali** (Rinascente, Amazon): acquistano il prodotto e lo rivendono → Canali distributivi
+- **Venditori** (agenti): negoziano per conto del produttore, non acquisiscono la proprietà → Sales management
 
-Un aspetto strategico centrale è il ruolo **duale del sito web ecobottle.com**, che funge contemporaneamente da:
+ECOBOTTLE sceglierà **3 agenti di vendita** (forza vendita indiretta) piuttosto che venditori diretti, per motivi di costo:
 
-### 4.1 Canale di distribuzione (e-commerce D2C)
-Il sito è il punto vendita diretto digitale — la funzione transazionale del canale diretto.
+| Voce | Agenti | Venditori Diretti |
+|------|--------|-------------------|
+| Costo fisso | 0 € | 72.000 €/anno (3 dipendenti) |
+| Provvigione | 4,5% sul venduto | 0,5% sul venduto |
+| **Fatturato previsto Anno 1** | **430.500 €** | **430.500 €** |
+| **Costo totale vendite** | **19.372,50 €** | **74.152,50 €** |
 
-### 4.2 Canale di comunicazione (content hub + brand storytelling)
-Il sito è anche il principale strumento di comunicazione commerciale, svolgendo le tre funzioni della comunicazione di marketing studiate nel corso:
-- **Sfera cognitiva**: far conoscere il prodotto e le sue caratteristiche (pagine prodotto, specifiche)
-- **Atteggiamento**: sviluppare percezioni positive (storytelling, visual, contenuti editoriali)
-- **Comportamento**: spingere all'acquisto (CTA, promozioni, urgenza)
+Con un fatturato di 430.500 €, gli **agenti sono la scelta più conveniente**. Solo al raggiungimento di **1.800.000 € di fatturato** converrebbe passare a venditori diretti (fatturato di pareggio: 72.000 / 0,04).
 
-### 4.3 Perché il sito web non è un "canale di distribuzione separato"
-Dal punto di vista della teoria della distribuzione, il sito web non costituisce un canale aggiuntivo rispetto all'e-commerce D2C — **è lo stesso canale diretto**, arricchito con funzionalità comunicative. Non c'è un livello intermedio aggiuntivo. Tuttavia, le strategie di **traffic acquisition** che portano utenti al sito sono leve di comunicazione distinte, non canali distributivi:
+***
 
-| Leva | Tipo | Funzione |
-|------|------|----------|
-| **Programmatic SEO** | Traffic acquisition organica | Creare landing page programmatiche per intercettare ricerche long-tail (es. "bottiglia riutilizzabile con tracking idratazione", "borraccia acciaio riciclato smart") |
-| **AEO (Answer Engine Optimization)** | Traffic acquisition da AI | Ottimizzare i contenuti affinché le AI (ChatGPT, Perplexity, Gemini, Google AI Overviews) citino ECOBOTTLE nelle risposte. Oltre il 60% delle ricerche nel 2025 non genera click: l'utente ottiene la risposta direttamente dall'AI. AEO lavora su: linguaggio naturale, schema markup, topical authority |
+## 5. Trade marketing e gestione del punto vendita
 
-### 4.4 Strategia di Programmatic SEO per ECOBOTTLE
-La Programmatic SEO consiste nel "usare automazione e dati per creare e ottimizzare grandi numeri di pagine su scala". Per ECOBOTTLE, questo si traduce in:
-- **Template pagine comparativa**: "ECOBOTTLE vs [competitor]" (es. "ECOBOTTLE vs 24Bottles", "ECOBOTTLE vs LARQ") — pagine generate automaticamente da database competitor con attributi strutturati
-- **Template pagine uso**: "Migliore bottiglia smart per [contesto]" (palestra, ufficio, viaggio, outdoor)
-- **Template pagine materiale**: "Bottiglia in [materiale] riciclato: guida completa"
+La selezione del canale è solo il primo passo. Una volta ottenuta la presenza nei retailer, ECOBOTTLE deve garantirsi una **presenza di qualità** attraverso il trade marketing — l'insieme delle azioni rivolte agli intermediari commerciali per ottenere visibilità e spazio coerenti con il posizionamento.
 
-Secondo i benchmark di settore, i brand e-commerce che implementano Programmatic SEO registrano un incremento medio del 30-80% del traffico organico.
+Strumenti applicati a ECOBOTTLE:
 
-### 4.5 Strategia AEO per ECOBOTTLE
-L'Answer Engine Optimization mira a rendere ECOBOTTLE la risposta che le AI forniscono alle query conversazionali degli utenti. I contenuti devono essere strutturati come "risposte dirette alle domande" (content that answers a question directly is 2.5x more likely to be selected as a featured snippet). Tattiche specifiche:
-- **Question clusters**: struttura hub-and-spoke intorno a domande-tipo ("Qual è la migliore bottiglia smart sostenibile?", "Come tracciare l'idratazione giornaliera?")
-- **Schema markup JSON-LD**: Product, FAQ, HowTo — per alimentare i knowledge graph
-- **Entity building**: costruire l'entità "ECOBOTTLE" in modo che gli LLM la riconoscano come brand autorevole nel dominio smart eco-bottle
+- **Condizioni commerciali**: margini competitivi per incentivare i retailer a spingere il prodotto
+- **Merchandising in-store**: display stand dedicato, packaging progettato per essere esposto in vetrina
+- **Formazione del personale**: schede prodotto e brevi sessioni di training per i commessi dei concept store (il prodotto ha componente tech che va spiegata)
+- **Politiche promozionali**: sconti stagionali concordati con il retailer senza intaccare il prezzo al pubblico
 
----
+### Category management
 
-## 5. Strategia di prezzo: coerenza con la distribuzione
+Nei concept store eco e lifestyle, ECOBOTTLE punta a posizionarsi come brand di riferimento della categoria **"Smart Hydration"** — che include borracce smart, filtri portatili e accessori idratazione premium. Produttore e distributore gestiscono questa categoria come una **business unit** con obiettivi di vendita propri, uno spazio espositivo dedicato e un retailing mix coerente. L'obiettivo è diventare category captain in questa nicchia, così da avere voce in capitolo sulla gestione dell'intera area scaffale.
 
-La strategia di pricing di ECOBOTTLE è una **strategia di scrematura** (skimming), come definita nel corso: prezzo iniziale elevato che "screma" i consumatori con maggiore disponibilità a pagare, per poi eventualmente ridurlo nel tempo.
+***
 
-Secondo il modello delle **3C del pricing** (corso):
-- **Clienti/domanda (massimo)**: WTP del target 55-75€, con picchi fino a 90€ per i Design Seekers → prezzo massimo di accettazione ~89€
-- **Costi (minimo)**: costo unitario stimato ~22€ → prezzo minimo 22€
-- **Concorrenza**: 24Bottles €29-49, LARQ €115-129, HidrateSpark €75-90 → fascia di riferimento competitiva
+## 6. Strategia di prezzo: coerenza con la distribuzione
 
-**Prezzo di lancio: €59** — posizionato:
-- Sopra i competitor non-smart (24Bottles €35, Chilly's €35) → giustificato dalla componente tech
-- Sotto i competitor tech puri (LARQ €129, HidrateSpark €80) → value proposition superiore per il target
-- Nella sweet spot della WTP del segmento primario (55-75€)
+La strategia di pricing di ECOBOTTLE è una **strategia di scrematura** (skimming): prezzo iniziale elevato che screma i consumatori con maggiore disponibilità a pagare.
 
----
+**Prezzo di lancio: €59** — posizionato tra:
+- Competitor non-smart (24Bottles €35, Chilly's €35)
+- Competitor tech puri (LARQ €129, HidrateSpark €80)
+- **Sweet spot della WTP del target: 55-75€**
 
-## 6. Evoluzione distributiva Anno 2-3
+Il prezzo premium è coerente con i canali selezionati (D2C, Amazon, retail selettivo), tutti compatibili con un posizionamento non-mass market. La GDO è stata esclusa anche per questo motivo: richiederebbe margini elevati per il distributore, comprimendo il margine industriale e forzando un abbassamento del prezzo al pubblico.
 
-| Anno | Azione | Indicatore |
-|------|--------|-----------|
-| Anno 1 | Lancio D2C + Amazon + 15-20 PdV selettivi | Copertura ponderata target: 25% |
-| Anno 2 | Espansione a 50 PdV + ingresso Fnac/MediaWorld | Copertura ponderata target: 45% |
-| Anno 3 | Apertura mercati EU (DE, FR, ES) via Amazon EU + retail selettivo locale + valutazione pop-up store | Copertura ponderata target: 60% EU |
+***
 
-L'evoluzione segue il principio di crescita graduale della copertura ponderata: prima aumentare il peso medio della clientela (entrare nei retailer più importanti), poi la copertura semplice (aumentare il numero di PdV).
+## 7. Il sito web come canale D2C
 
----
+Il sito ecobottle.com funge da:
+- **Canale di distribuzione**: punto vendita diretto digitale
+- **Canale di comunicazione**: content hub e brand storytelling (sfera cognitiva, atteggiamento, comportamento)
 
-*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini*
+Le strategie di acquisizione del traffico (SEO, advertising) sono leve di comunicazione, non canali distributivi separati — e verranno approfondite nel documento dedicato alla politica di comunicazione.
+
+***
+
+*Documento redatto nell'ambito del Project Work di Marketing — Università Politecnica delle Marche, A.A. 2025/2026 x Daniele Ronchini*  
 *Brand: ECOBOTTLE — Drink Smart. Live Green.*
