@@ -131,9 +131,10 @@ export default function StrategiaComunicazionePage() {
           <h3>3.3 Reason-why</h3>
           <blockquote>
             ECOBOTTLE è realizzata con il 75% di acciaio riciclato e materiali
-            bio-based, integra un sensore IoT che traccia il consumo idrico con
-            precisione del 95% e si sincronizza con Apple Health, Google Fit e
-            Samsung Health.
+            bio-based, integra un sensore IoT per il tracciamento del consumo
+            idrico e si sincronizza con Apple Health, Google Fit e Samsung
+            Health; l'accuratezza del sensore è in fase di validazione tramite
+            test di laboratorio.
           </blockquote>
 
           <h3>3.4 Supporting evidence</h3>
@@ -226,10 +227,7 @@ export default function StrategiaComunicazionePage() {
               &quot;76%&quot;, zoom-out su ragazza in contesto urbano.
             </p>
             <p>
-              <em>Copy:</em> &quot;Il 73% dei giovani adulti non beve abbastanza
-              acqua ogni giorno. ECOBOTTLE ti ricorda quando bere, traccia quanto
-              bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live
-              Green. 💧🌿&quot;
+              <em>Copy:</em> &quot;La mediana del nostro campione è 1,5 L/giorno; ECOBOTTLE aiuta a mantenere il ritmo quotidiano, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿&quot;
             </p>
           </div>
 

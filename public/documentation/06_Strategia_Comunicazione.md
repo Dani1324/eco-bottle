@@ -45,12 +45,12 @@ Come definito nel corso, "in una campagna pubblicitaria il posizionamento è sin
 La promise risponde alla domanda "qual è il beneficio che il nostro prodotto apporta al consumatore?" È il punto di leva della catena mezzi-fini, posizionato tra benefici funzionali (tracking, temperatura) e benefici psicologici (responsabilità, benessere).
 
 ### 3.3 Reason-why
-> ECOBOTTLE è realizzata con il 75% di acciaio riciclato e materiali bio-based, integra un sensore IoT che traccia il consumo idrico con precisione del 95% e si sincronizza con Apple Health, Google Fit e Samsung Health.
+> ECOBOTTLE è realizzata con il 75% di acciaio riciclato e materiali bio-based, integra un sensore IoT per il tracciamento del consumo idrico e si sincronizza con Apple Health, Google Fit e Samsung Health; l'accuratezza del sensore è in fase di validazione tramite test di laboratorio.
 
 La reason-why è "la motivazione per la quale è valida la promessa — una caratteristica del prodotto. Spiega il perché si ottiene quel beneficio." Sono dati tecnici e verificabili che rendono credibile la promise.
 
 ### 3.4 Supporting evidence
-> - Certificazione di sostenibilità dei materiali (ISO 14001)
+- Certificazioni materiali riconosciute (es. Global Recycled Standard o verifica del contenuto riciclato)
 > - Test di laboratorio indipendenti sull'accuratezza del sensore
 > - Partnership con associazione ambientalista per programma di compensazione CO₂
 > - Recensioni di early adopter e beta tester
@@ -86,7 +86,7 @@ Come definito nel corso, la pubblicità è "ogni forma di presentazione e promoz
 
 **Esempio post Instagram (Reel):**
 - **Visual**: Slow-motion di ECOBOTTLE che viene riempita d'acqua, il display e-ink si illumina mostrando "76%", zoom-out su ragazza in contesto urbano (ufficio con piante, luce naturale)
-- **Copy**: "Il 73% dei giovani adulti non beve abbastanza acqua ogni giorno. ECOBOTTLE ti ricorda quando bere, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿"
+- **Copy**: "Nel nostro campione la mediana del consumo giornaliero è 1,5 L; ECOBOTTLE ti aiuta a mantenere il ritmo quotidiano, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿"
 - **CTA**: "Link in bio → Scopri ECOBOTTLE"
 - **Hashtag strategy**: #DrinkSmartLiveGreen #ECOBOTTLE #SmartHydration #SustainableLiving
 
@@ -200,7 +200,7 @@ Il minimalismo nel branding attiva due meccanismi psicologici documentati:
 | 1 | Lancio sito ecobottle.com + primo carousel Instagram | D2C + Social | Cognitivo + Comportamento |
 | 2 | Pubblicazione guida "Idratazione smart: la guida definitiva" | Content SEO | Cognitivo (SEO) |
 | 3 | Macro-influencer: day-in-my-life con ECOBOTTLE | Influencer | Atteggiamento |
-| 4 | Instagram Reel virale: "Il 73% non beve abbastanza" | Social ADV | Atteggiamento + Comportamento |
+| 4 | Instagram Reel virale: "La mediana del nostro campione è 1,5 L/giorno; ECOBOTTLE aiuta a mantenere il ritmo" | Social ADV | Atteggiamento + Comportamento |
 | 5 | Email welcome sequence per primi acquirenti | One-to-one | Comportamento (retention) |
 | 6 | Lancio programma ambassador "Green Circle" | Community | Atteggiamento (advocacy) |
 | 7 | Prima serie di pagine programmatic SEO (10 comparativi) | Content SEO | Cognitivo (traffico organico) |
