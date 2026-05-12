@@ -29,6 +29,9 @@ export default function StrategiaComunicazionePage() {
             1. Inquadramento: la comunicazione commerciale nel marketing mix
           </h2>
           <p>
+            Ancor prima di definire messaggi e mezzi, la campagna si fonda sull&apos;<strong>individuazione del target</strong>: giovani professionisti, eco-lifestyle enthusiast e frequentatori del circuito fitness/wellness.
+          </p>
+          <p>
             La comunicazione commerciale è volta a sviluppare relazioni con il
             mercato dei consumatori. Il suo obiettivo è influenzare la percezione
             di valore da parte dei clienti. Persegue tre obiettivi fondamentali:
@@ -107,9 +110,7 @@ export default function StrategiaComunicazionePage() {
             </tbody>
           </table>
           <p>
-            ECOBOTTLE concentra il <strong>75% del budget</strong> sul modello
-            many-to-many (social media) e il 25% su one-to-one (email, direct),
-            bypassando il modello one-to-many (mass media).
+            Il budget di comunicazione è stato definito secondo il <strong>metodo degli obiettivi e delle attività (obiettivi e compiti)</strong>, il criterio più logico e accurato per una startup in fase di lancio che non ha uno storico di vendite e non può fare un mero confronto competitivo. Definita la necessità primaria di generare awareness e spingere alla prova iniziale all&apos;interno di un target altamente digitalizzato, il budget è stato ripartito al <strong>75% sul modello many-to-many (social media/influencer)</strong> per la visibilità in target e al <strong>25% sul modello one-to-one (email marketing/direct)</strong> per la conversione. L&apos;approccio esclude del tutto la pubblicità di massa (one-to-many), considerata uno spreco di risorse vista la forte verticalità del segmento.
           </p>
 
           <hr />
@@ -131,22 +132,23 @@ export default function StrategiaComunicazionePage() {
           <h3>3.3 Reason-why</h3>
           <blockquote>
             ECOBOTTLE è realizzata con il 75% di acciaio riciclato e materiali
-            bio-based, integra un sensore IoT per il tracciamento del consumo
-            idrico e si sincronizza con Apple Health, Google Fit e Samsung
-            Health; l'accuratezza del sensore è in fase di validazione tramite
-            test di laboratorio.
+            bio-based; inoltre, integra una sensoristica affidabile per il tracciamento del consumo
+            idrico sincronizzato direttamente tramite app mobile con ecosistemi come Apple Health 
+            e Google Fit.
           </blockquote>
 
           <h3>3.4 Supporting evidence</h3>
           <ul>
-            <li>Certificazione di sostenibilità dei materiali (ISO 14001)</li>
+            <li>Certificazione qualitativa sui materiali (BPA-free e Acciaio Inox 304)</li>
             <li>
-              Test di laboratorio indipendenti sull&apos;accuratezza del sensore
+              Garanzia di 2 anni e documentazione sulla precisione della componente elettronica
             </li>
             <li>
-              Partnership con associazione ambientalista per compensazione CO₂
+              Recensioni e testimonianze dirette dei beta tester coinvolti in fase di pre-lancio
             </li>
-            <li>Recensioni di early adopter e beta tester</li>
+            <li>
+              Partnership ufficiale con un ente ecologico certificato per la compensazione di CO₂
+            </li>
           </ul>
 
           <h3>3.5 Tone of voice</h3>
@@ -160,6 +162,11 @@ export default function StrategiaComunicazionePage() {
           <hr />
 
           <h2>4. Mix comunicazionale: gli strumenti</h2>
+
+          <p>
+            Il classico <strong>mix comunicazionale</strong> si compone di una pluralità di strumenti, tra cui la pubblicità, il product placement, le promozioni, il passaparola, le pubbliche relazioni, le sponsorizzazioni, la comunicazione personale e il marketing diretto.
+            Nel caso specifico del lancio di ECOBOTTLE, per operare in una logica di forte <strong>comunicazione integrata</strong> orientata all&apos;efficienza sul target, si è scelto di selezionare e valorizzare solo gli strumenti più contemporanei, misurabili e strategici per intercettare il segmento di riferimento primario:
+          </p>
 
           <h3>4.1 Social Media Advertising</h3>
           <p>
@@ -227,7 +234,7 @@ export default function StrategiaComunicazionePage() {
               &quot;76%&quot;, zoom-out su ragazza in contesto urbano.
             </p>
             <p>
-              <em>Copy:</em> &quot;La mediana del nostro campione è 1,5 L/giorno; ECOBOTTLE aiuta a mantenere il ritmo quotidiano, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿&quot;
+              <em>Copy:</em> &quot;La gran parte di noi fatica a bere la giusta quantità d&apos;acqua ogni giorno; ECOBOTTLE aiuta a mantenere il ritmo quotidiano, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿&quot;
             </p>
           </div>
 
@@ -323,136 +330,44 @@ export default function StrategiaComunicazionePage() {
 
           <hr />
 
-          <h2>5. Focus: Branding visivo</h2>
+          <h2>5. Focus: Branding e differenziazione visiva</h2>
+          <p>
+            Al di là degli aspetti operativi (come mezzi e tipologia di media usati), 
+            il branding visivo è un pilastro essenziale per consolidare l&apos;<strong>atteggiamento</strong> 
+            e garantire la <strong>differenziazione del brand</strong> dai concorrenti.
+          </p>
 
           <h3>
             5.1 Palette cromatica: Verde foresta (#2D4A2E) + Crema (#F5F0E8)
           </h3>
-
-          <h4>Ragioni psicologiche</h4>
           <p>
-            Il verde è universalmente associato a natura, crescita, salute e
-            sostenibilità. Il <strong>verde scuro/foresta</strong> aggiunge una
-            dimensione di premium e autorevolezza: è associato a gemme preziose
-            (giada, smeraldo) e al denaro, rafforzando la percezione di valore.
-          </p>
-          <p>
-            Il <strong>crema caldo</strong> (#F5F0E8) evoca naturalezza e
-            artigianalità, crea contrasto morbido con il verde e comunica calore
-            umano in un prodotto tecnologico.
+            Il verde scuro aggiunge una forte dimensione <strong>premium</strong> e di autorevolezza, allontanando 
+            il brand da sfumature troppo brillanti o plastiche percepite come &quot;cheap&quot;. 
+            A differenza dei competitor che comunicano molta freddezza (utilizzando grigi metallici, neri, o azzurri tecnologici), 
+            il Crema caldo garantisce un bilanciamento umano, facendo apparire la componente <em>&quot;smart&quot;</em> molto 
+            più vicina alle abitudini di vita quotidiana del consumatore. Da un punto di vista dell&apos;accessibilità, 
+            questa palette garantisce chiarezza ed elevata fruibilità visiva in tutte le interazioni digitali.
           </p>
 
-          <h4>Ragioni tecniche</h4>
-          <ul>
-            <li>
-              <strong>Contrasto WCAG AA</strong>: rapporto minimo 4.5:1
-              garantito
-            </li>
-            <li>
-              <strong>Resa cross-device</strong>: consistenza su OLED, LCD e
-              stampa (Pantone 5535 C)
-            </li>
-          </ul>
-
-          <h4>Ragioni funzionali</h4>
-          <ul>
-            <li>
-              <strong>Differenziazione</strong>: i competitor usano palette
-              fredde (nero/argento/azzurro). Il verde foresta crea
-              riconoscibilità istantanea
-            </li>
-            <li>
-              <strong>Coerenza contenuto-contenitore</strong>: il colore
-              rispecchia il contenuto valoriale (sostenibilità)
-            </li>
-          </ul>
-
-          <h3>5.2 Tipografia: Sans-serif minimalista</h3>
-
-          <h4>Ragioni psicologiche</h4>
+          <h3>5.2 Tipografia: Sans-serif umanistico e minimalista</h3>
           <p>
-            Lo studio Monotype/Neurons (2022) ha dimostrato che la scelta del
-            typeface influenza la risposta emotiva fino al{" "}
-            <strong>13%</strong>. I sans-serif umanistici generano un incremento
-            del 9% nella percezione di innovatività e del 7% nella prominenza.
+            Diversi studi evidenziano come la scelta del carattere tipografico influenzi la risposta emotiva. 
+            I font <em>sans-serif</em> di stampo &quot;umanistico&quot; accrescono nella mente del cliente 
+            la percezione di innovatività e prominenza del brand. 
+            La scelta di un font netto ma non freddamente geometrico conferisce ad ECOBOTTLE <strong>innovazione</strong> e <strong>modernità</strong> 
+            (posizionamento tech) rimanendo però percepibile come <strong>accessibile</strong> e affidabile. 
+            Permette anche di ottenere ottima leggibilità negli spazi più piccoli degli schermi mobili, senza distrazioni.
           </p>
-          <p>Per ECOBOTTLE il sans-serif umanistico comunica:</p>
-          <ul>
-            <li>
-              <strong>Innovazione e modernità</strong> → coerente con
-              posizionamento tech-forward
-            </li>
-            <li>
-              <strong>Accessibilità e umanità</strong> → font &quot;caldo&quot;,
-              non geometrico/freddo
-            </li>
-            <li>
-              <strong>Affidabilità senza rigidità</strong> → diverso dai serif
-              luxury e dai monospace tech
-            </li>
-          </ul>
 
-          <h4>Ragioni tecniche</h4>
-          <ul>
-            <li>
-              <strong>Leggibilità digitale</strong>: migliore su schermi piccoli
-              (mobile-first)
-            </li>
-            <li>
-              <strong>Hinting ottimizzato</strong>: font come Inter e DM Sans
-              nativi per rendering su schermo
-            </li>
-            <li>
-              <strong>Compatibilità web</strong>: Google Fonts, performance Core
-              Web Vitals ottimale
-            </li>
-          </ul>
-
-          <h3>5.3 Minimalismo visivo: la strategia del &quot;less is more&quot;</h3>
-
-          <h4>Ragioni psicologiche</h4>
-          <ol>
-            <li>
-              <strong>Riduzione del carico cognitivo</strong>: meno stimoli
-              visivi = più attenzione per ciascun elemento
-            </li>
-            <li>
-              <strong>Percezione di esclusività (Quiet Luxury)</strong>:
-              l&apos;assenza di decorazione è essa stessa un segnale di status
-            </li>
-            <li>
-              <strong>Atemporalità</strong>: il design minimalista resiste ai
-              trend estetici, riducendo i costi di rebranding
-            </li>
-          </ol>
-
-          <h4>Ragioni tecniche</h4>
-          <ul>
-            <li>
-              <strong>Scalabilità</strong>: funziona da favicon 16×16px a
-              billboard 6×3m
-            </li>
-            <li>
-              <strong>Peso pagina ridotto</strong>: Core Web Vitals migliori =
-              ranking SEO superiore
-            </li>
-            <li>
-              <strong>Adattabilità responsive</strong>: layout con white space
-              si adatta a qualsiasi viewport
-            </li>
-          </ul>
-
-          <h4>Ragioni funzionali</h4>
-          <ul>
-            <li>
-              <strong>Riduzione del tasso di abbandono</strong>: landing page
-              minimaliste con CTA chiara → tassi di conversione superiori
-            </li>
-            <li>
-              <strong>Coerenza con il prodotto</strong>: la comunicazione
-              rispecchia il design industriale minimalista di ECOBOTTLE
-            </li>
-          </ul>
+          <h3>5.3 Minimalismo: la strategia del &quot;Quiet Luxury&quot;</h3>
+          <p>
+            La pulizia visiva che sposa la filosofia del <em>less is more</em> non assolve 
+            solo a un ruolo estetico. Riducendo le eccessive stimolazioni visive, si riduce il carico cognitivo dell&apos;utente, 
+            permettendo una fruizione più rapida del messaggio chiave. 
+            Inoltre, nel mondo dei beni premium, l&apos;assenza di decorazione superflua viene sempre più percepita 
+            come un chiaro segnale di differenziazione e pregio (Quiet Luxury), portando maggiore coerenza tra un 
+            messaggio pubblicitario limpido e un prodotto minimalista.
+          </p>
 
           <hr />
 
@@ -512,7 +427,7 @@ export default function StrategiaComunicazionePage() {
               <tr>
                 <td>4</td>
                 <td>
-                  Instagram Reel virale: &quot;Il 73% non beve abbastanza&quot;
+                  Instagram Reel educativo: &quot;La maggior parte di noi non beve abbastanza&quot;
                 </td>
                 <td>Social ADV</td>
                 <td>Atteggiamento + Comportamento</td>
@@ -551,6 +466,21 @@ export default function StrategiaComunicazionePage() {
               </tr>
             </tbody>
           </table>
+
+          <hr />
+
+          <h2>7. Controllo dei risultati</h2>
+          <p>
+            Al termine delle fasi di lancio previste, la campagna si chiude con l&apos;esame e
+            il <strong>controllo dei risultati</strong>. Per misurare l&apos;effettivo raggiungimento 
+            degli obiettivi cognitivi e comportamentali vengono impiegati 4 KPI principali:
+          </p>
+          <ol>
+            <li><strong>Brand Awareness (Sfera Cognitiva)</strong>: misurazione di Impression e Reach totale delle campagne per valutare la penetrazione nel target.</li>
+            <li><strong>Engagement Rate (Atteggiamento)</strong>: misurazione dell&apos;interazione attiva del pubblico (like, salvataggi, condivisioni) ai contenuti, utile a dimostrare interesse.</li>
+            <li><strong>Traffico al Sito (Comportamento Iniziale)</strong>: quantità di visitatori unici in target che atterrano sulla pagina D2C o sui contenuti del blog, filtrati per canale di acquisizione.</li>
+            <li><strong>Conversion e Trial Rate (Comportamento)</strong>: tasso di conversione finale in acquisto o iscrizione alla newsletter di prelancio, essenziale per valutare una reale intenzione di adozione del prodotto.</li>
+          </ol>
 
           <p className={styles.docNote}>
             Documento redatto nell&apos;ambito del Project Work di Marketing —

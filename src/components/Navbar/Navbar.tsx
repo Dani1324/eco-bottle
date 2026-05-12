@@ -75,6 +75,7 @@ export default function Navbar() {
           <button
             className={styles.menuButton}
             onClick={() => setMobileOpen(true)}
+            aria-expanded={mobileOpen}
             aria-label="Apri menu"
           >
             <IconMenu2 size={28} />
@@ -82,25 +83,37 @@ export default function Navbar() {
         </div>
       </nav>
 
+      {/* Overlay backdrop */}
+      <div 
+        className={`${styles.overlay} ${mobileOpen ? styles.overlayOpen : ""}`} 
+        onClick={() => setMobileOpen(false)}
+        aria-hidden="true"
+      />
+
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${mobileOpen ? styles.open : ""}`}>
-        <button
-          className={styles.closeButton}
-          onClick={() => setMobileOpen(false)}
-          aria-label="Chiudi menu"
-        >
-          <IconX size={28} />
-        </button>
-        {navItems.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            className={styles.mobileMenuLink}
+        <div className={styles.mobileMenuHeader}>
+          <span className={styles.mobileMenuTitle}>Menu</span>
+          <button
+            className={styles.closeButton}
             onClick={() => setMobileOpen(false)}
+            aria-label="Chiudi menu"
           >
-            {item.label}
-          </a>
-        ))}
+            <IconX size={28} />
+          </button>
+        </div>
+        <div className={styles.mobileMenuLinks}>
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className={styles.mobileMenuLink}
+              onClick={() => setMobileOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
       </div>
     </>
   );

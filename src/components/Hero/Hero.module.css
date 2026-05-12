@@ -106,8 +106,25 @@
 @media (max-width: 968px) {
   .heroInner {
     grid-template-columns: 1fr;
-    padding: 40px 20px;
+    padding: 54vh 20px 40px 20px;
     text-align: center;
+    min-height: auto;
+  }
+
+  .heroImageWrapper {
+    width: calc(100vw - 10rem);
+    max-height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 5rem;
+  }
+
+  .heroRight {
+    margin: 0;
+  }
+
+  .heroLeft {
+    order: 1;
   }
 
   .heroTagline {
@@ -125,5 +142,12 @@
   .heroCta {
     display: flex;
     justify-content: center;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .heroInner {
+    padding: 85vw 20px 40px 20px;
   }
 }

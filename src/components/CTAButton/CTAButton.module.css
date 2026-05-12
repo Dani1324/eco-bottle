@@ -11,6 +11,7 @@
   cursor: pointer;
   text-decoration: none;
   border: 1.5px solid transparent;
+  max-width: calc(100vw - 40px);
 }
 
 /* Varianti */
