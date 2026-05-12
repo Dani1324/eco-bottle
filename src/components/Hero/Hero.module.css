@@ -133,6 +133,7 @@
 
   .heroDescription {
     max-width: 100%;
+    margin-top: 1.5rem;
   }
 
   .heroBottle {
@@ -148,6 +149,6 @@
 
 @media (max-width: 500px) {
   .heroInner {
-    padding: 85vw 20px 40px 20px;
+    padding: 83vw 20px 40px 20px;
   }
 }

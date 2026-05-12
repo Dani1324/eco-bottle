@@ -234,7 +234,7 @@ export default function StrategiaComunicazionePage() {
               &quot;76%&quot;, zoom-out su ragazza in contesto urbano.
             </p>
             <p>
-              <em>Copy:</em> &quot;La gran parte di noi fatica a bere la giusta quantità d&apos;acqua ogni giorno; ECOBOTTLE aiuta a mantenere il ritmo quotidiano, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿&quot;
+              <em>Copy:</em> &quot;La mediana del nostro campione è 1,5 L/giorno; ECOBOTTLE aiuta a mantenere il ritmo quotidiano, traccia quanto bevi e lo fa con il 75% di acciaio riciclato. Drink Smart. Live Green. 💧🌿&quot;
             </p>
           </div>
 
@@ -340,6 +340,8 @@ export default function StrategiaComunicazionePage() {
           <h3>
             5.1 Palette cromatica: Verde foresta (#2D4A2E) + Crema (#F5F0E8)
           </h3>
+
+          <h4>Ragioni psicologiche</h4>
           <p>
             Il verde scuro aggiunge una forte dimensione <strong>premium</strong> e di autorevolezza, allontanando 
             il brand da sfumature troppo brillanti o plastiche percepite come &quot;cheap&quot;. 
@@ -361,13 +363,88 @@ export default function StrategiaComunicazionePage() {
 
           <h3>5.3 Minimalismo: la strategia del &quot;Quiet Luxury&quot;</h3>
           <p>
-            La pulizia visiva che sposa la filosofia del <em>less is more</em> non assolve 
-            solo a un ruolo estetico. Riducendo le eccessive stimolazioni visive, si riduce il carico cognitivo dell&apos;utente, 
-            permettendo una fruizione più rapida del messaggio chiave. 
-            Inoltre, nel mondo dei beni premium, l&apos;assenza di decorazione superflua viene sempre più percepita 
-            come un chiaro segnale di differenziazione e pregio (Quiet Luxury), portando maggiore coerenza tra un 
-            messaggio pubblicitario limpido e un prodotto minimalista.
+            Lo studio Monotype/Neurons (2022) ha dimostrato che la scelta del
+            typeface influenza la risposta emotiva fino al{" "}
+            <strong>13%</strong>. I sans-serif umanistici generano un incremento
+            del 9% nella percezione di innovatività e del 7% nella prominenza.
           </p>
+          <p>Per ECOBOTTLE il sans-serif umanistico comunica:</p>
+          <ul>
+            <li>
+              <strong>Innovazione e modernità</strong> → coerente con
+              posizionamento tech-forward
+            </li>
+            <li>
+              <strong>Accessibilità e umanità</strong> → font &quot;caldo&quot;,
+              non geometrico/freddo
+            </li>
+            <li>
+              <strong>Affidabilità senza rigidità</strong> → diverso dai serif
+              luxury e dai monospace tech
+            </li>
+          </ul>
+
+          <h4>Ragioni tecniche</h4>
+          <ul>
+            <li>
+              <strong>Leggibilità digitale</strong>: migliore su schermi piccoli
+              (mobile-first)
+            </li>
+            <li>
+              <strong>Hinting ottimizzato</strong>: font come Inter e DM Sans
+              nativi per rendering su schermo
+            </li>
+            <li>
+              <strong>Compatibilità web</strong>: Google Fonts, performance Core
+              Web Vitals ottimale
+            </li>
+          </ul>
+
+          <h3>5.3 Minimalismo visivo: la strategia del &quot;less is more&quot;</h3>
+
+          <h4>Ragioni psicologiche</h4>
+          <ol>
+            <li>
+              <strong>Riduzione del carico cognitivo</strong>: meno stimoli
+              visivi = più attenzione per ciascun elemento
+            </li>
+            <li>
+              <strong>Percezione di esclusività (Quiet Luxury)</strong>:
+              l&apos;assenza di decorazione è essa stessa un segnale di status
+            </li>
+            <li>
+              <strong>Atemporalità</strong>: il design minimalista resiste ai
+              trend estetici, riducendo i costi di rebranding
+            </li>
+          </ol>
+
+          <h4>Ragioni tecniche</h4>
+          <ul>
+            <li>
+              <strong>Scalabilità</strong>: funziona da favicon 16×16px a
+              billboard 6×3m
+            </li>
+            <li>
+              <strong>Peso pagina ridotto</strong>: Core Web Vitals migliori =
+              ranking SEO superiore
+            </li>
+            <li>
+              <strong>Adattabilità responsive</strong>: layout con white space
+              si adatta a qualsiasi viewport
+            </li>
+          </ul>
+
+          <h4>Ragioni funzionali</h4>
+          <ul>
+            <li>
+              <strong>Riduzione del tasso di abbandono</strong>: landing page
+              minimaliste con CTA chiara → tassi di conversione superiori
+            </li>
+            <li>
+              <strong>Coerenza con il prodotto</strong>: la comunicazione
+              rispecchia il design industriale minimalista di ECOBOTTLE
+            </li>
+          </ul>
 
           <hr />
 
